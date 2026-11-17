@@ -1,0 +1,15 @@
+build/work/playback/turb512_d3.psi
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Capture        : build/work/playback/raw_psi_512.png (1600x900), view 3, sync, 2 RK4 steps per frame, 4000000 particles per side
+Left : Raw frames + half-precision 3D texture
+  per frame    : 1536.00 MiB read on average, disk 871.568 ms, bus 58.798 ms, decoding 5.923 ms, sort 0.121 ms, 2 RK4 steps of 2.737 ms
+  cost         : 941.883 ms per frame, that is 1.1 frames per second by its own costs; 40 frames advanced
+  GPU memory   : 3712 MiB; rendering 1.80 ms
+  divergence   : 4.740e-02 of the gradient (RMS over the slice)
+  error        : 4.1180e-03 (RMS over the slice, against the raw frame)
+Right : Psi-treillis, degree 3
+  per frame    : 10.53 MiB read on average, disk 3.601 ms, bus 0.537 ms, decoding 4.750 ms, sort 0.123 ms, 2 RK4 steps of 9.176 ms
+  cost         : 27.363 ms per frame, that is 36.5 frames per second by its own costs; 40 frames advanced
+  GPU memory   : 624 MiB; rendering 0.87 ms
+  divergence   : 9.415e-16 of the gradient (RMS over the slice)
+  error        : 5.6620e-03 (RMS over the slice, against the raw frame)

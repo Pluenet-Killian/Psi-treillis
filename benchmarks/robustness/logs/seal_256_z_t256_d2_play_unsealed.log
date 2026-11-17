@@ -1,0 +1,10 @@
+play           : build/work/seal_256/z_t256_d2_unsealed.psi, 256^3, degree 2, 33 frames read out of 33, 1000000 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 55.490 MiB; read in steady state: 1.6446 MiB per frame, that is 117x less than a raw frame (192 MiB)
+Per frame      : disk 0.311 ms, bus 0.090 ms, decoding 0.568 ms, sort 0.000 ms, 2 RK4 steps of 0.278 ms
+Key frames     : 1 read in steady state (coded), 2.831 MiB each: disk 0.582 ms, bus 0.134 ms, decoding 0.984 ms
+Full budget    : 1.526 ms per frame, that is 655.4 frames per second (wall clock: 1.571 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 96.0 MiB allocated by the reader, of which 61.3 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 180773096192b573

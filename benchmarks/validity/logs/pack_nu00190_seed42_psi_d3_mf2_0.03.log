@@ -1,0 +1,8 @@
+# psi_stream pack --data data/sweep/nu00190_seed42.seq --file build/work/validity/nu00190_seed42_psi_d3_mf2_0.03.psi --degree 3 --mf 2 --start 8 --frames 36 --no-seal --tolerance 0.03
+pack           : data/sweep/nu00190_seed42.seq, 256^3, frames 8 to 43 -> build/work/validity/nu00190_seed42_psi_d3_mf2_0.03.psi
+Codec          : degree 3, 3 levels (128^3 to 32^3), potential step 1.197e-03, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+Fine level     : potential of step 1 voxel in bricks of 4^3 nodes; tolerance 3.00 % of u' on the largest error of a component at voxel centres; quantisation error 0.353 % of u', step 4.356e-04
+Certification  : marking at 0.029900 u', certification at 0.029950 u' (tolerance minus an arithmetic margin of 1.0e-04 u', then minus half of it); at most 64 marking passes per frame
+Failure: fine level: capacity exceeded, the tolerance asks to refine more than a quarter of the volume
+  codec_stream.cuh:1366

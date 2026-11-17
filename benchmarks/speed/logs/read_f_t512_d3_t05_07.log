@@ -1,0 +1,13 @@
+play           : build/work/reference_files/f_t512_d3_t05.psi, 512^3, degree 3, 55 frames read out of 55, 4000000 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 4.99 %; at most 29256 bricks and 692952 nodes per frame; 61.2 MiB resident
+Certification  : bound held at encoding; largest error 0.049900 u' for a certification threshold of 0.049950 u' (tolerance 0.05000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step without support cache (blocks of 256 threads); lattice read directly
+File           : 618.379 MiB; read in steady state: 10.9852 MiB per frame, that is 140x less than a raw frame (1536 MiB)
+Per frame      : disk 2.078 ms, bus 0.486 ms, decoding 4.405 ms, sort 0.000 ms, 2 RK4 steps of 4.142 ms
+Key frames     : 1 read in steady state (coded), 25.151 MiB each: disk 4.848 ms, bus 1.007 ms, decoding 7.466 ms
+Full budget    : 15.252 ms per frame, that is 65.6 frames per second (wall clock: 15.544 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 688.0 MiB allocated by the reader, of which 553.8 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 6900b7f7deb57337
+CSV,play,512,3,4000000,2,1,0,10.9852,2.0783,0.4859,4.4049,0.0000,4.1415,0.0000,15.2522,15.5442,688.0,553.8,0,6900b7f7deb57337,1,25.1512,4.8475,1.0067,7.4658

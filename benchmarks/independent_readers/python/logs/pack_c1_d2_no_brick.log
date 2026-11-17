@@ -1,0 +1,21 @@
+== psi_stream pack --data build/tests/turb64.seq --file build/work/independent_readers/python/complements/c1_d2_no_brick.psi --probe build/work/independent_readers/python/complements/c1_d2_no_brick.probe --start 3 --frames 36 --degree 2 --tolerance 0.5: exit code 0
+pack           : build/tests/turb64.seq, 64^3, frames 3 to 38 -> build/work/independent_readers/python/complements/c1_d2_no_brick.psi
+Codec          : degree 2, 3 levels (32^3 to 8^3), potential step 3.049e-03, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+Fine level     : potential of step 1 voxel in bricks of 4^3 nodes; tolerance 50.00 % of u' on the largest error of a component at voxel centres; quantisation error 5.882 % of u', step 1.849e-02
+Certification  : marking at 0.499900 u', certification at 0.499950 u' (tolerance minus an arithmetic margin of 1.0e-04 u', then minus half of it); at most 64 marking passes per frame
+
+Predictors     : fitted on frames 4 to 7; level 0 (1.732, -0.739, 0.005) level 1 (1.974, -0.978, 0.001) level 2 (1.983, -0.984, 0.000)
+File           : 1.089 MiB for 36 frames, against 108 MiB raw: 99.1x
+Seal           : header and frame table sealed (48 bytes after the table)
+Frames         : 2 keys of 0.056 MiB, 34 innovations of 0.029 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 53.5x less than a raw frame against 25.0x for a key written raw; encoding of a key 9.27 ms
+Encoding       : 7.10 ms per frame (projection, quantisation, entropy coder); raw disk read 0.7 ms per frame
+Fidelity       : relative field error 9.5924e-03 on average, 9.8246e-03 at worst; largest error of a component 0.1169 u'; 36 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 0 innovation escapes and 0 overflows of the fine level, that is 0.0000 MiB over the file
+Fine level     : 0 bricks and 0 nodes per frame on average, that is 0.000 % of the nodes (at most 0 bricks and 0 nodes); 0.0015 MiB per frame, that is +5.19 % in bytes; at most 1 passes; 2.4 ms per frame
+Passes         : cap of 64 pass(es) per frame; 0 frame(s) stopped on this cap while nodes were still being added
+Floor          : 0 frame(s) where voxels remain outside the marking threshold once all their nodes are retained (at most 0 voxels in one frame)
+Bound          : largest error observed 0.1169 u' for a tolerance of 0.5000 u'; 0 frame(s) above the certification threshold (0.499950 u') out of 36 checked
+Clippings      : 0 in total, on 0 frame(s)

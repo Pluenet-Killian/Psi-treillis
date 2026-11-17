@@ -1,0 +1,24 @@
+== psi_stream pack --data data/turb256.seq --file build/work/independent_readers/python/reencoded/f_t256_d2_t05.psi --probe build/work/independent_readers/python/probes/f_t256_d2_t05.probe --degree 2 --start 16 --frames 33 --tolerance 0.05 --no-seal: exit code 4
+pack           : data/turb256.seq, 256^3, frames 16 to 48 -> build/work/independent_readers/python/reencoded/f_t256_d2_t05.psi
+Codec          : degree 2, 3 levels (128^3 to 32^3), potential step 7.971e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+Fine level     : potential of step 1 voxel in bricks of 4^3 nodes; tolerance 5.00 % of u' on the largest error of a component at voxel centres; quantisation error 0.588 % of u', step 4.833e-04
+Certification  : marking at 0.049900 u', certification at 0.049950 u' (tolerance minus an arithmetic margin of 1.0e-04 u', then minus half of it); at most 64 marking passes per frame
+
+Predictors     : fitted on frames 17 to 20; level 0 (1.632, -0.641, 0.009) level 1 (1.967, -0.976, 0.000) level 2 (1.981, -0.981, 0.001)
+File           : 57.861 MiB for 33 frames, against 6336 MiB raw: 109.5x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 2 keys of 2.920 MiB, 31 innovations of 1.678 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 65.8x less than a raw frame against 25.0x for a key written raw; encoding of a key 34.92 ms
+Encoding       : 31.95 ms per frame (projection, quantisation, entropy coder); raw disk read 38.6 ms per frame
+Fidelity       : relative field error 6.6470e-03 on average, 6.6850e-03 at worst; largest error of a component 0.0519 u'; 33 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 0 innovation escapes and 0 overflows of the fine level, that is 0.0000 MiB over the file
+Fine level     : 3751 bricks and 71005 nodes per frame on average, that is 0.423 % of the nodes (at most 4252 bricks and 79498 nodes); 0.0718 MiB per frame, that is +4.27 % in bytes; at most 7 passes; 15.7 ms per frame
+Passes         : cap of 64 pass(es) per frame; 0 frame(s) stopped on this cap while nodes were still being added
+Floor          : 1 frame(s) where voxels remain outside the marking threshold once all their nodes are retained (at most 1 voxels in one frame)
+Bound          : largest error observed 0.0519 u' for a tolerance of 0.0500 u'; 1 frame(s) above the certification threshold (0.049950 u') out of 33 checked
+Clippings      : 0 in total, on 0 frame(s)
+Failure: bound not held. Largest error 0.051905 u' for a certification threshold of 0.049950 u' (tolerance 0.0500 u', margin 1.0e-04 u'), on 1 frame(s). The file is written.
+  The fine level cannot go below its own floor (1 frame(s) where voxels remain outside the threshold, all their
+  nodes retained): relax --tolerance, or lower --fine-eps.

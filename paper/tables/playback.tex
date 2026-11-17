@@ -1,0 +1,19 @@
+% Written by tools/paper_numbers.py from the logs of benchmarks/. Do not edit: run the script again.
+\begin{tabular}{llrrrrrr}
+\toprule
+ & & Read & GPU memory & Disk & Decoding & RK4 step & Frame \\
+Grid & Chain & (MiB) & (MiB) & (ms) & (ms) & (ms) & (ms) \\
+\midrule
+$256^3$ & cuZFP, 2 bits & 12.00 & 590 & 2.39 & 1.05 & 0.53 & 5.3 \\
+$256^3$ & \codec & 1.38 & 192 & 0.30 & 0.73 & 6.46 & 14.2 \\
+\addlinespace
+$256^3$ & raw frames & 192.00 & 576 & 41.19 & 0.51 & 0.49 & 50.2 \\
+$256^3$ & \codec & 1.38 & 192 & 0.30 & 0.70 & 5.98 & 13.2 \\
+\addlinespace
+$512^3$ & cuZFP, 2 bits & 96.00 & 3810 & 43.96 & 7.68 & 1.87 & 59.3 \\
+$512^3$ & \codec & 10.53 & 624 & 3.81 & 3.43 & 6.96 & 21.7 \\
+\addlinespace
+$512^3$ & raw frames & 1536.00 & 3712 & 871.57 & 5.92 & 2.74 & 941.9 \\
+$512^3$ & \codec & 10.53 & 624 & 3.60 & 4.75 & 9.18 & 27.4 \\
+\bottomrule
+\end{tabular}

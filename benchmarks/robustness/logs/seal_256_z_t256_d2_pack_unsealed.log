@@ -1,0 +1,14 @@
+pack           : data/turb256.seq, 256^3, frames 16 to 48 -> build/work/seal_256/z_t256_d2_unsealed.psi
+Codec          : degree 2, 3 levels (128^3 to 32^3), potential step 7.971e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 17 to 20; level 0 (1.632, -0.641, 0.009) level 1 (1.967, -0.976, 0.000) level 2 (1.981, -0.981, 0.001)
+File           : 55.490 MiB for 33 frames, against 6336 MiB raw: 114.2x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 2 keys of 2.847 MiB, 31 innovations of 1.606 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 67.4x less than a raw frame against 25.0x for a key written raw; encoding of a key 19.81 ms
+Encoding       : 17.85 ms per frame (projection, quantisation, entropy coder); raw disk read 41.6 ms per frame
+Fidelity       : relative field error 6.8383e-03 on average, 6.8945e-03 at worst; largest error of a component 0.1867 u'; 33 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 0 innovation escapes and 0 overflows of the fine level, that is 0.0000 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)

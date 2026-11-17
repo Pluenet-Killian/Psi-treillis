@@ -1,0 +1,200 @@
+Claim REF-1: reference reader on CPU against the twelve reference files
+psi_ref    : build/psi_ref.exe, SHA-256 8e63378509b65974 (first 16 digits); source tools/reference_reader.cpp, SHA-256 1cef85ff9d584513 (first 16 digits)
+psi_stream : build/psi_stream.exe, SHA-256 860088437685357a (first 16 digits)
+GPU at the start: utilisation 9 %, 2222 MiB in use; compute programs of this repository: none; other compute programs: 3
+
+== f_t256_d3_t05.psi (85579008 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t256_d3_t05.psi, PSISTRM3, 256^3, degree 3, 3 levels, 57 frames (16 to 72), no seal
+    Frames      : 57 read out of 57; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 53 innovation(s)
+    Exceptions  : 2 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 126027 brick(s) and 2757251 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 72 (position 56), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 2097152 differ from those of the encoder; fine level: 0 node(s) out of 16777216
+    Velocity    : largest difference from the field of the probe 1.857e-05 u', RMS difference 1.552e-06 u' (u' = 0.751674); scales to within 3.7e-08 and 1.2e-08
+    CSV,ref,256,3,3,57,57,0,0,2,0
+    CSV,probe,72,114688,0,0,1.8568e-05,1.5524e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 72, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 555c3c58f6672040
+    psi_stream play: exit code 0
+
+== f_t256_d3_t04.psi (90141384 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t256_d3_t04.psi, PSISTRM3, 256^3, degree 3, 3 levels, 57 frames (16 to 72), no seal
+    Frames      : 57 read out of 57; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 53 innovation(s)
+    Exceptions  : 2 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 353684 brick(s) and 8219083 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 72 (position 56), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 2097152 differ from those of the encoder; fine level: 0 node(s) out of 16777216
+    Velocity    : largest difference from the field of the probe 1.949e-05 u', RMS difference 1.553e-06 u' (u' = 0.751674); scales to within 3.7e-08 and 3.9e-08
+    CSV,ref,256,3,3,57,57,0,0,2,0
+    CSV,probe,72,114688,0,0,1.9488e-05,1.5531e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 72, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 1ca9174a4db1f098
+    psi_stream play: exit code 0
+
+== f_t256_d3_t03.psi (109153408 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t256_d3_t03.psi, PSISTRM3, 256^3, degree 3, 3 levels, 57 frames (16 to 72), no seal
+    Frames      : 57 read out of 57; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 53 innovation(s)
+    Exceptions  : 2 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 1200313 brick(s) and 29737720 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 72 (position 56), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 2097152 differ from those of the encoder; fine level: 0 node(s) out of 16777216
+    Velocity    : largest difference from the field of the probe 2.007e-05 u', RMS difference 1.553e-06 u' (u' = 0.751674); scales to within 3.7e-08 and 7.5e-08
+    CSV,ref,256,3,3,57,57,0,0,2,0
+    CSV,probe,72,114688,0,0,2.0067e-05,1.5533e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 72, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions a427af44696916eb
+    psi_stream play: exit code 0
+
+== f_t512_d3_t05.psi (648417200 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t512_d3_t05.psi, PSISTRM3, 512^3, degree 3, 3 levels, 55 frames (0 to 54), no seal
+    Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+    Exceptions  : 38 escape(s), 13 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 1564077 brick(s) and 36846144 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 134217728
+    Velocity    : largest difference from the field of the probe 2.769e-05 u', RMS difference 2.481e-06 u' (u' = 0.823854); scales to within 4.9e-08 and 2.5e-08
+    CSV,ref,512,3,3,55,55,0,0,38,13
+    CSV,probe,54,114688,0,0,2.7688e-05,2.4808e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 6c28b8ac2a718f9d
+    psi_stream play: exit code 0
+
+== f_t512_d3_t04.psi (700267032 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t512_d3_t04.psi, PSISTRM3, 512^3, degree 3, 3 levels, 55 frames (0 to 54), no seal
+    Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+    Exceptions  : 38 escape(s), 13 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 3927322 brick(s) and 97886471 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 134217728
+    Velocity    : largest difference from the field of the probe 2.710e-05 u', RMS difference 2.480e-06 u' (u' = 0.823854); scales to within 4.9e-08 and 2.8e-08
+    CSV,ref,512,3,3,55,55,0,0,38,13
+    CSV,probe,54,114688,0,0,2.7096e-05,2.4801e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 99cd089d204a4fb0
+    psi_stream play: exit code 0
+
+== f_t512_d3_t03.psi (885064416 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t512_d3_t03.psi, PSISTRM3, 512^3, degree 3, 3 levels, 55 frames (0 to 54), no seal
+    Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+    Exceptions  : 38 escape(s), 13 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 11203503 brick(s) and 305133355 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 134217728
+    Velocity    : largest difference from the field of the probe 2.762e-05 u', RMS difference 2.481e-06 u' (u' = 0.823854); scales to within 4.9e-08 and 4.8e-09
+    CSV,ref,512,3,3,55,55,0,0,38,13
+    CSV,probe,54,114688,0,0,2.7623e-05,2.4808e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 3226601057956894
+    psi_stream play: exit code 0
+
+== f_t256_d2_t06.psi (59199232 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t256_d2_t06.psi, PSISTRM3, 256^3, degree 2, 3 levels, 33 frames (16 to 48), no seal
+    Frames      : 33 read out of 33; 2 coded key(s), 0 raw key(s), 1 innovation(s) after a key, 30 innovation(s)
+    Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 52455 brick(s) and 930146 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 48 (position 32), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 2097152 differ from those of the encoder; fine level: 0 node(s) out of 16777216
+    Velocity    : largest difference from the field of the probe 1.510e-05 u', RMS difference 1.635e-06 u' (u' = 0.751674); scales to within 2.6e-08 and 5.2e-08
+    CSV,ref,256,2,3,33,33,0,0,0,0
+    CSV,probe,48,114688,0,0,1.5097e-05,1.6348e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 48, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions cccd6ac8f84bc933
+    psi_stream play: exit code 0
+
+== f_t256_d2_t05.psi (60671400 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t256_d2_t05.psi, PSISTRM3, 256^3, degree 2, 3 levels, 33 frames (16 to 48), no seal
+    Frames      : 33 read out of 33; 2 coded key(s), 0 raw key(s), 1 innovation(s) after a key, 30 innovation(s)
+    Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 123779 brick(s) and 2343177 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 48 (position 32), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 2097152 differ from those of the encoder; fine level: 0 node(s) out of 16777216
+    Velocity    : largest difference from the field of the probe 1.510e-05 u', RMS difference 1.635e-06 u' (u' = 0.751674); scales to within 2.6e-08 and 6.3e-08
+    CSV,ref,256,2,3,33,33,0,0,0,0
+    CSV,probe,48,114688,0,0,1.5097e-05,1.6349e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 48, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 3cb634ac0c98560e
+    psi_stream play: exit code 0
+
+== f_t512_d2_t07.psi (755659160 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t512_d2_t07.psi, PSISTRM3, 512^3, degree 2, 3 levels, 55 frames (0 to 54), no seal
+    Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+    Exceptions  : 7 escape(s), 60 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 506589 brick(s) and 9366811 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 134217728
+    Velocity    : largest difference from the field of the probe 2.207e-05 u', RMS difference 2.482e-06 u' (u' = 0.823854); scales to within 2.3e-08 and 1.8e-08
+    CSV,ref,512,2,3,55,55,0,0,7,60
+    CSV,probe,54,114688,0,0,2.2070e-05,2.4816e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions c90e16c34e3b79c4
+    psi_stream play: exit code 0
+
+== f_t512_d2_t06.psi (766427032 bytes); probe: written at encoding
+    File        : build/work/reference_files/f_t512_d2_t06.psi, PSISTRM3, 512^3, degree 2, 3 levels, 55 frames (0 to 54), no seal
+    Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+    Exceptions  : 7 escape(s), 60 overflow(s) of level 0, 0 overflow(s) ignored
+    Fine level  : 1032076 brick(s) and 19824812 node(s) over the frames read
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 134217728
+    Velocity    : largest difference from the field of the probe 2.342e-05 u', RMS difference 2.482e-06 u' (u' = 0.823854); scales to within 2.3e-08 and 6.4e-08
+    CSV,ref,512,2,3,55,55,0,0,7,60
+    CSV,probe,54,114688,0,0,2.3421e-05,2.4819e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions d4cd66c8c0e2a1fc
+    psi_stream play: exit code 0
+
+== z_t512_d2.psi (745904980 bytes); probe: identical re-encoding (SHA-256)
+    File        : build/work/reference_files/z_t512_d2.psi, PSISTRM2, 512^3, degree 2, 3 levels, 55 frames (0 to 54), no seal
+    Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+    Exceptions  : 7 escape(s), 60 overflow(s) of level 0, 0 overflow(s) ignored
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 0
+    Velocity    : largest difference from the field of the probe 2.205e-05 u', RMS difference 2.482e-06 u' (u' = 0.823854); scales to within 2.3e-08 and 0.0e+00
+    CSV,ref,512,2,2,55,55,0,0,7,60
+    CSV,probe,54,114688,0,0,2.2052e-05,2.4819e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 001e6154ff371cf9
+    psi_stream play: exit code 0
+
+== z_t512_d3.psi (618399956 bytes); probe: identical re-encoding (SHA-256)
+    File        : build/work/reference_files/z_t512_d3.psi, PSISTRM2, 512^3, degree 3, 3 levels, 55 frames (0 to 54), no seal
+    Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+    Exceptions  : 38 escape(s), 13 overflow(s) of level 0, 0 overflow(s) ignored
+    Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+    Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+    Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 0
+    Velocity    : largest difference from the field of the probe 2.826e-05 u', RMS difference 2.481e-06 u' (u' = 0.823854); scales to within 4.9e-08 and 0.0e+00
+    CSV,ref,512,3,2,55,55,0,0,38,13
+    CSV,probe,54,114688,0,0,2.8262e-05,2.4806e-06,1
+    psi_ref: exit code 0
+    psi_stream play: Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+    psi_stream play: Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 976e6377f466724e
+    psi_stream play: exit code 0
+
+Coverage at 64^3: files of build/tests/cases/ (tests/test_codec.py), read by the two readers
+    106 files; outcomes of the CPU reader: 8 counted, 25 read, 73 refused
+    disagreements of outcome or of number of differing frames between the CPU reader and the GPU reader: 0
+    probes at 64^3: 10, largest difference of the CPU reader 8.023e-06 u'
+GPU at the end: utilisation 0 %, 2279 MiB in use; compute programs of this repository: none; other compute programs: 3

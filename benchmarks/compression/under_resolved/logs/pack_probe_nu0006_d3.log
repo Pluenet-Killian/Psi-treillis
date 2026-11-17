@@ -1,0 +1,15 @@
+pack           : data/turb512_nu0006.seq, 512^3, frames 0 to 54 -> build/work/under_resolved/probe_nu0006_d3.psi
+Codec          : degree 3, 3 levels (256^3 to 64^3), potential step 6.330e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 1 to 4; level 0 (1.815, -0.821, 0.007) level 1 (1.957, -0.976, -0.001) level 2 (1.992, -0.992, 0.001)
+File           : 808.886 MiB for 55 frames, against 84480 MiB raw: 104.4x
+Seal           : header and frame table sealed (48 bytes after the table)
+Frames         : 2 keys of 37.897 MiB, 53 innovations of 13.832 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 40.5x less than a raw frame against 25.0x for a key written raw; encoding of a key 142.36 ms
+Encoding       : 123.44 ms per frame (projection, quantisation, entropy coder); raw disk read 782.1 ms per frame
+Fidelity       : relative field error 1.5160e-02 on average, 1.5183e-02 at worst; largest error of a component 0.5829 u'; 55 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 329 innovation escapes and 1559 overflows of the fine level, that is 0.0144 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)
+CSV,pack,512,3,3,55,0.005,32,808.8857,84480.0000,104.44,37.8966,13.8319,123.439,1.5160e-02,1.5183e-02,0,0.58292,0,0,0,0,0,0

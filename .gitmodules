@@ -1,0 +1,12 @@
+[submodule "third_party/SZ3"]
+	path = third_party/SZ3
+	url = https://github.com/szcompressor/SZ3.git
+[submodule "third_party/SPERR"]
+	path = third_party/SPERR
+	url = https://github.com/NCAR/SPERR.git
+[submodule "third_party/zfp"]
+	path = third_party/zfp
+	url = https://github.com/LLNL/zfp.git
+[submodule "third_party/cuSZp"]
+	path = third_party/cuSZp
+	url = https://github.com/szcompressor/cuSZp.git

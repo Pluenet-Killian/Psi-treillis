@@ -1,0 +1,7 @@
+Psi-treillis
+Copyright 2026 Killian Pluenet
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The comparison compressors under third_party/ are git submodules that point to their own repositories. They are not
+part of this work and keep their own licences: SZ3, SPERR, zfp and cuSZp.

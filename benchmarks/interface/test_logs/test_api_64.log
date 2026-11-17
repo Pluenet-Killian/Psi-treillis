@@ -1,0 +1,19 @@
+psitreillis 0.2.0, library build/psitreillis.dll
+ok    cli.same_bytes_as_pack
+ok    cli.info
+ok    cli.decompress_npy
+ok    api.info
+ok    api.errors_match_the_encoder
+ok    api.bound_is_held : largest error 3.9881 % of u_rms for a bound of 4 %
+ok    api.sample_matches_the_grid
+ok    api.divergence_free : RMS divergence 1.9e-04 of the RMS gradient, by differences at +-0.125 voxel
+ok    api.random_access
+ok    api.errors_are_reported
+ok    api.altered_file_is_refused : frame 5 refused: corrupt frequency table
+ok    py.compress_from_memory
+ok    py.u_rms_is_measured : measured 0.7198, sequence header 0.7188
+ok    cli.npy_and_raw_inputs
+ok    api.bound_too_tight
+ok    api.memory_is_released : 0 MiB after 40 open/decode/close cycles and one compression
+
+TOTAL : 16 cases, 16 ok, 0 failed

@@ -1,0 +1,15 @@
+pack           : data/turb512.seq, 512^3, frames 0 to 54 -> build/work/independent_readers/cpp/z_t512_d2.psi
+Codec          : degree 2, 3 levels (256^3 to 64^3), potential step 4.368e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 1 to 4; level 0 (1.590, -0.596, 0.010) level 1 (1.957, -0.965, 0.000) level 2 (1.988, -0.988, 0.001)
+File           : 711.350 MiB for 55 frames, against 84480 MiB raw: 118.8x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 2 keys of 22.486 MiB, 53 innovations of 12.573 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 68.3x less than a raw frame against 25.0x for a key written raw; encoding of a key 136.40 ms
+Encoding       : 119.63 ms per frame (projection, quantisation, entropy coder); raw disk read 805.8 ms per frame
+Fidelity       : relative field error 6.9030e-03 on average, 6.9097e-03 at worst; largest error of a component 0.2679 u'; 55 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 7 innovation escapes and 60 overflows of the fine level, that is 0.0005 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)
+CSV,pack,512,2,3,55,0.005,32,711.3504,84480.0000,118.76,22.4864,12.5731,119.633,6.9030e-03,6.9097e-03,0,0.26793,0,0,0,0,0,0

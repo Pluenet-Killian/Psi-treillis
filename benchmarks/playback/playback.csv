@@ -1,0 +1,9 @@
+grid,pair,side,chain,mib_read_per_frame,disk_ms,bus_ms,decoding_ms,sort_ms,rk4_steps_per_frame,rk4_step_ms,frame_cost_ms,frames_advanced,gpu_memory_mib,rendering_ms,divergence_over_gradient,slice_error_rms,gpu_free
+256,cuzfp_psi,left,cuZFP 2 bits + half-precision 3D texture,12.00,2.388,0.559,1.048,0.230,2,0.530,5.286,40,590,1.01,6.133e-02,5.9888e-03,yes
+256,cuzfp_psi,right,"Psi-treillis, degree 3",1.38,0.298,0.104,0.734,0.165,2,6.457,14.213,40,192,1.01,7.732e-16,6.0989e-03,yes
+256,raw_psi,left,Raw frames + half-precision 3D texture,192.00,41.191,7.324,0.507,0.219,2,0.494,50.229,40,576,0.65,4.770e-02,4.9928e-03,yes
+256,raw_psi,right,"Psi-treillis, degree 3",1.38,0.303,0.094,0.701,0.136,2,5.982,13.199,40,192,0.67,7.732e-16,6.0989e-03,yes
+512,cuzfp_psi,left,cuZFP 2 bits + half-precision 3D texture,96.00,43.957,3.803,7.676,0.129,2,1.873,59.311,40,3810,1.17,6.176e-02,5.0376e-03,yes
+512,cuzfp_psi,right,"Psi-treillis, degree 3",10.53,3.808,0.481,3.427,0.100,2,6.964,21.744,40,624,0.66,9.415e-16,5.6620e-03,yes
+512,raw_psi,left,Raw frames + half-precision 3D texture,1536.00,871.568,58.798,5.923,0.121,2,2.737,941.883,40,3712,1.80,4.740e-02,4.1180e-03,yes
+512,raw_psi,right,"Psi-treillis, degree 3",10.53,3.601,0.537,4.750,0.123,2,9.176,27.363,40,624,0.87,9.415e-16,5.6620e-03,yes

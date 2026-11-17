@@ -1,0 +1,85 @@
+file,python_outcome,python_frames_differing,gpu_outcome,gpu_frames_differing,play_exit_code,agreement,python_reason
+guard_capacity_d2.psi,refused,,refused,,1,yes,index_offset = 0: interrupted encoding or altered header
+guard_capacity_d3.psi,refused,,refused,,1,yes,index_offset = 0: interrupted encoding or altered header
+guard_degree_0.psi,refused,,refused,,1,yes,degree = 0: 2 or 3 expected
+guard_degree_3.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_degree_7.psi,refused,,refused,,1,yes,degree = 7: 2 or 3 expected
+guard_fb7_d2.psi,read,0,read,0,0,yes,
+guard_frame.psi,read,27,read,27,1,yes,
+guard_geo_block_offset0.psi,refused,,refused,,1,yes,"frame 5, innovations: the first block offset is not zero"
+guard_geo_block_offset_backwards.psi,refused,,refused,,1,yes,"frame 5, innovations: block offsets not increasing by at least 4 bytes"
+guard_geo_block_offset_end.psi,refused,,refused,,1,yes,"frame 5, innovations: the last block starts less than 4 bytes from the end of the stream area"
+guard_geo_block_offset_huge.psi,refused,,refused,,1,yes,"frame 5, innovations: block offsets not increasing by at least 4 bytes"
+guard_geo_bytes_huge.psi,refused,,refused,,1,yes,frame 5: payload outside the frame area
+guard_geo_bytes_less.psi,refused,,refused,,1,yes,"frame 5, innovations: the last block starts less than 4 bytes from the end of the stream area"
+guard_geo_bytes_short.psi,refused,,refused,,1,yes,"frame 5, innovations: tables and offsets outside the frame"
+guard_geo_exceptions3.psi,refused,,refused,,1,yes,"frame 5, innovations: frequency table 0 has sum 4183, 4096 expected"
+guard_geo_exceptions_huge.psi,refused,,refused,,1,yes,"frame 5: 2147483647 exceptions, more than ex_cap = 65536"
+guard_geo_fb5.psi,read,0,read,0,0,yes,
+guard_geo_fine_block_offset.psi,refused,,refused,,1,yes,"frame 5, fine level: block offsets not increasing by at least 4 bytes"
+guard_geo_fine_brick.psi,refused,,refused,,1,yes,"fine level: brick = 8, 4 expected"
+guard_geo_fine_bricks_huge.psi,refused,,refused,,1,yes,"frame 5: fine level of 16777215 bricks and 11302 nodes, above the maxima of the header"
+guard_geo_fine_bricks_minus.psi,read,1,read,1,1,yes,
+guard_geo_fine_bricks_plus.psi,read,1,read,1,1,yes,
+guard_geo_fine_levels2.psi,refused,,refused,,1,yes,"frame 0, coded key: the first block offset is not zero"
+guard_geo_fine_max_bricks.psi,refused,,refused,,1,yes,"frame 0: fine level of 550 bricks and 12724 nodes, above the maxima of the header"
+guard_geo_fine_max_nodes.psi,refused,,refused,,1,yes,"frame 0: fine level of 550 bricks and 12724 nodes, above the maxima of the header"
+guard_geo_fine_n128.psi,refused,,refused,,1,yes,"frame 0, fine level: the last block starts less than 4 bytes from the end of the stream area"
+guard_geo_fine_nodes_plus.psi,read,1,read,1,1,yes,
+guard_geo_fine_nodes_zero.psi,read,1,read,1,1,yes,
+guard_geo_fine_section_huge.psi,refused,,refused,,1,yes,"frame 5: section of the fine level of 2147483640 bytes, outside the frame or not a multiple of 8"
+guard_geo_fine_section_odd.psi,refused,,refused,,1,yes,"frame 5: section of the fine level of 10700 bytes, outside the frame or not a multiple of 8"
+guard_geo_fine_section_short.psi,refused,,refused,,1,yes,"frame 5, fine level: frequency table 0 has sum 2992, 4096 expected"
+guard_geo_frequencies.psi,refused,,refused,,1,yes,"frame 5, innovations: frequency table 1 has sum 4097, 4096 expected"
+guard_geo_last_block_zero.psi,read,27,read,27,1,yes,
+guard_geo_levels1.psi,refused,,refused,,1,yes,"frame 0, coded key: the first block offset is not zero"
+guard_geo_levels2.psi,refused,,refused,,1,yes,"frame 0, coded key: the first block offset is not zero"
+guard_geo_mf1.psi,refused,,refused,,1,yes,"frame 0, coded key: block offsets not increasing by at least 4 bytes"
+guard_geo_n128.psi,refused,,refused,,1,yes,"frame 0, coded key: block offsets not increasing by at least 4 bytes"
+guard_geo_n32.psi,refused,,refused,,1,yes,"levels of [16, 8, 4] nodes per axis: at least 8 expected at each level"
+guard_geo_offset_outside.psi,refused,,refused,,1,yes,frame 5: payload outside the frame area
+guard_geo_offset_shifted.psi,refused,,refused,,1,yes,"frame 5, innovations: frequency table 0 has sum 4445, 4096 expected"
+guard_geo_raw_bytes.psi,refused,,refused,,1,yes,frame 0: raw key shorter than key_bytes = 125952
+guard_geo_raw_exceptions.psi,refused,,refused,,1,yes,frame 0: exception list outside the frame
+guard_geo_raw_levels2.psi,refused,,refused,,1,yes,"frame 0: 23003341 exceptions, more than ex_cap = 65536"
+guard_geo_type0_key.psi,refused,,refused,,1,yes,frame 0 is not a key frame
+guard_geo_type0_raw.psi,refused,,refused,,1,yes,frame 0: raw key shorter than key_bytes = 125952
+guard_geo_type5_9.psi,refused,,refused,,1,yes,"frame 5: type 9, from 0 to 3 expected"
+guard_geo_type5_after.psi,read,27,read,27,1,yes,
+guard_geo_type5_coded.psi,refused,,refused,,1,yes,"frame 5, coded key: frequency table 3 has sum 2767811, 4096 expected"
+guard_geo_type5_raw.psi,refused,,refused,,1,yes,frame 5: raw key shorter than key_bytes = 125952
+guard_geo_zero_state.psi,read,27,read,27,1,yes,
+guard_magic.psi,refused,,refused,,1,yes,unknown signature: this is not a .psi file
+guard_overflow.psi,read,0,read,0,0,yes,
+guard_sealed_coef_0.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_coef_2b.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_delta.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_dt_frame.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_fb.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_fine_delta.psi,refused,,refused,,1,yes,seal: the header of the fine level has changed
+guard_sealed_fine_levels.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_fine_margin.psi,refused,,refused,,1,yes,seal: the header of the fine level has changed
+guard_sealed_fine_mean.psi,refused,,refused,,1,yes,seal: the frame table has changed
+guard_sealed_fine_nodes.psi,refused,,refused,,1,yes,seal: the header of the fine level has changed
+guard_sealed_fingerprint.psi,refused,,refused,,1,yes,seal: the frame table has changed
+guard_sealed_index_offset.psi,refused,,refused,,1,yes,"frame 35: type 1857681089, from 0 to 3 expected"
+guard_sealed_levels.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_mean.psi,refused,,refused,,1,yes,seal: the frame table has changed
+guard_sealed_mf.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_n.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_n_frames.psi,refused,,refused,,1,yes,"size of 1086017 bytes: 1085921 expected without a seal, 1085969 with one"
+guard_sealed_seal_magic.psi,refused,,refused,,1,yes,the 48 bytes that follow the table are not a seal
+guard_sealed_seal_value.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_sealed_seal_zero.psi,refused,,refused,,1,yes,the 48 bytes that follow the table are not a seal
+guard_sealed_type.psi,refused,,refused,,1,yes,seal: the frame table has changed
+guard_sealed_wrapped.psi,refused,,refused,,1,yes,seal: the header has changed
+guard_truncated_1.psi,refused,,refused,,1,yes,file of 0 bytes: shorter than a header of 208 bytes
+guard_truncated_10.psi,refused,,refused,,1,yes,"size of 1382728 bytes: 1382776 expected without a seal, 1382824 with one"
+guard_truncated_2.psi,refused,,refused,,1,yes,file of 100 bytes: shorter than a header of 208 bytes
+guard_truncated_3.psi,refused,,refused,,1,yes,"size of 208 bytes: 1085969 expected without a seal, 1086017 with one"
+guard_truncated_4.psi,refused,,refused,,1,yes,"size of 272 bytes: 1085969 expected without a seal, 1086017 with one"
+guard_truncated_5.psi,refused,,refused,,1,yes,"size of 1086016 bytes: 1085969 expected without a seal, 1086017 with one"
+guard_truncated_6.psi,refused,,refused,,1,yes,"size of 1085968 bytes: 1085969 expected without a seal, 1086017 with one"
+guard_truncated_7.psi,refused,,refused,,1,yes,"size of 208 bytes: 1382776 expected without a seal, 1382824 with one"
+guard_truncated_8.psi,refused,,refused,,1,yes,"size of 272 bytes: 1382776 expected without a seal, 1382824 with one"
+guard_truncated_9.psi,refused,,refused,,1,yes,"size of 1382804 bytes: 1382776 expected without a seal, 1382824 with one"

@@ -1,0 +1,2 @@
+packzfp        : data/turb512.seq, 512^3, frames 0 to 63, cuZFP 2.00 bits per value
+File           : build/work/playback/turb512.zfs, 6144.0 MiB, that is 96.00 MiB per frame (16.0x less than the raw frame)

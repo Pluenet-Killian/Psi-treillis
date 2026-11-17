@@ -1,0 +1,69 @@
+# Measurement environment, recorded on 2026-11-17 21:30
+
+## Machine
+System:                              Windows 11 Professional 10.0.26200
+Processor:                           Intel(R) Core(TM) Ultra 9 275HX (24 cores, 24 threads)
+Memory:                              63 GiB
+
+## GPU
+Model, driver, memory, BIOS:         NVIDIA GeForce RTX 5090 Laptop GPU, 621.14, 24463 MiB, 98.03.5c.00.70
+Power supply:                        mains
+
+## Toolchain
+nvcc:                                Cuda compilation tools, release 13.2, V13.2.78 (the one of build/)
+Compilers of build/:                 C MSVC 19.44.35228.0; C++ MSVC 19.44.35228.0; CUDA NVIDIA 13.2.78 (host MSVC 19.44.35228.0)
+Visual Studio:                       17.14.37 (July 2026)
+CMake:                               4.3.4 (the one of build/)
+Ninja:                               1.13.2 (the one of build/)
+Python:                              3.14.2
+NumPy:                               2.4.1
+
+## Repository
+Commit:                              cf5fe8c 2026-11-17 Final pass before publication: captures retaken with sorted particles, article recompiled, notices completed
+Branch:                              main
+Working tree:                        clean
+
+## Comparison compressors (third_party/: the revisions checked out)
+cuSZp:                               b5d880f09ca16cc43fc834f1614920bb24ae874d 2026-11-08  https://github.com/szcompressor/cuSZp.git  (tracked files unmodified)
+SPERR:                               9a16ab0ea3af8f4d534634a51d51d65acb9fcb37 2026-10-25  https://github.com/NCAR/SPERR.git  (tracked files unmodified)
+SZ3:                                 db2eca3ea8ae526ee1328649a1caf1a691b45873 2026-10-27  https://github.com/szcompressor/SZ3.git  (tracked files unmodified)
+zfp:                                 4282154f3f0afcd9ea2f0d3e9a77b2cf38eaafab 2026-11-08  https://github.com/LLNL/zfp.git  (tracked files unmodified)
+
+## Binaries (build/)
+build/psitreillis.dll:               2026-11-17 16:55  SHA-256 360146f16f3b3752ee297b4d18b026f4d3764c008a5674c9dfc1cd57fd022657
+build/psit.exe:                      2026-11-17 16:31  SHA-256 7d8330a1fb441043b2595e71686d98703345951f897e1cfc970cba769a443afb
+build/example_roundtrip.exe:         2026-11-17 16:31  SHA-256 e3491aa70aeaa73a6c18847f5d5f62cd3a6fd2cd1c2a2c39786524906b05c267
+build/dns.exe:                       2026-11-17 16:55  SHA-256 da073eba4c724437cda9b9ad7e1ec5050b4c05695795c792a1f2392e87c62da3
+build/psi_stream.exe:                2026-11-17 16:56  SHA-256 860088437685357ad14ebb302baa12f64a2afacb1cea749c90cc4e0fa7e242d2
+build/tracers.exe:                   2026-11-17 16:56  SHA-256 0ddcea53b811f847662dea8562c61705cc50dc5fc19bbcb9fd294441b0192b84
+build/psi_view.exe:                  2026-11-17 16:56  SHA-256 3856079a8685948f7a15aa5c3d6721a0fe2023d48a0261b7a6e441e56d24e935
+build/psi_ref.exe:                   2026-11-17 16:51  SHA-256 8e63378509b65974b51468597da6c6ae916ce9aa8c262da17315e7014f97c328
+build/codecs/sz3/tools/sz3/sz3.exe:  2026-11-17 16:21  SHA-256 85ecf4280604176a41523b0a2e82f0b33030575f4dc6894636be93554a8d68b0
+build/codecs/sperr/sperr_capi.dll:   2026-11-17 16:21  SHA-256 48d290281376f36c194bf5461b2620705fe826b4fd20cfb7e855ec29da9ac440
+build/codecs/zfp/bin/zfpcmd.exe:     2026-11-17 16:21  SHA-256 0aba323cfdbabbb50effc097d9396f72f394f1205db34a0c363ef9a86eaae22a
+build/codecs/cuszp/cuSZp_cli.exe:    2026-11-17 16:22  SHA-256 e42e0c89050c9cf28cf7413bcbe6fae744422963bf3d33bd1fb87e5f396c2c09
+
+## Sequences (data/, not versioned: they can be produced again by dns)
+The fingerprint covers the header and the first frame, not the whole file.
+data/sweep/nu00110_seed11.seq:       256^3, 48 frames, dt_frame 0.00459607, nu 0.0011, u' 0.815785, kmax*eta 0.78308, Re_lambda 180.8, 9.0 GiB, SHA-256 eb65f7588b744b9fd957ce02e98e780f2b1c2181539f7c76a5e640be5fe26891
+data/sweep/nu00110_seed42.seq:       256^3, 48 frames, dt_frame 0.00457032, nu 0.0011, u' 0.821771, kmax*eta 0.7598, Re_lambda 172.71, 9.0 GiB, SHA-256 240c7657e5847fbff7162b9465439b71f353c2f19dbb5e793ac46615382a542a
+data/sweep/nu00110_seed7.seq:        256^3, 48 frames, dt_frame 0.00480607, nu 0.0011, u' 0.823374, kmax*eta 0.76421, Re_lambda 175.41, 9.0 GiB, SHA-256 36021fc197114c6e7fc8d4a0ebbf20de4b3d83f76a60e0b530739b5b5af1bb4d
+data/sweep/nu00130_seed11.seq:       256^3, 48 frames, dt_frame 0.00442985, nu 0.0013, u' 0.821585, kmax*eta 0.8587, Re_lambda 157.87, 9.0 GiB, SHA-256 9a16c81da2687cb921bb8ba9261666b01cd924c83bb4a8f2a4e0b5eb9eb09170
+data/sweep/nu00130_seed42.seq:       256^3, 48 frames, dt_frame 0.00361976, nu 0.0013, u' 0.819596, kmax*eta 0.86336, Re_lambda 158.82, 9.0 GiB, SHA-256 8bdde8c30762391478aa469e4724cbc9bb75f76ff8b9cf48072d1ea93103c9d4
+data/sweep/nu00130_seed7.seq:        256^3, 48 frames, dt_frame 0.00448244, nu 0.0013, u' 0.838064, kmax*eta 0.8469, Re_lambda 159.79, 9.0 GiB, SHA-256 37cd54e29a28d4a7c86bd9af4738ac1a59f652a145619c0261bba43bfbe5c83a
+data/sweep/nu00160_seed11.seq:       256^3, 48 frames, dt_frame 0.00430617, nu 0.0016, u' 0.852763, kmax*eta 0.95943, Re_lambda 140.17, 9.0 GiB, SHA-256 a7db0d39e54285b5760f1378a052c3d7273223d17a1b39cb25952db2eab7cdab
+data/sweep/nu00160_seed42.seq:       256^3, 48 frames, dt_frame 0.0045118, nu 0.0016, u' 0.801401, kmax*eta 1.0259, Re_lambda 141.53, 9.0 GiB, SHA-256 7d3daf621c0b2470cb49248bae298cfbe456cbc28b5c7c69137b131b5f0ac04b
+data/sweep/nu00160_seed7.seq:        256^3, 48 frames, dt_frame 0.00407142, nu 0.0016, u' 0.840819, kmax*eta 1.0074, Re_lambda 150.25, 9.0 GiB, SHA-256 730373c8dfcb5e43bc797bae96a849dce578baf2221c63b69371f5f5c38ff479
+data/sweep/nu00190_seed11.seq:       256^3, 48 frames, dt_frame 0.00494162, nu 0.0019, u' 0.842515, kmax*eta 1.1096, Re_lambda 129.77, 9.0 GiB, SHA-256 cf9af3fd2482bc41b7b8e71cdb2bfb7ad1e10ea9c59813f519d7dff97bfbb2e0
+data/sweep/nu00190_seed42.seq:       256^3, 48 frames, dt_frame 0.00484819, nu 0.0019, u' 0.803578, kmax*eta 1.1558, Re_lambda 128.1, 9.0 GiB, SHA-256 e4658b37461ec7fd2dd40714cea6f2b7f29aff04741633c94571bbfce5deddef
+data/sweep/nu00190_seed7.seq:        256^3, 48 frames, dt_frame 0.00454671, nu 0.0019, u' 0.847678, kmax*eta 1.1376, Re_lambda 138.08, 9.0 GiB, SHA-256 4bd83040fd7d72ba5bb1ce422041bfbe2cdaeb4eaaeac51643400b879c0d4203
+data/sweep/nu00230_seed11.seq:       256^3, 48 frames, dt_frame 0.00447757, nu 0.0023, u' 0.844024, kmax*eta 1.2855, Re_lambda 119.29, 9.0 GiB, SHA-256 106228791bb97a7c348a1eef5a4e24cf1a5380a39b932d5c857c3071ee779415
+data/sweep/nu00230_seed42.seq:       256^3, 48 frames, dt_frame 0.00418858, nu 0.0023, u' 0.80136, kmax*eta 1.3465, Re_lambda 117.99, 9.0 GiB, SHA-256 d01debfea1cb5a940094e1c6143020ec94d61182050c293fbbf73ade00f2740f
+data/sweep/nu00230_seed7.seq:        256^3, 48 frames, dt_frame 0.00446853, nu 0.0023, u' 0.82359, kmax*eta 1.3098, Re_lambda 117.92, 9.0 GiB, SHA-256 6a45d8a24f2f42438dbc51bc145b61aa199277e51e1717f9a83b37a385ad2969
+data/sweep/nu00280_seed11.seq:       256^3, 48 frames, dt_frame 0.00453677, nu 0.0028, u' 0.839243, kmax*eta 1.4701, Re_lambda 104.08, 9.0 GiB, SHA-256 996efa1d0eed506705cc0e83b6f012e8672342b5d0211c6897bfba5f87b94e69
+data/sweep/nu00280_seed42.seq:       256^3, 48 frames, dt_frame 0.00548185, nu 0.0028, u' 0.757373, kmax*eta 1.666, Re_lambda 108.86, 9.0 GiB, SHA-256 2d6d6fd58284423f74f40892a8956042653f83a419e82d0449c6b964339da188
+data/sweep/nu00280_seed7.seq:        256^3, 48 frames, dt_frame 0.0047109, nu 0.0028, u' 0.841093, kmax*eta 1.5203, Re_lambda 111.8, 9.0 GiB, SHA-256 cb119cc7ab2e89702d358aed9250a7705ad5c6eac28c1fd6add9790fd02da2f2
+data/test64.seq:                     64^3, 4 frames, dt_frame 0.0234307, nu 0.02, u' 0.725701, kmax*eta 1.6875, Re_lambda 32.926, 0.0 GiB, SHA-256 57aaacd536226a97d4000014d19f645ebb998a3a036a2d064c3278ab76594bce
+data/turb256.seq:                    256^3, 128 frames, dt_frame 0.00548185, nu 0.0028, u' 0.751674, kmax*eta 1.6789, Re_lambda 108.89, 24.0 GiB, SHA-256 775d60cc63a6b3907ac761e72ef7b3825c5b57fa20053748155a407dee92a396
+data/turb512.seq:                    512^3, 64 frames, dt_frame 0.0022011, nu 0.00111, u' 0.823854, kmax*eta 1.5438, Re_lambda 175.96, 96.0 GiB, SHA-256 4000e1787f3578d68f8c4b484bc7facff2cc29fca8faa08000d11f1989c8731a
+data/turb512_nu0006.seq:             512^3, 64 frames, dt_frame 0.00186979, nu 0.0006, u' 0.849526, kmax*eta 0.9453, Re_lambda 240.07, 96.0 GiB, SHA-256 6d7c8c3cd9bbf8d10789ffb06f2cc92509e98dad44051af9d3f298c279c3eed2

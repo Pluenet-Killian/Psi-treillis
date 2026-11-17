@@ -1,0 +1,23 @@
+pack           : data/turb512.seq, 512^3, frames 0 to 54 -> build/work/reference_files/f_t512_d3_t05.psi
+Codec          : degree 3, 3 levels (256^3 to 64^3), potential step 6.138e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+Fine level     : potential of step 1 voxel in bricks of 4^3 nodes; tolerance 5.00 % of u' on the largest error of a component at voxel centres; quantisation error 0.588 % of u', step 3.722e-04
+Certification  : marking at 0.049900 u', certification at 0.049950 u' (tolerance minus an arithmetic margin of 1.0e-04 u', then minus half of it); at most 64 marking passes per frame
+
+Predictors     : fitted on frames 1 to 4; level 0 (1.440, -0.426, 0.018) level 1 (1.943, -0.958, 0.000) level 2 (1.990, -0.990, 0.001)
+File           : 618.379 MiB for 55 frames, against 84480 MiB raw: 136.6x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 2 keys of 25.162 MiB, 53 innovations of 10.718 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 61.0x less than a raw frame against 25.0x for a key written raw; encoding of a key 292.43 ms
+Encoding       : 275.34 ms per frame (projection, quantisation, entropy coder); raw disk read 725.3 ms per frame
+Fidelity       : relative field error 6.2267e-03 on average, 6.2316e-03 at worst; largest error of a component 0.0499 u'; 55 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 38 innovation escapes and 13 overflows of the fine level, that is 0.0004 MiB over the file
+Fine level     : 28438 bricks and 669930 nodes per frame on average, that is 0.499 % of the nodes (at most 29256 bricks and 692952 nodes); 0.5205 MiB per frame, that is +4.85 % in bytes; at most 7 passes; 157.9 ms per frame
+Passes         : cap of 64 pass(es) per frame; 0 frame(s) stopped on this cap while nodes were still being added
+Floor          : 0 frame(s) where voxels remain outside the marking threshold once all their nodes are retained (at most 0 voxels in one frame)
+Bound          : largest error observed 0.0499 u' for a tolerance of 0.0500 u'; 0 frame(s) above the certification threshold (0.049950 u') out of 55 checked
+Clippings      : 0 in total, on 0 frame(s)
+CSV,pack,512,3,3,55,0.005,32,618.3788,84480.0000,136.62,25.1624,10.7179,275.342,6.2267e-03,6.2316e-03,0,0.04990,0,0,0,0,0,0
+CSV,fine,512,3,55,0.05,0.0058824,0.5205,0.048540,0.04990,0.004991,29256,692952,0,7,157.85
+CSV,passes,512,3,55,64,7,0,0.0001,0.049950,0,0

@@ -1,0 +1,21 @@
+# Build folders and large data, at the root only: both can be regenerated (see README.md and benchmarks/README.md).
+/build/
+/build_*/
+/data/
+*.seq
+*.psi
+*.zfs
+
+# Python caches.
+__pycache__/
+*.pyc
+
+# Intermediate files of the LaTeX build of paper/.
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz

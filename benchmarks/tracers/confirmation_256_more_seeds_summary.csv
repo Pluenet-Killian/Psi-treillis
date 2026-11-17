@@ -1,0 +1,2 @@
+campaign,grid,path,fd,substeps,tracers,seeds,last_t_tau,var_d_growth_per_tau,var_d_growth_standard_error,d_standard_deviation_at_last_t,divergence_over_gradient,criterion_seeds,criterion_mean_excess,criterion_standard_error_between_seeds,criterion_expected_standard_error,criterion_standard_errors,tracers_per_bin
+confirmation_256_more_seeds,256,ref0.002,0.125,2,134217728,5,10,2.682017e-08,5.378e-12,5.178483e-04,2.632444e-04,,,,,,

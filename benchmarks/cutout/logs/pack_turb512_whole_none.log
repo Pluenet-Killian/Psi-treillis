@@ -1,0 +1,15 @@
+# psi_stream pack --data data/turb512.seq --file build/work/cutout/turb512_whole_none.psi --start 0 --frames 8 --no-seal --degree 3 --mf 2
+pack           : data/turb512.seq, 512^3, frames 0 to 7 -> build/work/cutout/turb512_whole_none.psi
+Codec          : degree 3, 3 levels (256^3 to 64^3), potential step 6.138e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 1 to 4; level 0 (1.440, -0.426, 0.018) level 1 (1.943, -0.958, 0.000) level 2 (1.990, -0.990, 0.001)
+File           : 97.577 MiB for 8 frames, against 12288 MiB raw: 125.9x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 1 keys of 24.665 MiB, 7 innovations of 10.416 MiB on average
+Keys           : 1 coded out of 1 (3D Lorenzo residual, rANS), 62.3x less than a raw frame against 25.0x for a key written raw; encoding of a key 301.84 ms
+Encoding       : 252.20 ms per frame (projection, quantisation, entropy coder); raw disk read 567.0 ms per frame
+Fidelity       : relative field error 6.3983e-03 on average, 6.4009e-03 at worst; largest error of a component 0.2144 u'; 8 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 16 innovation escapes and 0 overflows of the fine level, that is 0.0001 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)

@@ -1,0 +1,15 @@
+== psi_stream pack --data build/tests/turb64.seq --file build/work/independent_readers/python/reencoded/d3_no_seal.psi --probe build/work/independent_readers/python/probes/d3_no_seal.probe --degree 3 --start 3 --frames 36 --no-seal: exit code 0
+pack           : build/tests/turb64.seq, 64^3, frames 3 to 38 -> build/work/independent_readers/python/reencoded/d3_no_seal.psi
+Codec          : degree 3, 3 levels (32^3 to 8^3), potential step 4.284e-03, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 4 to 7; level 0 (1.637, -0.635, 0.011) level 1 (1.966, -0.978, 0.000) level 2 (2.003, -1.006, 0.000)
+File           : 1.003 MiB for 36 frames, against 108 MiB raw: 107.7x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 2 keys of 0.057 MiB, 34 innovations of 0.026 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 52.3x less than a raw frame against 25.0x for a key written raw; encoding of a key 5.44 ms
+Encoding       : 5.23 ms per frame (projection, quantisation, entropy coder); raw disk read 0.6 ms per frame
+Fidelity       : relative field error 7.7830e-03 on average, 7.9554e-03 at worst; largest error of a component 0.0909 u'; 36 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 0 innovation escapes and 0 overflows of the fine level, that is 0.0000 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)

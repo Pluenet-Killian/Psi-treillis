@@ -1,0 +1,201 @@
+== build/tests/cases/guard_geo_block_offset0.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_block_offset_backwards.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_block_offset_end.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_block_offset_huge.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_bytes_huge.psi: exit code 1, refused
+Failure: corrupt frame table: frame outside the frame area
+  codec_stream.cuh:405
+== build/tests/cases/guard_geo_bytes_less.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_bytes_short.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:419
+== build/tests/cases/guard_geo_exceptions3.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== build/tests/cases/guard_geo_exceptions_huge.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== build/tests/cases/guard_geo_fb5.psi: exit code 0, read
+play           : build/tests/cases/guard_geo_fb5.psi, 64^3, degree 2, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.015 ms, bus 0.030 ms, decoding 0.310 ms, sort 0.000 ms, 2 RK4 steps of 0.017 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.017 ms, bus 0.038 ms, decoding 0.415 ms
+Full budget    : 0.388 ms per frame, that is 2576.2 frames per second (wall clock: 0.431 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 4ed2349c5bc9358a
+== build/tests/cases/guard_geo_fine_block_offset.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_fine_brick.psi: exit code 1, refused
+Failure: header of the fine level unreadable
+  codec_stream.cuh:380
+== build/tests/cases/guard_geo_fine_bricks_huge.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== build/tests/cases/guard_geo_fine_bricks_minus.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_bricks_minus.psi, 64^3, degree 3, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step without support cache (blocks of 256 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.018 ms, bus 0.030 ms, decoding 0.578 ms, sort 0.000 ms, 2 RK4 steps of 0.089 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.023 ms, bus 0.027 ms, decoding 0.609 ms
+Full budget    : 0.805 ms per frame, that is 1242.6 frames per second (wall clock: 0.947 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions eeed104e902eecc3
+== build/tests/cases/guard_geo_fine_bricks_plus.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_bricks_plus.psi, 64^3, degree 3, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step without support cache (blocks of 256 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.023 ms, bus 0.027 ms, decoding 0.445 ms, sort 0.000 ms, 2 RK4 steps of 0.082 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.022 ms, bus 0.026 ms, decoding 0.594 ms
+Full budget    : 0.660 ms per frame, that is 1514.0 frames per second (wall clock: 0.758 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 4fdf45ede6c1b2ea
+== build/tests/cases/guard_geo_fine_levels2.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_fine_max_bricks.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== build/tests/cases/guard_geo_fine_max_nodes.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== build/tests/cases/guard_geo_fine_n128.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_fine_nodes_plus.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_nodes_plus.psi, 64^3, degree 3, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step without support cache (blocks of 256 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.039 ms, bus 0.038 ms, decoding 0.532 ms, sort 0.000 ms, 2 RK4 steps of 0.096 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.083 ms, bus 0.049 ms, decoding 0.725 ms
+Full budget    : 0.801 ms per frame, that is 1248.8 frames per second (wall clock: 0.996 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions bd7186597da1f50a
+== build/tests/cases/guard_geo_fine_nodes_zero.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_nodes_zero.psi, 64^3, degree 3, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step without support cache (blocks of 256 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.033 ms, bus 0.030 ms, decoding 0.496 ms, sort 0.000 ms, 2 RK4 steps of 0.084 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.068 ms, bus 0.032 ms, decoding 1.591 ms
+Full budget    : 0.727 ms per frame, that is 1376.3 frames per second (wall clock: 0.847 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 66e59a478b57771d
+== build/tests/cases/guard_geo_fine_section_huge.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1064
+== build/tests/cases/guard_geo_fine_section_odd.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1064
+== build/tests/cases/guard_geo_fine_section_short.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== build/tests/cases/guard_geo_frequencies.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== build/tests/cases/guard_geo_last_block_zero.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_last_block_zero.psi, 64^3, degree 2, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.018 ms, bus 0.051 ms, decoding 0.363 ms, sort 0.000 ms, 2 RK4 steps of 0.039 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.027 ms, bus 0.028 ms, decoding 0.437 ms
+Full budget    : 0.511 ms per frame, that is 1957.8 frames per second (wall clock: 0.608 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions f98cd3335683d977
+== build/tests/cases/guard_geo_levels1.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_levels2.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_mf1.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_n128.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== build/tests/cases/guard_geo_n32.psi: exit code 1, refused
+Failure: too many levels for this resolution
+  codec_stream.cuh:140
+== build/tests/cases/guard_geo_offset_outside.psi: exit code 1, refused
+Failure: corrupt frame table: frame outside the frame area
+  codec_stream.cuh:405
+== build/tests/cases/guard_geo_offset_shifted.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== build/tests/cases/guard_geo_raw_bytes.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1078
+== build/tests/cases/guard_geo_raw_exceptions.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== build/tests/cases/guard_geo_raw_levels2.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== build/tests/cases/guard_geo_type0_key.psi: exit code 1, refused
+Failure: corrupt frame table: the first frame is not a key frame
+  codec_stream.cuh:407
+== build/tests/cases/guard_geo_type0_raw.psi: exit code 1, refused
+Failure: raw key frame: size inconsistent with the geometry of the header
+  codec_stream.cuh:1073
+== build/tests/cases/guard_geo_type5_9.psi: exit code 1, refused
+Failure: corrupt frame table: unknown frame type
+  codec_stream.cuh:404
+== build/tests/cases/guard_geo_type5_after.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_type5_after.psi, 64^3, degree 2, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.022 ms, bus 0.029 ms, decoding 0.298 ms, sort 0.000 ms, 2 RK4 steps of 0.016 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.017 ms, bus 0.023 ms, decoding 0.415 ms
+Full budget    : 0.381 ms per frame, that is 2626.6 frames per second (wall clock: 0.441 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions 4820960da45dab49
+== build/tests/cases/guard_geo_type5_coded.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== build/tests/cases/guard_geo_type5_raw.psi: exit code 1, refused
+Failure: raw key frame: size inconsistent with the geometry of the header
+  codec_stream.cuh:1073
+== build/tests/cases/guard_geo_zero_state.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_zero_state.psi, 64^3, degree 2, 36 frames read out of 36, 1000 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.012 ms, bus 0.033 ms, decoding 0.294 ms, sort 0.000 ms, 2 RK4 steps of 0.015 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.016 ms, bus 0.027 ms, decoding 0.413 ms
+Full budget    : 0.370 ms per frame, that is 2700.0 frames per second (wall clock: 0.419 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions 5e2aa15c4e174fd1

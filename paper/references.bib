@@ -1,0 +1,380 @@
+% Each entry carries a field `verified`: the page on which its bibliographic data were read, and what could not
+% be verified. BibTeX styles ignore this field; it is the record of the verification, kept with the entry.
+% Verified bibliography. Every field below was read on the URL given in the
+% `note` field during the verification session of 2026-11-17.
+% Nothing was filled from memory. See references_verification.md for the
+% description of each work and for what could not be verified.
+% DOIs are written in their usual capitalisation; Crossref returns them in
+% lower case (DOIs are case-insensitive).
+
+% ---------------------------------------------------------------- compressors
+
+@article{liang2023sz3,
+  author        = {Xin Liang and Kai Zhao and Sheng Di and Sihuan Li and Robert Underwood and Ali M. Gok and Jiannan Tian and Junjing Deng and Jon C. Calhoun and Dingwen Tao and Zizhong Chen and Franck Cappello},
+  title         = {{SZ3}: A Modular Framework for Composing Prediction-Based Error-Bounded Lossy Compressors},
+  journal       = {IEEE Transactions on Big Data},
+  year          = {2023},
+  volume        = {9},
+  number        = {2},
+  pages         = {485--498},
+  doi           = {10.1109/TBDATA.2022.3201176},
+  eprint        = {2111.02925},
+  archivePrefix = {arXiv},
+  verified          = {Verified on \url{https://api.crossref.org/works/10.1109/TBDATA.2022.3201176} ; named as a paper to cite by \url{https://github.com/szcompressor/SZ3}}
+}
+
+@inproceedings{zhao2021optimizing,
+  author    = {Kai Zhao and Sheng Di and Maxim Dmitriev and Thierry-Laurent D. Tonellot and Zizhong Chen and Franck Cappello},
+  title     = {Optimizing Error-Bounded Lossy Compression for Scientific Data by Dynamic Spline Interpolation},
+  booktitle = {2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+  year      = {2021},
+  pages     = {1643--1654},
+  doi       = {10.1109/ICDE51399.2021.00145},
+  verified      = {Verified on \url{https://api.crossref.org/works/10.1109/ICDE51399.2021.00145} ; named as a paper to cite by \url{https://github.com/szcompressor/SZ3}}
+}
+
+@article{liu2024high,
+  author  = {Jinyang Liu and Sheng Di and Kai Zhao and Xin Liang and Sian Jin and Zizhe Jian and Jiajun Huang and Shixun Wu and Zizhong Chen and Franck Cappello},
+  title   = {High-performance Effective Scientific Error-bounded Lossy Compression with Auto-tuned Multi-component Interpolation},
+  journal = {Proceedings of the ACM on Management of Data},
+  year    = {2024},
+  volume  = {2},
+  number  = {1},
+  pages   = {1--27},
+  doi     = {10.1145/3639259},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1145/3639259} ; named as a paper to cite by \url{https://github.com/szcompressor/SZ3}}
+}
+
+@inproceedings{li2023lossy,
+  author    = {Shaomeng Li and Peter Lindstrom and John Clyne},
+  title     = {Lossy Scientific Data Compression With {SPERR}},
+  booktitle = {2023 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  year      = {2023},
+  pages     = {1007--1017},
+  doi       = {10.1109/IPDPS54959.2023.00104},
+  verified      = {Verified on \url{https://api.crossref.org/works/10.1109/IPDPS54959.2023.00104} ; named as the paper to cite by \url{https://github.com/NCAR/SPERR}}
+}
+
+@article{lindstrom2014fixed,
+  author  = {Peter Lindstrom},
+  title   = {Fixed-Rate Compressed Floating-Point Arrays},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  year    = {2014},
+  volume  = {20},
+  number  = {12},
+  pages   = {2674--2683},
+  doi     = {10.1109/TVCG.2014.2346458},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1109/TVCG.2014.2346458} ; named as the paper to cite by \url{https://github.com/LLNL/zfp} . No separate publication for the CUDA backend (cuZFP) could be verified; the zfp documentation \url{https://zfp.readthedocs.io/en/latest/execution.html} states that the CUDA implementation supports only fixed-rate mode}
+}
+
+@article{diffenderfer2019error,
+  author  = {James Diffenderfer and Alyson L. Fox and Jeffrey A. Hittinger and Geoffrey Sanders and Peter G. Lindstrom},
+  title   = {Error Analysis of {ZFP} Compression for Floating-Point Data},
+  journal = {SIAM Journal on Scientific Computing},
+  year    = {2019},
+  volume  = {41},
+  number  = {3},
+  pages   = {A1867--A1898},
+  doi     = {10.1137/18M1168832},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1137/18M1168832} ; named by \url{https://github.com/LLNL/zfp} as the description of the algorithm of the current zfp version}
+}
+
+@inproceedings{huang2023cuszp,
+  author    = {Yafan Huang and Sheng Di and Xiaodong Yu and Guanpeng Li and Franck Cappello},
+  title     = {{cuSZp}: An Ultra-fast {GPU} Error-bounded Lossy Compression Framework with Optimized End-to-End Performance},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  year      = {2023},
+  pages     = {1--13},
+  doi       = {10.1145/3581784.3607048},
+  verified      = {Verified on \url{https://api.crossref.org/works/10.1145/3581784.3607048} ; named as a paper to cite by \url{https://github.com/szcompressor/cuSZp}}
+}
+
+@inproceedings{huang2024cuszp2,
+  author    = {Yafan Huang and Sheng Di and Guanpeng Li and Franck Cappello},
+  title     = {{cuSZp2}: A {GPU} Lossy Compressor with Extreme Throughput and Optimized Compression Ratio},
+  booktitle = {SC24: International Conference for High Performance Computing, Networking, Storage and Analysis},
+  year      = {2024},
+  pages     = {1--18},
+  doi       = {10.1109/SC41406.2024.00021},
+  verified      = {Verified on the Crossref record returned by \url{https://api.crossref.org/works?query.bibliographic=cuSZp2+A+GPU+Lossy+Compressor+with+Extreme+Throughput+and+Optimized+Compression+Ratio} ; named as a paper to cite by \url{https://github.com/szcompressor/cuSZp} . Cite only if the benchmark used a cuSZp2 release}
+}
+
+@article{gong2023mgard,
+  author  = {Qian Gong and Jieyang Chen and Ben Whitney and Xin Liang and Viktor Reshniak and Tania Banerjee and Jaemoon Lee and Anand Rangarajan and Lipeng Wan and Nicolas Vidal and Qing Liu and Ana Gainaru and Norbert Podhorszki and Richard Archibald and Sanjay Ranka and Scott Klasky},
+  title   = {{MGARD}: A multigrid framework for high-performance, error-controlled data compression and refactoring},
+  journal = {SoftwareX},
+  year    = {2023},
+  volume  = {24},
+  pages   = {101590},
+  doi     = {10.1016/j.softx.2023.101590},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1016/j.softx.2023.101590} ; listed under "MGARD Foundations" by \url{https://github.com/CODARcode/MGARD}}
+}
+
+@article{ainsworth2019multilevel,
+  author  = {Mark Ainsworth and Ozan Tugluk and Ben Whitney and Scott Klasky},
+  title   = {Multilevel Techniques for Compression and Reduction of Scientific Data---Quantitative Control of Accuracy in Derived Quantities},
+  journal = {SIAM Journal on Scientific Computing},
+  year    = {2019},
+  volume  = {41},
+  number  = {4},
+  pages   = {A2146--A2171},
+  doi     = {10.1137/18M1208885},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1137/18M1208885} . The MGARD paper on guarantees for derived quantities (quantities of interest)}
+}
+
+@article{di2025survey,
+  author        = {Sheng Di and Jinyang Liu and Kai Zhao and Xin Liang and Robert Underwood and Zhaorui Zhang and Milan Shah and Yafan Huang and Jiajun Huang and Xiaodong Yu and Congrong Ren and Hanqi Guo and Grant Wilkins and Dingwen Tao and Jiannan Tian and Sian Jin and Zizhe Jian and Daoce Wang and Md Hasanur Rahman and Boyuan Zhang and Shihui Song and Jon Calhoun and Guanpeng Li and Kazutomo Yoshii and Khalid Alharthi and Franck Cappello},
+  title         = {A Survey on Error-Bounded Lossy Compression for Scientific Datasets},
+  journal       = {ACM Computing Surveys},
+  year          = {2025},
+  volume        = {57},
+  number        = {11},
+  pages         = {1--38},
+  doi           = {10.1145/3733104},
+  eprint        = {2404.02840},
+  archivePrefix = {arXiv},
+  verified          = {Journal record verified on the Crossref record returned by \url{https://api.crossref.org/works?query.bibliographic=Di+Liu+Zhao+Liang+A+Survey+on+Error-Bounded+Lossy+Compression+for+Scientific+Datasets+ACM+Computing+Surveys} ; preprint verified on \url{https://arxiv.org/abs/2404.02840} (version 3 of 9 April 2025). Author names as in the Crossref record; the arXiv page writes "MD Hasanur Rahman", "Jon C. Calhoun" and "Khalid Ayed Alharthi"}
+}
+
+@inproceedings{zhao2020sdrbench,
+  author        = {Kai Zhao and Sheng Di and Xin Liang and Sihuan Li and Dingwen Tao and Julie Bessac and Zizhong Chen and Franck Cappello},
+  title         = {{SDRBench}: Scientific Data Reduction Benchmark for Lossy Compressors},
+  booktitle     = {2020 IEEE International Conference on Big Data (Big Data)},
+  year          = {2020},
+  doi           = {10.1109/BigData50022.2020.9378449},
+  eprint        = {2101.03201},
+  archivePrefix = {arXiv},
+  verified          = {Verified on \url{https://arxiv.org/abs/2101.03201} (journal reference and related DOI shown there; comment: published in the Proceedings of the 1st International Workshop on Big Data Reduction at BigData'20) and on \url{https://sdrbench.github.io/} . Pages NOT VERIFIED}
+}
+
+@inproceedings{liang2020toward,
+  author    = {Xin Liang and Hanqi Guo and Sheng Di and Franck Cappello and Mukund Raj and Chunhui Liu and Kenji Ono and Zizhong Chen and Tom Peterka},
+  title     = {Toward Feature-Preserving {2D} and {3D} Vector Field Compression},
+  booktitle = {2020 IEEE Pacific Visualization Symposium (PacificVis)},
+  year      = {2020},
+  pages     = {81--90},
+  doi       = {10.1109/PacificVis48177.2020.6431},
+  verified      = {Verified on \url{https://api.crossref.org/works/10.1109/PacificVis48177.2020.6431} and \url{https://scholarsmine.mst.edu/comsci_facwork/1123} . The name "cpSZ" does not appear on the pages fetched}
+}
+
+@article{liang2023toward,
+  author  = {Xin Liang and Sheng Di and Franck Cappello and Mukund Raj and Chunhui Liu and Kenji Ono and Zizhong Chen and Tom Peterka and Hanqi Guo},
+  title   = {Toward Feature-Preserving Vector Field Compression},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  year    = {2023},
+  volume  = {29},
+  number  = {12},
+  pages   = {5434--5450},
+  doi     = {10.1109/TVCG.2022.3214821},
+  verified    = {Verified on the Crossref record returned by \url{https://api.crossref.org/works?query.bibliographic=Liang+Di+Cappello+Raj+Liu+Ono+Chen+Peterka+Guo+Toward+Feature-Preserving+Vector+Field+Compression+IEEE+Transactions+on+Visualization+and+Computer+Graphics} . Journal version of the PacificVis 2020 paper}
+}
+
+% ------------------------------------------------- closest prior work
+
+@misc{pluzhnik2026property,
+  author        = {Andrey Pluzhnik and Ramansh Sharma and Martin Burtscher and Varun Shankar},
+  title         = {Property-Preserving Data Compression for Incompressible Flows},
+  year          = {2026},
+  eprint        = {2610.02776},
+  howpublished = {arXiv preprint arXiv:2610.02776},
+  archivePrefix = {arXiv},
+  primaryClass  = {math.NA},
+  doi           = {10.48550/arXiv.2610.02776},
+  verified          = {arXiv preprint, version 1 of 2 October 2026 (the only version listed on 17 November 2026). Verified on \url{https://arxiv.org/abs/2610.02776} and \url{https://arxiv.org/html/2610.02776v1} ; code at \url{https://github.com/VarShankar/property-preserving-compression}}
+}
+
+@misc{ni2025representing,
+  author        = {Xingyu Ni and Jingrui Xing and Xingqiao Li and Bin Wang and Baoquan Chen},
+  title         = {Representing Flow Fields with Divergence-Free Kernels for Reconstruction},
+  year          = {2025},
+  eprint        = {2504.01913},
+  howpublished = {arXiv preprint arXiv:2504.01913},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2504.01913},
+  verified          = {arXiv preprint, version 1 of 2 April 2025; no journal reference listed. Verified on \url{https://arxiv.org/abs/2504.01913}}
+}
+
+% ------------------------------ divergence-free representations and integration
+
+@article{deriaz2006divergence,
+  author        = {Erwan Deriaz and Val{\'e}rie Perrier},
+  title         = {Divergence-free and curl-free wavelets in two dimensions and three dimensions: application to turbulent flows},
+  journal       = {Journal of Turbulence},
+  year          = {2006},
+  volume        = {7},
+  pages         = {N3},
+  doi           = {10.1080/14685240500260547},
+  eprint        = {cs/0502092},
+  archivePrefix = {arXiv},
+  verified          = {Verified on \url{https://api.crossref.org/works/10.1080/14685240500260547} ; the arXiv record \url{https://arxiv.org/abs/cs/0502092} carries the same DOI under the title "Divergence-free Wavelets for Navier-Stokes"}
+}
+
+@article{chang2022curl,
+  author        = {Jumyung Chang and Ruben Partono and Vinicius C. Azevedo and Christopher Batty},
+  title         = {{Curl-Flow}: Boundary-Respecting Pointwise Incompressible Velocity Interpolation for Grid-Based Fluids},
+  journal       = {ACM Transactions on Graphics},
+  year          = {2022},
+  volume        = {41},
+  number        = {6},
+  pages         = {1--21},
+  doi           = {10.1145/3550454.3555498},
+  eprint        = {2104.00867},
+  archivePrefix = {arXiv},
+  verified          = {Verified on \url{https://api.crossref.org/works/10.1145/3550454.3555498} and \url{https://arxiv.org/abs/2104.00867} . Article number NOT VERIFIED (the Crossref record has no article-number field)}
+}
+
+@article{finn2005volume,
+  author  = {John M. Finn and Luis Chac{\'o}n},
+  title   = {Volume preserving integrators for solenoidal fields on a grid},
+  journal = {Physics of Plasmas},
+  year    = {2005},
+  volume  = {12},
+  number  = {5},
+  pages   = {054503},
+  doi     = {10.1063/1.1889156},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1063/1.1889156} (record includes the abstract)}
+}
+
+@article{ravu2016creating,
+  author  = {Bharath Ravu and Murray Rudman and Guy Metcalfe and Daniel R. Lester and Devang V. Khakhar},
+  title   = {Creating analytically divergence-free velocity fields from grid-based data},
+  journal = {Journal of Computational Physics},
+  year    = {2016},
+  volume  = {323},
+  pages   = {75--94},
+  doi     = {10.1016/j.jcp.2016.07.018},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1016/j.jcp.2016.07.018} . Abstract not read on a fetched page}
+}
+
+% ------------------------------------- turbulence data, visualization, tracing
+
+@article{treib2012turbulence,
+  author  = {Marc Treib and Kai B{\"u}rger and Florian Reichl and Charles Meneveau and Alex Szalay and R{\"u}diger Westermann},
+  title   = {Turbulence Visualization at the Terascale on Desktop {PCs}},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  year    = {2012},
+  volume  = {18},
+  number  = {12},
+  pages   = {2169--2177},
+  doi     = {10.1109/TVCG.2012.274},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1109/TVCG.2012.274} and \url{https://cs.cit.tum.de/cg/research/publications/2012/turbulence-visualization-at-the-terascale-on-desktop-pcs}}
+}
+
+@inproceedings{treib2015analyzing,
+  author    = {Marc Treib and Kai B{\"u}rger and Jun Wu and R{\"u}diger Westermann},
+  title     = {Analyzing the Effect of Lossy Compression on Particle Traces in Turbulent Vector Fields},
+  booktitle = {Proceedings of the 6th International Conference on Information Visualization Theory and Applications},
+  year      = {2015},
+  pages     = {279--288},
+  doi       = {10.5220/0005307202790288},
+  verified      = {Verified on \url{https://api.crossref.org/works/10.5220/0005307202790288} and \url{https://www.cs.cit.tum.de/cg/research/publications/2015/analyzing-the-effect-of-lossy-compression-on-particle-traces-in-turbulent-vector-fields/}}
+}
+
+@article{li2008public,
+  author        = {Yi Li and Eric Perlman and Minping Wan and Yunke Yang and Charles Meneveau and Randal Burns and Shiyi Chen and Alexander Szalay and Gregory Eyink},
+  title         = {A public turbulence database cluster and applications to study {Lagrangian} evolution of velocity increments in turbulence},
+  journal       = {Journal of Turbulence},
+  year          = {2008},
+  volume        = {9},
+  pages         = {N31},
+  doi           = {10.1080/14685240802376389},
+  eprint        = {0804.1703},
+  archivePrefix = {arXiv},
+  verified          = {Verified on \url{https://api.crossref.org/works/10.1080/14685240802376389} ; requested citation on \url{https://turbulence.pha.jhu.edu/citing.aspx}}
+}
+
+@misc{jhtdbisotropic,
+  author       = {{Johns Hopkins Turbulence Databases}},
+  title        = {Forced Isotropic Turbulence Data Set (Extended)},
+  howpublished = {Johns Hopkins University},
+  doi          = {10.7281/T1KK98XB},
+  verified         = {Dataset DOI as given on \url{https://turbulence.pha.jhu.edu/citing.aspx} ; it resolves to \url{https://turbulence.idies.jhu.edu/datasets/homogeneousTurbulence/isotropic} . Simulation parameters read in \url{https://turbulence.pha.jhu.edu/docs/README-isotropic.pdf} . Year of the dataset record NOT VERIFIED}
+}
+
+@article{wu2020data,
+  author        = {Zhao Wu and Tamer A. Zaki and Charles Meneveau},
+  title         = {Data compression for turbulence databases using spatio-temporal sub-sampling and local re-simulation},
+  journal       = {Physical Review Fluids},
+  year          = {2020},
+  volume        = {5},
+  pages         = {064607},
+  doi           = {10.1103/PhysRevFluids.5.064607},
+  eprint        = {1910.11994},
+  archivePrefix = {arXiv},
+  verified          = {Verified on \url{https://arxiv.org/abs/1910.11994} only (journal reference shown there as "Phys. Rev. Fluids 5, 064607 (2020)" with the related DOI); the publisher record was not fetched}
+}
+
+% ------------------------------------------------------- learned compression
+
+@article{glaws2020deep,
+  author  = {Andrew Glaws and Ryan King and Michael Sprague},
+  title   = {Deep learning for in situ data compression of large turbulent flow simulations},
+  journal = {Physical Review Fluids},
+  year    = {2020},
+  volume  = {5},
+  number  = {11},
+  pages   = {114602},
+  doi     = {10.1103/PhysRevFluids.5.114602},
+  verified    = {Verified on \url{https://api.crossref.org/works/10.1103/PhysRevFluids.5.114602} . Abstract not read on a fetched page}
+}
+
+@inproceedings{momenifar2022physics,
+  author        = {Mohammadreza Momenifar and Enmao Diao and Vahid Tarokh and Andrew D. Bragg},
+  title         = {A Physics-Informed Vector Quantized Autoencoder for Data Compression of Turbulent Flow},
+  booktitle     = {2022 Data Compression Conference (DCC)},
+  year          = {2022},
+  pages         = {01--10},
+  doi           = {10.1109/DCC52660.2022.00039},
+  eprint        = {2201.03617},
+  archivePrefix = {arXiv},
+  verified          = {Verified on \url{https://api.crossref.org/works/10.1109/DCC52660.2022.00039} and \url{https://arxiv.org/abs/2201.03617} . The arXiv page states that this is the conference version of arXiv:2103.01074 ("Dimension Reduced Turbulent Flow Data From Deep Vector Quantizers", journal reference "Journal of Turbulence 2022", DOI 10.1080/14685248.2022.2060508, seen on \url{https://arxiv.org/abs/2103.01074)}}
+}
+
+% ------------------------------------------------- entropy coding and splines
+
+@misc{duda2013asymmetric,
+  author        = {Jarek Duda},
+  title         = {Asymmetric numeral systems: entropy coding combining speed of {Huffman} coding with compression rate of arithmetic coding},
+  year          = {2013},
+  eprint        = {1311.2540},
+  howpublished = {arXiv preprint arXiv:1311.2540},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.1311.2540},
+  verified          = {arXiv preprint, version 2 of 6 January 2014 (version 1 of 11 November 2013); no journal reference listed. Verified on \url{https://arxiv.org/abs/1311.2540}}
+}
+
+@article{unser1993bspline1,
+  author  = {M. Unser and A. Aldroubi and M. Eden},
+  title   = {{B-spline} signal processing. {I}. Theory},
+  journal = {IEEE Transactions on Signal Processing},
+  year    = {1993},
+  volume  = {41},
+  number  = {2},
+  pages   = {821--833},
+  doi     = {10.1109/78.193220},
+  verified    = {Verified on the Crossref record returned by \url{https://api.crossref.org/works?query.bibliographic=Unser+B-spline+signal+processing+Part+I+theory+IEEE+Transactions+on+Signal+Processing+1993} (author given names appear as initials there). Abstract not read on a fetched page}
+}
+
+@article{unser1993bspline2,
+  author  = {M. Unser and A. Aldroubi and M. Eden},
+  title   = {{B-spline} signal processing. {II}. Efficiency design and applications},
+  journal = {IEEE Transactions on Signal Processing},
+  year    = {1993},
+  volume  = {41},
+  number  = {2},
+  pages   = {834--848},
+  doi     = {10.1109/78.193221},
+  verified    = {Verified on the Crossref record returned by \url{https://api.crossref.org/works?query.bibliographic=Unser+B-spline+signal+processing+Part+I+theory+IEEE+Transactions+on+Signal+Processing+1993} (author given names appear as initials there; title as printed in the record). Abstract not read on a fetched page}
+}
+
+@article{unser1999splines,
+  author  = {M. Unser},
+  title   = {Splines: a perfect fit for signal and image processing},
+  journal = {IEEE Signal Processing Magazine},
+  year    = {1999},
+  volume  = {16},
+  number  = {6},
+  pages   = {22--38},
+  doi     = {10.1109/79.799930},
+  verified    = {Verified on the Crossref record returned by \url{https://api.crossref.org/works?query.bibliographic=Unser+Splines+a+perfect+fit+for+signal+and+image+processing} (author given name appears as an initial there). Abstract not read on a fetched page}
+}

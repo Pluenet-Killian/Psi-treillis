@@ -1,0 +1,61 @@
+% Written by tools/paper_numbers.py from the logs of benchmarks/. Do not edit: run the script again.
+\begin{longtable}{@{}lp{10.6cm}l@{}}
+\caption{The claims of the project and their verdicts.\label{tab:claims}}\\
+\toprule
+Identifier & Claim & Verdict \\
+\midrule
+\endfirsthead
+\toprule
+Identifier & Claim & Verdict \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+COMP-1 & Compression without a bound, degree 3 & holds \\
+COMP-2 & Compression without a bound, degree 2 & holds \\
+BOUND-1 & Certified bound, degree 3 & holds \\
+BOUND-2 & Cost of the bound, degree 3 & holds \\
+BOUND-3 & Certified bound, degree 2 & holds \\
+READBACK-1 & Read-back consistent with the encoding & holds \\
+DIV-1 & Zero divergence & holds \\
+SPEED-1 & Reading speed & holds \\
+ENC-1 & Encoding speed & holds \\
+LAGR-1 & Clustering of tracers under cuZFP & holds \\
+LAGR-2 & No clustering under Psi-treillis & holds \\
+LAGR-3 & Volume carried by a tracer & holds \\
+ROBUST-1 & Reader faced with an altered file & holds \\
+TEST-1 & Determinism and non-regression & holds \\
+API-1 & Public interface, round trip at 64$^3$ & holds \\
+API-2 & Errors read back at 512$^3$ through another code path & holds \\
+BENCH-1 & Against SPERR, at an equal bound & holds \\
+BENCH-2 & Pareto front at 256$^3$ & holds \\
+REF-1 & A reader independent of the code & holds \\
+LAGR-4 & Clustering under the trilinear texture & \textbf{does not hold} \\
+BOUND-4 & Certified bound, degree 2, one point lower & \textbf{does not hold} \\
+RESO-1 & Fidelity on a less resolved turbulence & \textbf{does not hold} \\
+RESO-2 & Certified bound on a less resolved turbulence & \textbf{does not hold} \\
+BENCH-3 & Against SZ3 in 4D, at an equal bound & \textbf{does not hold} \\
+JHTDB-1 & Expected degradation on JHTDB & \textbf{pending} \\
+JHTDB-2 & Usefulness for compression on JHTDB & \textbf{pending} \\
+PORT-1 & Another machine & \textbf{pending} \\
+LAGR-5 & Lagrangian confirmation on an independent realisation & \textbf{does not hold} \\
+BENCH-4 & SZ3 in 4D on 32 frames at 512$^3$ & \textbf{pending} \\
+VALID-1 & Resolution threshold of the bound of 5 \% & holds \\
+VALID-2 & Ahead of SPERR where the bound holds & \textbf{does not hold} \\
+VALID-3 & The step of 1 voxel holds the bound everywhere, without catching up on the compression ratio & holds \\
+VALID-4 & Field error as a function of the resolution & \textbf{does not hold} \\
+VALID-5 & Spread between realisations & \textbf{does not hold} \\
+CTRL-1 & Windowed cutout protocol & holds \\
+JHTDB-3 & Degradation on a JHTDB cutout & \textbf{pending} \\
+JHTDB-4 & Step of 1 voxel on the JHTDB cutout & \textbf{pending} \\
+REPR-1 & Does our under-resolved sequence stand in for JHTDB? & \textbf{pending} \\
+REF-2 & A second reader from the completed specification & \textbf{does not hold} \\
+LINUX-1 & Compilation under Linux & \textbf{pending} \\
+GRID-1 & Compression alone breaks the law & holds \\
+READ-1 & Reading alone breaks the law & holds \\
+READ-2 & Compression adds to it & holds \\
+TRAC-1 & Tracers after an error-bounded compressor & holds \\
+SPEC-1 & Spectrum of Psi-treillis & holds \\
+PLAY-1 & Cost of one replayed frame & holds \\
+REF-3 & A third reader from the specification completed on 17 November 2026 & \textbf{pending} \\
+\end{longtable}

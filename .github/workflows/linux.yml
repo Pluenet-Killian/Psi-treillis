@@ -1,0 +1,54 @@
+# SPDX-License-Identifier: Apache-2.0
+# Compiles the project on Linux at every commit, on a machine without a GPU, then replays the claims sheet and checks
+# that the repository is in English. Nothing runs on a GPU here: this checks that the sources build with GCC and nvcc,
+# not that the codec works (claim LINUX-1 of docs/CLAIMS.md). The GPU tests are run locally: tests/test_codec.py,
+# tests/test_api.py. The last run is recorded by benchmarks/linux_build/record.py, which reads the names of the steps
+# and the output of the commands below.
+name: Linux build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the CUDA compiler and libraries
+        run: |
+          wget -q https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
+          sudo dpkg -i cuda-keyring_1.1-1_all.deb
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends \
+            cuda-nvcc-13-2 cuda-cudart-dev-13-2 libcufft-dev-13-2 cuda-cccl-13-2 ninja-build
+          echo "/usr/local/cuda-13.2/bin" >> "$GITHUB_PATH"
+
+      # The submodules of third_party/ are not checked out: the targets that need zfp (tracers, psi_view) are not
+      # configured.
+      - name: Configure
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DPSIT_BUILD_TOOLS=ON -DPSIT_CUDA_ARCHITECTURES=86
+
+      - name: Build the library, the command-line tool, the example, the codec chain and the simulator
+        run: cmake --build build --target psitreillis psit example_roundtrip psi_stream dns
+
+      - name: Build the CPU reference reader
+        run: cmake --build build --target psi_ref
+
+      - name: The tools start without a GPU
+        run: |
+          ./build/psit --help
+          ./build/psit version
+          ./build/psi_ref || test $? -eq 2
+
+      - name: Replay the claims sheet from the measurements kept in the repository
+        run: python3 tools/claims.py
+
+      - name: Check that the repository is in English
+        run: python3 tools/check_english.py

@@ -1,0 +1,5 @@
+campaign,grid,path,fd,substeps,tracers,seeds,last_t_tau,var_d_growth_per_tau,var_d_growth_standard_error,d_standard_deviation_at_last_t,divergence_over_gradient,criterion_seeds,criterion_mean_excess,criterion_standard_error_between_seeds,criterion_expected_standard_error,criterion_standard_errors,tracers_per_bin
+offsets_256,256,tex,0.25,2,16777216,1,20,4.876048e-05,nan,3.123241e-02,2.325791e-02,1,+6.068945e-04,nan,3.452670e-04,+1.7578,1
+offsets_256,256,psi3,0.25,2,16777216,1,20,3.036439e-07,nan,2.464641e-03,7.899527e-04,1,+2.686977e-04,nan,3.452670e-04,+0.7782,1
+offsets_256,256,tex,0.0625,2,16777216,1,20,1.181166e-04,nan,4.861014e-02,4.299129e-02,1,+6.068945e-04,nan,3.452670e-04,+1.7578,1
+offsets_256,256,psi3,0.0625,2,16777216,1,20,1.388699e-09,nan,1.666770e-04,1.079729e-04,1,+2.686977e-04,nan,3.452670e-04,+0.7782,1

@@ -1,0 +1,15 @@
+# psi_stream pack --data data/sweep/nu00130_seed7.seq --file build/work/validity/nu00130_seed7_psi_d3_mf2_none.psi --degree 3 --mf 2 --start 8 --frames 36 --no-seal
+pack           : data/sweep/nu00130_seed7.seq, 256^3, frames 8 to 43 -> build/work/validity/nu00130_seed7_psi_d3_mf2_none.psi
+Codec          : degree 3, 3 levels (128^3 to 32^3), potential step 1.249e-03, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 9 to 12; level 0 (1.888, -0.896, 0.009) level 1 (1.948, -0.973, -0.001) level 2 (1.989, -0.991, 0.001)
+File           : 80.484 MiB for 36 frames, against 6912 MiB raw: 85.9x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 2 keys of 5.333 MiB, 34 innovations of 2.053 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 36.0x less than a raw frame against 25.0x for a key written raw; encoding of a key 47.47 ms
+Encoding       : 42.10 ms per frame (projection, quantisation, entropy coder); raw disk read 66.7 ms per frame
+Fidelity       : relative field error 2.2975e-02 on average, 2.3073e-02 at worst; largest error of a component 0.6661 u'; 36 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 478 innovation escapes and 1679 overflows of the fine level, that is 0.0165 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)

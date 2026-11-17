@@ -1,0 +1,284 @@
+batch,file,exit_code,outcome,message
+chosen,build/tests/cases/guard_geo_block_offset0.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_block_offset_backwards.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_block_offset_end.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_block_offset_huge.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_bytes_huge.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+chosen,build/tests/cases/guard_geo_bytes_less.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_bytes_short.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_exceptions3.psi,1,refused,Failure: corrupt frequency table
+chosen,build/tests/cases/guard_geo_exceptions_huge.psi,1,refused,Failure: corrupt exception list
+chosen,build/tests/cases/guard_geo_fb5.psi,0,read,
+chosen,build/tests/cases/guard_geo_fine_block_offset.psi,1,refused,Failure: corrupt section of the fine level
+chosen,build/tests/cases/guard_geo_fine_brick.psi,1,refused,Failure: header of the fine level unreadable
+chosen,build/tests/cases/guard_geo_fine_bricks_huge.psi,1,refused,Failure: corrupt section of the fine level
+chosen,build/tests/cases/guard_geo_fine_bricks_minus.psi,1,counted,
+chosen,build/tests/cases/guard_geo_fine_bricks_plus.psi,1,counted,
+chosen,build/tests/cases/guard_geo_fine_levels2.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_fine_max_bricks.psi,1,refused,Failure: corrupt section of the fine level
+chosen,build/tests/cases/guard_geo_fine_max_nodes.psi,1,refused,Failure: corrupt section of the fine level
+chosen,build/tests/cases/guard_geo_fine_n128.psi,1,refused,Failure: corrupt section of the fine level
+chosen,build/tests/cases/guard_geo_fine_nodes_plus.psi,1,counted,
+chosen,build/tests/cases/guard_geo_fine_nodes_zero.psi,1,counted,
+chosen,build/tests/cases/guard_geo_fine_section_huge.psi,1,refused,Failure: corrupt section of the fine level
+chosen,build/tests/cases/guard_geo_fine_section_odd.psi,1,refused,Failure: corrupt section of the fine level
+chosen,build/tests/cases/guard_geo_fine_section_short.psi,1,refused,Failure: corrupt frequency table
+chosen,build/tests/cases/guard_geo_frequencies.psi,1,refused,Failure: corrupt frequency table
+chosen,build/tests/cases/guard_geo_last_block_zero.psi,1,counted,
+chosen,build/tests/cases/guard_geo_levels1.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_levels2.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_mf1.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_n128.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_n32.psi,1,refused,Failure: too many levels for this resolution
+chosen,build/tests/cases/guard_geo_offset_outside.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+chosen,build/tests/cases/guard_geo_offset_shifted.psi,1,refused,Failure: corrupt frequency table
+chosen,build/tests/cases/guard_geo_raw_bytes.psi,1,refused,Failure: corrupt exception list
+chosen,build/tests/cases/guard_geo_raw_exceptions.psi,1,refused,Failure: corrupt exception list
+chosen,build/tests/cases/guard_geo_raw_levels2.psi,1,refused,Failure: corrupt exception list
+chosen,build/tests/cases/guard_geo_type0_key.psi,1,refused,Failure: corrupt frame table: the first frame is not a key frame
+chosen,build/tests/cases/guard_geo_type0_raw.psi,1,refused,Failure: raw key frame: size inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_type5_9.psi,1,refused,Failure: corrupt frame table: unknown frame type
+chosen,build/tests/cases/guard_geo_type5_after.psi,1,counted,
+chosen,build/tests/cases/guard_geo_type5_coded.psi,1,refused,Failure: corrupt frequency table
+chosen,build/tests/cases/guard_geo_type5_raw.psi,1,refused,Failure: raw key frame: size inconsistent with the geometry of the header
+chosen,build/tests/cases/guard_geo_zero_state.psi,1,counted,
+random,build/tests/cases/random/d2_base_000.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_001.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_002.psi,1,counted,
+random,build/tests/cases/random/d2_base_003.psi,1,counted,
+random,build/tests/cases/random/d2_base_004.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_005.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_006.psi,1,counted,
+random,build/tests/cases/random/d2_base_007.psi,1,counted,
+random,build/tests/cases/random/d2_base_008.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_009.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_010.psi,1,counted,
+random,build/tests/cases/random/d2_base_011.psi,1,counted,
+random,build/tests/cases/random/d2_base_012.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_013.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_014.psi,1,counted,
+random,build/tests/cases/random/d2_base_015.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_016.psi,1,refused,Failure: frame table unreadable
+random,build/tests/cases/random/d2_base_017.psi,1,refused,"Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)"
+random,build/tests/cases/random/d2_base_018.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_019.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_020.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_021.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_022.psi,1,counted,
+random,build/tests/cases/random/d2_base_023.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_024.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_025.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_026.psi,1,counted,
+random,build/tests/cases/random/d2_base_027.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_028.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_029.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_030.psi,1,counted,
+random,build/tests/cases/random/d2_base_031.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_032.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_033.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_034.psi,1,counted,
+random,build/tests/cases/random/d2_base_035.psi,1,counted,
+random,build/tests/cases/random/d2_base_036.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_037.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_038.psi,1,counted,
+random,build/tests/cases/random/d2_base_039.psi,1,counted,
+random,build/tests/cases/random/d2_base_040.psi,1,refused,Failure: invalid .psi file
+random,build/tests/cases/random/d2_base_041.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_042.psi,0,read,
+random,build/tests/cases/random/d2_base_043.psi,1,counted,
+random,build/tests/cases/random/d2_base_044.psi,1,refused,Failure: .psi file: invalid degree
+random,build/tests/cases/random/d2_base_045.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_046.psi,1,counted,
+random,build/tests/cases/random/d2_base_047.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_048.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_049.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_050.psi,1,counted,
+random,build/tests/cases/random/d2_base_051.psi,1,counted,
+random,build/tests/cases/random/d2_base_052.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_053.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_054.psi,1,counted,
+random,build/tests/cases/random/d2_base_055.psi,1,counted,
+random,build/tests/cases/random/d2_base_056.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d2_base_057.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d2_base_058.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_base_059.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_000.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_001.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d2_no_seal_002.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_003.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_004.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_005.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d2_no_seal_006.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_007.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_no_seal_008.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_009.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_010.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_011.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_012.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_013.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d2_no_seal_014.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_015.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_016.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_017.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_018.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_019.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_020.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_021.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_022.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_023.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_024.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_025.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_026.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_027.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_028.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_029.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d2_no_seal_030.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_031.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_032.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_033.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_034.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_035.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_036.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_037.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_038.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_039.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_040.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_041.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_042.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_043.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_044.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_045.psi,1,refused,Failure: corrupt frame table: unknown frame type
+random,build/tests/cases/random/d2_no_seal_046.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_047.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_no_seal_048.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_049.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d2_no_seal_050.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_no_seal_051.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d2_no_seal_052.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_053.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_054.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_055.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_056.psi,0,read,
+random,build/tests/cases/random/d2_no_seal_057.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_058.psi,1,counted,
+random,build/tests/cases/random/d2_no_seal_059.psi,1,counted,
+random,build/tests/cases/random/d3_bound_000.psi,1,refused,Failure: frame table unreadable
+random,build/tests/cases/random/d3_bound_001.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_002.psi,1,counted,
+random,build/tests/cases/random/d3_bound_003.psi,1,counted,
+random,build/tests/cases/random/d3_bound_004.psi,1,refused,Failure: invalid .psi file
+random,build/tests/cases/random/d3_bound_005.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_006.psi,1,counted,
+random,build/tests/cases/random/d3_bound_007.psi,1,counted,
+random,build/tests/cases/random/d3_bound_008.psi,1,refused,Failure: .psi file: invalid resolution
+random,build/tests/cases/random/d3_bound_009.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_010.psi,1,counted,
+random,build/tests/cases/random/d3_bound_011.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_012.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d3_bound_013.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_014.psi,1,counted,
+random,build/tests/cases/random/d3_bound_015.psi,1,counted,
+random,build/tests/cases/random/d3_bound_016.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d3_bound_017.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_018.psi,1,counted,
+random,build/tests/cases/random/d3_bound_019.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_020.psi,1,refused,Failure: frame table unreadable
+random,build/tests/cases/random/d3_bound_021.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_022.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_023.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_024.psi,1,refused,Failure: seal of the file: the header of the fine level has been altered since writing
+random,build/tests/cases/random/d3_bound_025.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_026.psi,1,counted,
+random,build/tests/cases/random/d3_bound_027.psi,1,refused,Failure: corrupt section of the fine level
+random,build/tests/cases/random/d3_bound_028.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d3_bound_029.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_030.psi,1,counted,
+random,build/tests/cases/random/d3_bound_031.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_032.psi,1,refused,Failure: seal of the file: the header of the fine level has been altered since writing
+random,build/tests/cases/random/d3_bound_033.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_034.psi,1,counted,
+random,build/tests/cases/random/d3_bound_035.psi,1,counted,
+random,build/tests/cases/random/d3_bound_036.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d3_bound_037.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d3_bound_038.psi,1,counted,
+random,build/tests/cases/random/d3_bound_039.psi,1,counted,
+random,build/tests/cases/random/d3_bound_040.psi,1,refused,Failure: seal of the file: the header of the fine level has been altered since writing
+random,build/tests/cases/random/d3_bound_041.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_042.psi,1,counted,
+random,build/tests/cases/random/d3_bound_043.psi,1,counted,
+random,build/tests/cases/random/d3_bound_044.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d3_bound_045.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_046.psi,1,counted,
+random,build/tests/cases/random/d3_bound_047.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_048.psi,1,refused,Failure: invalid .psi file
+random,build/tests/cases/random/d3_bound_049.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_050.psi,1,counted,
+random,build/tests/cases/random/d3_bound_051.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_052.psi,1,refused,Failure: seal of the file: the header has been altered since writing
+random,build/tests/cases/random/d3_bound_053.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_054.psi,1,counted,
+random,build/tests/cases/random/d3_bound_055.psi,1,counted,
+random,build/tests/cases/random/d3_bound_056.psi,1,refused,Failure: seal of the file: the header of the fine level has been altered since writing
+random,build/tests/cases/random/d3_bound_057.psi,1,refused,Failure: seal of the file: the frame table has been altered since writing
+random,build/tests/cases/random/d3_bound_058.psi,1,counted,
+random,build/tests/cases/random/d3_bound_059.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_000.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_001.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_002.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_003.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_004.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_005.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_006.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_007.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_008.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_009.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_010.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_011.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_012.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_013.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d3_bound_no_seal_014.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_015.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_016.psi,1,refused,Failure: fractional bits (--fb): from 0 to 12
+random,build/tests/cases/random/d3_bound_no_seal_017.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_018.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_019.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_020.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_021.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_022.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_023.psi,1,refused,Failure: corrupt section of the fine level
+random,build/tests/cases/random/d3_bound_no_seal_024.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_025.psi,1,refused,Failure: corrupt section of the fine level
+random,build/tests/cases/random/d3_bound_no_seal_026.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_027.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_028.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_029.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_030.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_031.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_032.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_033.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d3_bound_no_seal_034.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_035.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_036.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_037.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_038.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_039.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_no_seal_040.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_041.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_042.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_043.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_no_seal_044.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_045.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d3_bound_no_seal_046.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_047.psi,1,refused,Failure: corrupt frequency table
+random,build/tests/cases/random/d3_bound_no_seal_048.psi,1,refused,Failure: frame table unreadable
+random,build/tests/cases/random/d3_bound_no_seal_049.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d3_bound_no_seal_050.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_051.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_052.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_053.psi,1,refused,Failure: corrupt frame table: frame outside the frame area
+random,build/tests/cases/random/d3_bound_no_seal_054.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_055.psi,1,refused,Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+random,build/tests/cases/random/d3_bound_no_seal_056.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_057.psi,0,read,
+random,build/tests/cases/random/d3_bound_no_seal_058.psi,1,counted,
+random,build/tests/cases/random/d3_bound_no_seal_059.psi,1,refused,Failure: corrupt frequency table

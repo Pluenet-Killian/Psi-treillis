@@ -1,0 +1,15 @@
+build/work/playback/turb512_d3.psi
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Capture        : build/work/playback/cuzfp_psi_512.png (1600x900), view 3, sync, 2 RK4 steps per frame, 4000000 particles per side
+Left : cuZFP 2 bits + half-precision 3D texture
+  per frame    : 96.00 MiB read on average, disk 43.957 ms, bus 3.803 ms, decoding 7.676 ms, sort 0.129 ms, 2 RK4 steps of 1.873 ms
+  cost         : 59.311 ms per frame, that is 16.9 frames per second by its own costs; 40 frames advanced
+  GPU memory   : 3810 MiB; rendering 1.17 ms
+  divergence   : 6.176e-02 of the gradient (RMS over the slice)
+  error        : 5.0376e-03 (RMS over the slice, against the raw frame)
+Right : Psi-treillis, degree 3
+  per frame    : 10.53 MiB read on average, disk 3.808 ms, bus 0.481 ms, decoding 3.427 ms, sort 0.100 ms, 2 RK4 steps of 6.964 ms
+  cost         : 21.744 ms per frame, that is 46.0 frames per second by its own costs; 40 frames advanced
+  GPU memory   : 624 MiB; rendering 0.66 ms
+  divergence   : 9.415e-16 of the gradient (RMS over the slice)
+  error        : 5.6620e-03 (RMS over the slice, against the raw frame)

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or its measurements, please cite the article below."
+title: "Psi-treillis: divergence-free compression of periodic turbulent velocity fields, sampled on the GPU without rebuilding the grid"
+type: software
+authors:
+  - family-names: Pluenet
+    given-names: Killian
+version: 0.2.0
+date-released: 2026-11-17
+license: Apache-2.0
+repository-code: "https://github.com/Pluenet-Killian/Psi-treillis"
+abstract: >-
+  Psi-treillis compresses time sequences of incompressible, periodic velocity fields. The velocity is stored as the
+  curl of a B-spline vector potential with integer coefficients, coded by temporal prediction and rANS, and decoded on
+  the GPU. The decoded field is divergence-free by construction, it can be sampled at arbitrary points without
+  rebuilding the grid, and a bound on the largest error is verified at compression. The repository holds the article,
+  the codec, and the measurements behind every claim, including the claims its own measurements refute.
+keywords:
+  - lossy compression
+  - turbulence
+  - divergence-free
+  - vector potential
+  - GPU
+  - CUDA
+  - scientific data
+preferred-citation:
+  type: unpublished
+  title: "Psi-treillis: divergence-free compression of periodic turbulent velocity fields, sampled on the GPU without rebuilding the grid"
+  authors:
+    - family-names: Pluenet
+      given-names: Killian
+  year: 2026
+  url: "https://github.com/Pluenet-Killian/Psi-treillis/blob/main/paper/paper.pdf"
+  notes: "Manuscript in the repository of the software, paper/paper.pdf."

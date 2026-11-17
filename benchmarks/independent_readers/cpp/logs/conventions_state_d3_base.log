@@ -1,0 +1,4 @@
+File        : build/tests/cases/d3_base.psi, PSISTRM2, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table

@@ -1,0 +1,11 @@
+play           : build/work/reference_files/z_t512_d3.psi, 512^3, degree 3, 55 frames read out of 55, 4000000 particles, 2 RK4 steps per frame
+Kernels        : RK4 step without support cache (blocks of 256 threads); lattice read directly
+File           : 589.752 MiB; read in steady state: 10.4645 MiB per frame, that is 147x less than a raw frame (1536 MiB)
+Per frame      : disk 1.898 ms, bus 0.494 ms, decoding 3.733 ms, sort 0.000 ms, 2 RK4 steps of 4.001 ms
+Key frames     : 1 read in steady state (coded), 24.637 MiB each: disk 4.801 ms, bus 1.017 ms, decoding 7.171 ms
+Full budget    : 14.126 ms per frame, that is 70.8 frames per second (wall clock: 14.348 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 624.0 MiB allocated by the reader, of which 492.2 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 9a791d50b0effa7e
+CSV,play,512,3,4000000,2,1,0,10.4645,1.8980,0.4936,3.7326,0.0000,4.0011,0.0000,14.1262,14.3478,624.0,492.2,0,9a791d50b0effa7e,1,24.6374,4.8014,1.0169,7.1709

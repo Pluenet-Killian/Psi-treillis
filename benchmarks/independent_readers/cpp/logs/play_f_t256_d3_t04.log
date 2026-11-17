@@ -1,0 +1,13 @@
+play           : build/work/reference_files/f_t256_d3_t04.psi, 256^3, degree 3, 57 frames read out of 57, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 7549 bricks and 175789 nodes per frame; 12.3 MiB resident
+Certification  : bound held at encoding; largest error 0.039900 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Probe          : frame 72, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 85.966 MiB; read in steady state: 1.4775 MiB per frame, that is 130x less than a raw frame (192 MiB)
+Per frame      : disk 0.229 ms, bus 0.078 ms, decoding 0.756 ms, sort 0.000 ms, 2 RK4 steps of 0.068 ms
+Key frames     : 1 read in steady state (coded), 3.150 MiB each: disk 0.493 ms, bus 0.139 ms, decoding 1.121 ms
+Full budget    : 1.198 ms per frame, that is 834.8 frames per second (wall clock: 1.302 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 82.0 MiB allocated by the reader, of which 74.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 1ca9174a4db1f098

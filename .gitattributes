@@ -1,0 +1,12 @@
+# Line endings: LF in the repository and at checkout, on every machine, whatever the core.autocrlf setting of each one.
+# The shell scripts do not run with CRLF, and the fingerprint of a log must not depend on the machine that cloned the
+# repository.
+* text=auto eol=lf
+
+# Binary files: never converted, never compared line by line.
+*.png binary
+*.pdf binary
+*.psi binary
+*.seq binary
+*.zfs binary
+*.probe binary

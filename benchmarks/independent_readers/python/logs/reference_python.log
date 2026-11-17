@@ -1,0 +1,168 @@
+Log of the second reader (tools/reference_reader.py), claim REF-2
+Python 3.14.2, NumPy 2.4.1; psi_stream run for the probes
+Threshold of the criterion: field at the probe at less than 5e-05 u'
+Files of the criterion: 5 reference files at 256^3 and 22 valid test files at 64^3; 84 altered files at 64^3 go to the coverage
+
+f_t256_d3_t05.psi: SHA-256 68a2e8b870fdcc764fc418335c6e464b31051415e1fa025e0b94718fd8658704
+    pack --degree 3 --start 16 --frames 57 --tolerance 0.05 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 256^3, degree 3, seal absent, lattice read directly; 57 frames read back out of 57, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 2 escape(s), 0 overflow(s)
+    probe (file): frame at position 56, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 1.857e-05 u'; scales to within 3.7e-08
+
+f_t256_d3_t04.psi: SHA-256 b658d1d5c026d52ecc169e1aac02a5d3c3a80e5eba2bf0e5d9b89464d22416f6
+    pack --degree 3 --start 16 --frames 57 --tolerance 0.04 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 256^3, degree 3, seal absent, lattice read directly; 57 frames read back out of 57, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 2 escape(s), 0 overflow(s)
+    probe (file): frame at position 56, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 1.949e-05 u'; scales to within 3.9e-08
+
+f_t256_d3_t03.psi: SHA-256 127eabe540ee27e8b4f3137e1e7ac42f46184e878adae2150bca786bfc34e732
+    pack --degree 3 --start 16 --frames 57 --tolerance 0.03 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 256^3, degree 3, seal absent, lattice read directly; 57 frames read back out of 57, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 2 escape(s), 0 overflow(s)
+    probe (file): frame at position 56, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 2.007e-05 u'; scales to within 7.5e-08
+
+f_t256_d2_t06.psi: SHA-256 0458075bf697d82cf411164704ad24bb1c30f5d1d301fd26522826c8ad8ee465
+    pack --degree 2 --start 16 --frames 33 --tolerance 0.06 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 256^3, degree 2, seal absent, lattice read directly; 33 frames read back out of 33, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 32, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 1.510e-05 u'; scales to within 5.2e-08
+
+f_t256_d2_t05.psi: SHA-256 625e1d463ce7cad030818aa436ab45ece1e583c9d3fd462ca93dc068da65173a
+    pack --degree 2 --start 16 --frames 33 --tolerance 0.05 --no-seal --probe: exit code 4; re-encoding identical to the file
+    PSISTRM3, 256^3, degree 2, seal absent, lattice read directly; 33 frames read back out of 33, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 32, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 1.510e-05 u'; scales to within 6.3e-08
+
+d2_base.psi: SHA-256 5f77800e51abafa8207c7401093a621dda9aa6a666e4bfc328c85c5e0c1d8c59
+    pack --degree 2 --start 3 --frames 36 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.273e-06 u'; scales to within 5.2e-08
+
+d2_base_again.psi: SHA-256 5f77800e51abafa8207c7401093a621dda9aa6a666e4bfc328c85c5e0c1d8c59
+    pack --degree 2 --start 3 --frames 36 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.273e-06 u'; scales to within 5.2e-08
+
+d2_bound.psi: SHA-256 1424fa7e4ff3546ccdc78d4a710811f7cd30ceb330e5e4d59aa370cf6076f9f5
+    pack --degree 2 --start 3 --frames 36 --tolerance 0.05 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.230e-06 u'; scales to within 5.2e-08
+
+d2_bound_again.psi: SHA-256 1424fa7e4ff3546ccdc78d4a710811f7cd30ceb330e5e4d59aa370cf6076f9f5
+    pack --degree 2 --start 3 --frames 36 --tolerance 0.05 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.230e-06 u'; scales to within 5.2e-08
+
+d2_bound_no_seal.psi: SHA-256 d567112f8fb75b79e3d8c7869a5d8594e37286ddadd55d0bba2d2dc456633a74
+    pack --degree 2 --start 3 --frames 36 --tolerance 0.05 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 2, seal absent, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.230e-06 u'; scales to within 5.2e-08
+
+d2_cap.psi: SHA-256 e842e6713b275587b7f6861710be0e3363a1f727888e99d24b2d4cc19bcf7ccc
+    pack --degree 2 --start 3 --frames 36 --tolerance 0.05 --fine-passes 1 --probe: exit code 4; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.248e-06 u'; scales to within 5.2e-08
+
+d2_exceptions.psi: SHA-256 a1b70708e30a54920fe8de9e98cb7fb3fa015e6c1a685c45af21229ef7039425
+    pack --degree 2 --eps 0.001 --start 3 --frames 36 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 69 escape(s), 52805 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.614e-06 u'; scales to within 2.3e-08
+
+d2_floor.psi: SHA-256 d47f0ca0864f3c105c15e14eca47b4618d09be75b7f83247bff2b4d2f9c3dd54
+    pack --degree 2 --start 3 --frames 36 --tolerance 0.05 --fine-eps 0.02 --probe: exit code 4; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.273e-06 u'; scales to within 5.2e-08
+
+d2_no_seal.psi: SHA-256 da0ef478e3e443ac6490dcb5cf041c73d9f643a722987bb74707d395e1fdfff8
+    pack --degree 2 --start 3 --frames 36 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 2, seal absent, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.273e-06 u'; scales to within 5.2e-08
+
+d2_old.psi: SHA-256 7504435f874c67abd8bff0e710d32af51bf8f9319e8cb3ea820535c482d1c8d4
+    pack --degree 2 --start 3 --frames 36 --tolerance 0.05 --tolerance-margin 0 --fine-passes 12 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 2, seal absent, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.230e-06 u'; scales to within 5.2e-08
+
+d2_raw_keys.psi: SHA-256 5bc12f665a0793d94b91c20588731e098da0e6f97718e945cfc6b3d00b2d8d4c
+    pack --degree 2 --start 3 --frames 36 --raw-keys --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 2, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 2 raw key(s), 0 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 3.273e-06 u'; scales to within 5.2e-08
+
+d3_base.psi: SHA-256 97ef1b494b23fccebe073b5bf3cde53d38e52d5ec365faf949d83fa0c98f5e0d
+    pack --degree 3 --start 3 --frames 36 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.944e-06 u'; scales to within 5.1e-08
+
+d3_base_again.psi: SHA-256 97ef1b494b23fccebe073b5bf3cde53d38e52d5ec365faf949d83fa0c98f5e0d
+    pack --degree 3 --start 3 --frames 36 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.944e-06 u'; scales to within 5.1e-08
+
+d3_bound.psi: SHA-256 9d610d19a4833d6f933843e8a5c65a2d644fbfb0b685bf6787c6f351fb9952ca
+    pack --degree 3 --start 3 --frames 36 --tolerance 0.04 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.916e-06 u'; scales to within 5.1e-08
+
+d3_bound_again.psi: SHA-256 9d610d19a4833d6f933843e8a5c65a2d644fbfb0b685bf6787c6f351fb9952ca
+    pack --degree 3 --start 3 --frames 36 --tolerance 0.04 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.916e-06 u'; scales to within 5.1e-08
+
+d3_bound_no_seal.psi: SHA-256 9de59044c68d64a8eae031f637b5b9e4d13dae8cd54c308942fc26f42fce630f
+    pack --degree 3 --start 3 --frames 36 --tolerance 0.04 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 3, seal absent, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.916e-06 u'; scales to within 5.1e-08
+
+d3_cap.psi: SHA-256 0b1dfd6ef4adf44e9dd248f46a7010787b6d7e18fd74414ceb99fdfae49fa260
+    pack --degree 3 --start 3 --frames 36 --tolerance 0.04 --fine-passes 1 --probe: exit code 4; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.916e-06 u'; scales to within 5.1e-08
+
+d3_exceptions.psi: SHA-256 90544663171a7d26207f2790a6400bc2e5303faa43e2f6374651d591b75383de
+    pack --degree 3 --eps 0.002 --start 3 --frames 36 --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 176 escape(s), 219 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 8.023e-06 u'; scales to within 5.0e-09
+
+d3_floor.psi: SHA-256 0549f4ec88c34de2b109fa6acfd01217f64ce23c25f3c020b92d319a682dffc8
+    pack --degree 3 --start 3 --frames 36 --tolerance 0.04 --fine-eps 0.02 --probe: exit code 4; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.934e-06 u'; scales to within 5.1e-08
+
+d3_no_seal.psi: SHA-256 22e44bd5df94c589f6f8846176c466764576c87ba7794b29fa27723ea0cf9c7b
+    pack --degree 3 --start 3 --frames 36 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 3, seal absent, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.944e-06 u'; scales to within 5.1e-08
+
+d3_old.psi: SHA-256 e36c41a38076627d97aa73fa89d688d490adf73187ee51ff305efa1b206caa57
+    pack --degree 3 --start 3 --frames 36 --tolerance 0.04 --tolerance-margin 0 --fine-passes 12 --no-seal --probe: exit code 0; re-encoding identical to the file
+    PSISTRM3, 64^3, degree 3, seal absent, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 0 raw key(s), 2 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.916e-06 u'; scales to within 5.1e-08
+
+d3_raw_keys.psi: SHA-256 1edddf37f61b4a79e17d61b8a5ad09aa3fa243c238b62baaa040447683fcd22f
+    pack --degree 3 --start 3 --frames 36 --raw-keys --probe: exit code 0; re-encoding identical to the file
+    PSISTRM2, 64^3, degree 3, seal verified, lattice read directly; 36 frames read back out of 36, 0 fingerprint(s) differing; 2 raw key(s), 0 coded, 0 escape(s), 0 overflow(s)
+    probe (file): frame at position 35, 114688 points; 0 node(s) of the lattice and 0 node(s) of the fine level different from those of the encoder; field at 5.944e-06 u'; scales to within 5.1e-08
+
+Complementary files at 64^3, outside the criterion (produced by pack --start 3 --frames 36 on the test sequence)
+c1_d2_no_brick.psi (no brick: tables of the empty segments (doubt D3)): pack --degree 2 --tolerance 0.5, exit code 0
+    PSISTRM3, lattice read directly, 0 wrapped frame(s), clippings (0, 0, 0, 0, 0, 0); 36 frames read back, 0 fingerprint(s) differing; 0 raw key(s), 0 escape(s), 0 overflow(s), 36 frame(s) without a brick
+    probe: 0 node(s) of the lattice and 0 node(s) of the fine level differing; field at 3.273e-06 u'; range of the differences inside a support: 2162 at most, 0 point(s) at 2^15 = 32768 or more
+c1_d3_no_brick.psi (no brick: tables of the empty segments (doubt D3)): pack --degree 3 --tolerance 0.5, exit code 0
+    PSISTRM3, lattice read directly, 0 wrapped frame(s), clippings (0, 0, 0, 0, 0, 0); 36 frames read back, 0 fingerprint(s) differing; 0 raw key(s), 0 escape(s), 0 overflow(s), 36 frame(s) without a brick
+    probe: 0 node(s) of the lattice and 0 node(s) of the fine level differing; field at 5.944e-06 u'; range of the differences inside a support: 3496 at most, 0 point(s) at 2^15 = 32768 or more
+c2_d2_bound_raw_keys.psi (PSISTRM3 with raw keys (section 5)): pack --degree 2 --tolerance 0.05 --raw-keys, exit code 0
+    PSISTRM3, lattice read directly, 0 wrapped frame(s), clippings (0, 0, 0, 0, 0, 0); 36 frames read back, 0 fingerprint(s) differing; 2 raw key(s), 0 escape(s), 0 overflow(s), 0 frame(s) without a brick
+    probe: 0 node(s) of the lattice and 0 node(s) of the fine level differing; field at 3.230e-06 u'; range of the differences inside a support: 2162 at most, 0 point(s) at 2^15 = 32768 or more
+c2_d3_bound_raw_keys.psi (PSISTRM3 with raw keys (section 5)): pack --degree 3 --tolerance 0.04 --raw-keys, exit code 0
+    PSISTRM3, lattice read directly, 0 wrapped frame(s), clippings (0, 0, 0, 0, 0, 0); 36 frames read back, 0 fingerprint(s) differing; 2 raw key(s), 0 escape(s), 0 overflow(s), 0 frame(s) without a brick
+    probe: 0 node(s) of the lattice and 0 node(s) of the fine level differing; field at 5.916e-06 u'; range of the differences inside a support: 3496 at most, 0 point(s) at 2^15 = 32768 or more
+c3_d2_eps0005.psi (clippings of site 5, lattice not wrapped): pack --degree 2 --eps 0.0005, exit code 3
+    PSISTRM2, lattice read directly, 0 wrapped frame(s), clippings (0, 0, 0, 0, 0, 3826); 36 frames read back, 0 fingerprint(s) differing; 0 raw key(s), 1730 escape(s), 454233 overflow(s), 0 frame(s) without a brick
+    probe: 0 node(s) of the lattice and 0 node(s) of the fine level differing; field at 2.922e-06 u'; range of the differences inside a support: 21608 at most, 0 point(s) at 2^15 = 32768 or more
+c3_d3_eps0005.psi (wrapped lattice, read by differences (doubt D2)): pack --degree 3 --eps 0.0005, exit code 3
+    PSISTRM2, lattice read by differences, 36 wrapped frame(s), clippings (0, 0, 0, 0, 0, 590961); 36 frames read back, 0 fingerprint(s) differing; 0 raw key(s), 3098 escape(s), 144022 overflow(s), 0 frame(s) without a brick
+    probe: 0 node(s) of the lattice and 0 node(s) of the fine level differing; field at 5.643e-06 u'; range of the differences inside a support: 65062 at most, 118 point(s) at 2^15 = 32768 or more; the field would be at 2.568e+01 u' with a forced direct reading, at 4.201e-01 u' when subtracting the last node of the support instead of the first
+
+Altered files at 64^3: 84
+    Python reader: 73 refusal(s), 11 complete read(s), 0 Python error(s)
+    same outcome and same number of differing frames as psi_stream play: 84 file(s) out of 84 compared
+
+SUMMARY of the criterion: 27 files out of 27, 1029 frames read back out of 1029, 0 fingerprint(s) different from that of the table
+    probes: 27 file(s) probed on a re-encoding identical by SHA-256, 0 on a different re-encoding; 0 node(s) of the lattice or of the fine level different from those of the encoder; field at 2.007e-05 u' at most, for a threshold of 5e-05
+    complements: 6 file(s), 0 fingerprint(s) differing, field at 5.944e-06 u' at most
+    anomalies of the log: 0

@@ -1,0 +1,7 @@
+campaign,grid,path,fd,substeps,tracers,seeds,last_t_tau,var_d_growth_per_tau,var_d_growth_standard_error,d_standard_deviation_at_last_t,divergence_over_gradient,criterion_seeds,criterion_mean_excess,criterion_standard_error_between_seeds,criterion_expected_standard_error,criterion_standard_errors,tracers_per_bin
+confirmation_256,256,zfp2,0.125,2,134217728,5,10,3.216663e-04,3.412e-08,5.671195e-02,4.763435e-02,5,+6.307432e-03,8.729884e-05,1.544081e-04,+40.8491,8
+confirmation_256,256,tex,0.125,2,134217728,5,10,1.080661e-04,7.854e-09,3.287128e-02,3.521801e-02,5,+4.201472e-04,8.477508e-05,1.544081e-04,+2.7210,8
+confirmation_256,256,psi3,0.125,2,134217728,5,10,2.328733e-08,2.485e-12,4.825381e-04,2.276556e-04,5,-1.886187e-05,9.616309e-05,1.544081e-04,-0.1222,8
+confirmation_256,256,psi2,0.125,2,134217728,5,10,8.293794e-08,1.505e-11,9.106435e-04,9.881063e-04,5,-1.662880e-04,8.238859e-05,1.544081e-04,-1.0769,8
+confirmation_256,256,psi3b,0.125,2,134217728,5,10,2.428222e-08,2.858e-12,4.927379e-04,2.367621e-04,5,-1.248509e-04,1.087948e-04,1.544081e-04,-0.8086,8
+confirmation_256,256,ref0.002,0.125,2,134217728,5,10,2.682826e-08,2.749e-12,5.179263e-04,2.632332e-04,5,-4.315168e-04,3.447492e-05,1.544081e-04,-2.7947,8

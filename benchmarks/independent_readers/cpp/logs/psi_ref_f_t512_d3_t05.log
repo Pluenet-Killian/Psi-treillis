@@ -1,0 +1,10 @@
+File        : build/work/reference_files/f_t512_d3_t05.psi, PSISTRM3, 512^3, degree 3, 3 levels, 55 frames (0 to 54), no seal
+Frames      : 55 read out of 55; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 51 innovation(s)
+Exceptions  : 38 escape(s), 13 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 1564077 brick(s) and 36846144 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 54 (position 54), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 16777216 differ from those of the encoder; fine level: 0 node(s) out of 134217728
+Velocity    : largest difference from the field of the probe 2.769e-05 u', RMS difference 2.481e-06 u' (u' = 0.823854); scales to within 4.9e-08 and 2.5e-08
+CSV,ref,512,3,3,55,55,0,0,38,13
+CSV,probe,54,114688,0,0,2.7688e-05,2.4808e-06,1

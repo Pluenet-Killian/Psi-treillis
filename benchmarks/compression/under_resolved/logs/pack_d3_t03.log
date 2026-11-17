@@ -1,0 +1,7 @@
+pack           : data/turb512_nu0006.seq, 512^3, frames 0 to 54 -> build/work/under_resolved/d3_t03.psi
+Codec          : degree 3, 3 levels (256^3 to 64^3), potential step 6.330e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+Fine level     : potential of step 1 voxel in bricks of 4^3 nodes; tolerance 3.00 % of u' on the largest error of a component at voxel centres; quantisation error 0.353 % of u', step 2.303e-04
+Certification  : marking at 0.029900 u', certification at 0.029950 u' (tolerance minus an arithmetic margin of 1.0e-04 u', then minus half of it); at most 64 marking passes per frame
+Failure: fine level: capacity exceeded, the tolerance asks to refine more than a quarter of the volume
+  codec_stream.cuh:1366

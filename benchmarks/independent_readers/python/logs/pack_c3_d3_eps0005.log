@@ -1,0 +1,19 @@
+== psi_stream pack --data build/tests/turb64.seq --file build/work/independent_readers/python/complements/c3_d3_eps0005.psi --probe build/work/independent_readers/python/complements/c3_d3_eps0005.probe --start 3 --frames 36 --degree 3 --eps 0.0005: exit code 3
+pack           : build/tests/turb64.seq, 64^3, frames 3 to 38 -> build/work/independent_readers/python/complements/c3_d3_eps0005.psi
+Codec          : degree 3, 3 levels (32^3 to 8^3), potential step 4.284e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-04 u' (new formula)
+
+Predictors     : fitted on frames 4 to 7; level 0 (1.947, -0.957, 0.004) level 1 (1.974, -0.984, 0.000) level 2 (2.003, -1.007, 0.000)
+File           : 2.857 MiB for 36 frames, against 108 MiB raw: 37.8x
+Seal           : header and frame table sealed (48 bytes after the table)
+Frames         : 2 keys of 0.132 MiB, 34 innovations of 0.076 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 22.7x less than a raw frame against 25.0x for a key written raw; encoding of a key 4.67 ms
+Encoding       : 4.56 ms per frame (projection, quantisation, entropy coder); raw disk read 0.6 ms per frame
+Fidelity       : relative field error 5.9915e-03 on average, 6.8370e-03 at worst; largest error of a component 0.9862 u'; 36 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 3098 innovation escapes and 144022 overflows of the fine level, that is 1.1224 MiB over the file
+Lattice        : 36 frame(s) whose potential leaves the range of a short; the reader will read this file by differences
+Clippings      : 590961 in total, on 36 frame(s); lattice, difference between neighbours, level 0: 590961
+               : by frame type: key frames 25909; innovations 538630; frames that follow a key 26422
+Failure: 590961 coefficient(s) clipped. The file is written, but it does not reproduce the requested projection.
+  Increase --eps, or rerun with --allow-clipping to accept it.

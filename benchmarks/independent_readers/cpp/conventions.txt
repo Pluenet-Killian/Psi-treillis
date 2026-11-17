@@ -1,0 +1,38 @@
+Conventions established by trial (docs/FORMAT.md, sections 6.5 and 6.7), on the test files at 64^3
+psi_ref: SHA-256 8e63378509b65974 (first 16 digits); psit: SHA-256 7d8330a1fb441043 (first 16 digits)
+
+1. Refinement of the pyramid: nodes of the sampling lattice that differ from those of the probe
+   (files without an overflow of level 0; frame of the probe)
+   d2_base.psi, degree 2, alignment adopted, rounding to nearest     :     0 nodes out of 32768
+   d2_base.psi, degree 2, alignment adopted, rounding down           : 32723 nodes out of 32768
+   d2_base.psi, degree 2, alignment adopted, rounding towards zero   : 32370 nodes out of 32768
+   d2_base.psi, degree 2, alignment other, rounding to nearest       : 32768 nodes out of 32768
+   d2_base.psi, degree 2, alignment other, rounding down             : 32768 nodes out of 32768
+   d2_base.psi, degree 2, alignment other, rounding towards zero     : 32768 nodes out of 32768
+   d3_base.psi, degree 3, alignment adopted, rounding to nearest     :     0 nodes out of 32768
+   d3_base.psi, degree 3, alignment adopted, rounding down           : 32750 nodes out of 32768
+   d3_base.psi, degree 3, alignment adopted, rounding towards zero   : 32426 nodes out of 32768
+   d3_base.psi, degree 3, alignment other, rounding to nearest       : 32768 nodes out of 32768
+   d3_base.psi, degree 3, alignment other, rounding down             : 32768 nodes out of 32768
+   d3_base.psi, degree 3, alignment other, rounding towards zero     : 32768 nodes out of 32768
+
+2. Position of the nodes: largest velocity difference from the probe, in u', node i being at (i + d) steps
+   d2_base.psi, degree 2, lattice d = 0.0                        : 1.580e+00
+   d2_base.psi, degree 2, lattice d = 0.5                        : 3.314e-06
+   d3_base.psi, degree 3, lattice d = 0.0                        : 5.963e-06
+   d3_base.psi, degree 3, lattice d = 0.5                        : 1.546e+00
+   d2_bound.psi, degree 2, lattice d = 0.5, fine level d = 0.0    : 8.456e-02
+   d2_bound.psi, degree 2, lattice d = 0.5, fine level d = 0.5    : 3.272e-06
+   d3_bound.psi, degree 3, lattice d = 0.0, fine level d = 0.0    : 5.963e-06
+   d3_bound.psi, degree 3, lattice d = 0.0, fine level d = 0.5    : 7.444e-02
+
+3. Position of the centre of the voxel of index (i, j, k): largest difference, in u', between `psit sample` (grid
+   indices) and the formulas of section 6.7 at the point ((i + c) voxel, (j + c) voxel, (k + c) voxel)
+   d2_base.psi, degree 2, frame at position 35, 32 points, c = 0.0 : 4.423e-01
+   d2_base.psi, degree 2, frame at position 35, 32 points, c = 0.5 : 1.864e-06
+   d3_base.psi, degree 3, frame at position 35, 32 points, c = 0.0 : 4.346e-01
+   d3_base.psi, degree 3, frame at position 35, 32 points, c = 0.5 : 2.699e-06
+   d2_bound.psi, degree 2, frame at position 35, 32 points, c = 0.0 : 4.423e-01
+   d2_bound.psi, degree 2, frame at position 35, 32 points, c = 0.5 : 1.910e-06
+   d3_bound.psi, degree 3, frame at position 35, 32 points, c = 0.0 : 4.346e-01
+   d3_bound.psi, degree 3, frame at position 35, 32 points, c = 0.5 : 2.699e-06

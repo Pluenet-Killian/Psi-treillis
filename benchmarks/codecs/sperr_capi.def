@@ -1,0 +1,4 @@
+LIBRARY sperr_capi
+EXPORTS
+    sperr_comp_3d
+    sperr_decomp_3d

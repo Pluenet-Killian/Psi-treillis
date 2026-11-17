@@ -1,0 +1,14 @@
+pack           : data/turb512.seq, 512^3, frames 0 to 63 -> build/work/playback/turb512_d3.psi
+Codec          : degree 3, 3 levels (256^3 to 64^3), potential step 6.138e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 1 to 4; level 0 (1.440, -0.426, 0.018) level 1 (1.943, -0.958, 0.000) level 2 (1.990, -0.990, 0.001)
+File           : 680.539 MiB for 64 frames, against 98304 MiB raw: 144.5x
+Seal           : header and frame table sealed (48 bytes after the table)
+Frames         : 2 keys of 24.651 MiB, 62 innovations of 10.181 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 62.3x less than a raw frame against 25.0x for a key written raw; encoding of a key 141.60 ms
+Encoding       : 124.51 ms per frame (projection, quantisation, entropy coder); raw disk read 789.5 ms per frame
+Fidelity       : relative field error 6.4010e-03 on average, 6.4052e-03 at worst; largest error of a component 0.2168 u'; 64 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 38 innovation escapes and 13 overflows of the fine level, that is 0.0004 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)

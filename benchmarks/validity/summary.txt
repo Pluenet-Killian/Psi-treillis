@@ -1,0 +1,90 @@
+
+nu = 0.0011: eta from 0.363 to 0.374 voxel, 3 realisation(s)
+   psi_d3_mf2  bound   none: exit code 0     ratio    82.3 to    87.0x  RMS error 2.564 to 2.824 %  largest error 88.44 % of u'
+   psi_d3_mf2  bound   0.05: exit code 1
+   psi_d3_mf2  bound   0.03: exit code 1
+   psi_d2_mf2  bound   none: exit code 0     ratio    81.1 to    85.4x  RMS error 2.792 to 3.063 %  largest error 84.91 % of u'
+   psi_d3_mf1  bound   none: exit code 0     ratio    19.0 to    20.1x  RMS error 0.550 to 0.554 %  largest error 4.25 % of u'
+   psi_d3_mf1  bound   0.05: exit code 0     ratio    19.0 to    20.1x  RMS error 0.550 to 0.554 %  largest error 4.25 % of u'
+   psi_d3_mf1  bound   0.03: exit code 0     ratio    19.0 to    20.1x  RMS error 0.549 to 0.554 %  largest error 2.99 % of u'
+   sperr       bound   0.05: exit code 0     ratio    27.6 to    29.6x  RMS error 1.614 to 1.653 %  largest error 5.00 % of u'
+   sperr       bound   0.03: exit code 0     ratio    18.9 to    20.2x  RMS error 1.072 to 1.091 %  largest error 3.00 % of u'
+   sz3         bound   0.05: exit code 0     ratio    29.9 to    32.2x  RMS error 2.488 to 2.588 %  largest error 5.00 % of u'
+   sz3         bound   0.03: exit code 0     ratio    20.7 to    21.9x  RMS error 1.665 to 1.675 %  largest error 3.00 % of u'
+   sz3_4d_32   bound   0.05: exit code 0     ratio    55.1 to    59.4x  RMS error 2.342 to 2.371 %  largest error 5.00 % of u'
+   sz3_4d_32   bound   0.03: exit code 0     ratio    38.1 to    40.6x  RMS error 1.493 to 1.504 %  largest error 3.00 % of u'
+
+nu = 0.0013: eta from 0.404 to 0.412 voxel, 3 realisation(s)
+   psi_d3_mf2  bound   none: exit code 0     ratio    90.2 to    99.8x  RMS error 2.197 to 2.297 %  largest error 66.61 % of u'
+   psi_d3_mf2  bound   0.05: exit code 1
+   psi_d3_mf2  bound   0.03: exit code 1
+   psi_d2_mf2  bound   none: exit code 0     ratio    88.0 to    97.4x  RMS error 2.417 to 2.515 %  largest error 89.30 % of u'
+   psi_d3_mf1  bound   none: exit code 0     ratio    21.3 to    23.6x  RMS error 0.544 to 0.545 %  largest error 4.89 % of u'
+   psi_d3_mf1  bound   0.05: exit code 0     ratio    21.3 to    23.6x  RMS error 0.544 to 0.545 %  largest error 4.89 % of u'
+   psi_d3_mf1  bound   0.03: exit code 0     ratio    21.3 to    23.6x  RMS error 0.544 to 0.545 %  largest error 2.99 % of u'
+   sperr       bound   0.05: exit code 0     ratio    33.9 to    34.4x  RMS error 1.509 to 1.519 %  largest error 5.00 % of u'
+   sperr       bound   0.03: exit code 0     ratio    23.2 to    23.4x  RMS error 1.015 to 1.021 %  largest error 3.00 % of u'
+   sz3         bound   0.05: exit code 0     ratio    36.6 to    37.4x  RMS error 2.386 to 2.400 %  largest error 5.00 % of u'
+   sz3         bound   0.03: exit code 0     ratio    24.4 to    24.9x  RMS error 1.620 to 1.634 %  largest error 3.00 % of u'
+   sz3_4d_32   bound   0.05: exit code 0     ratio    68.8 to    70.2x  RMS error 2.248 to 2.266 %  largest error 5.00 % of u'
+   sz3_4d_32   bound   0.03: exit code 0     ratio    45.9 to    46.9x  RMS error 1.451 to 1.461 %  largest error 3.00 % of u'
+
+nu = 0.0016: eta from 0.458 to 0.490 voxel, 3 realisation(s)
+   psi_d3_mf2  bound   none: exit code 0     ratio    96.4 to   104.4x  RMS error 1.510 to 1.791 %  largest error 52.79 % of u'
+   psi_d3_mf2  bound   0.05: exit code 1
+   psi_d3_mf2  bound   0.03: exit code 1
+   psi_d2_mf2  bound   none: exit code 0     ratio    93.0 to   101.2x  RMS error 1.694 to 1.994 %  largest error 55.06 % of u'
+   psi_d3_mf1  bound   none: exit code 0     ratio    23.7 to    26.1x  RMS error 0.529 to 0.538 %  largest error 4.51 % of u'
+   psi_d3_mf1  bound   0.05: exit code 0     ratio    23.7 to    26.1x  RMS error 0.529 to 0.538 %  largest error 4.51 % of u'
+   psi_d3_mf1  bound   0.03: exit code 0     ratio    23.7 to    26.1x  RMS error 0.529 to 0.538 %  largest error 2.99 % of u'
+   sperr       bound   0.05: exit code 0     ratio    41.0 to    48.3x  RMS error 1.293 to 1.390 %  largest error 5.00 % of u'
+   sperr       bound   0.03: exit code 0     ratio    27.9 to    32.8x  RMS error 0.889 to 0.947 %  largest error 3.00 % of u'
+   sz3         bound   0.05: exit code 0     ratio    44.9 to    53.8x  RMS error 2.180 to 2.276 %  largest error 5.00 % of u'
+   sz3         bound   0.03: exit code 0     ratio    29.1 to    34.2x  RMS error 1.445 to 1.534 %  largest error 3.00 % of u'
+   sz3_4d_32   bound   0.05: exit code 0     ratio    85.6 to   106.6x  RMS error 2.026 to 2.157 %  largest error 5.00 % of u'
+   sz3_4d_32   bound   0.03: exit code 0     ratio    55.3 to    66.2x  RMS error 1.355 to 1.405 %  largest error 3.00 % of u'
+
+nu = 0.0019: eta from 0.530 to 0.552 voxel, 3 realisation(s)
+   psi_d3_mf2  bound   none: exit code 0     ratio   101.1 to   107.2x  RMS error 1.177 to 1.311 %  largest error 45.10 % of u'
+   psi_d3_mf2  bound   0.05: exit code 0,1   ratio    56.1 to    60.3x  RMS error 0.901 to 0.917 %  largest error 4.99 % of u'
+   psi_d3_mf2  bound   0.03: exit code 1
+   psi_d2_mf2  bound   none: exit code 0     ratio    96.9 to   103.3x  RMS error 1.330 to 1.484 %  largest error 62.43 % of u'
+   psi_d3_mf1  bound   none: exit code 0     ratio    26.5 to    28.8x  RMS error 0.504 to 0.517 %  largest error 3.89 % of u'
+   psi_d3_mf1  bound   0.05: exit code 0     ratio    26.5 to    28.8x  RMS error 0.504 to 0.517 %  largest error 3.89 % of u'
+   psi_d3_mf1  bound   0.03: exit code 0     ratio    26.5 to    28.8x  RMS error 0.504 to 0.517 %  largest error 2.99 % of u'
+   sperr       bound   0.05: exit code 0     ratio    54.6 to    60.8x  RMS error 1.145 to 1.207 %  largest error 5.00 % of u'
+   sperr       bound   0.03: exit code 0     ratio    37.4 to    41.7x  RMS error 0.794 to 0.833 %  largest error 3.00 % of u'
+   sz3         bound   0.05: exit code 0     ratio    61.1 to    70.6x  RMS error 2.044 to 2.104 %  largest error 5.00 % of u'
+   sz3         bound   0.03: exit code 0     ratio    38.8 to    44.4x  RMS error 1.342 to 1.383 %  largest error 3.00 % of u'
+   sz3_4d_32   bound   0.05: exit code 0     ratio   122.5 to   143.1x  RMS error 1.860 to 1.998 %  largest error 5.00 % of u'
+   sz3_4d_32   bound   0.03: exit code 0     ratio    76.3 to    88.0x  RMS error 1.270 to 1.307 %  largest error 3.00 % of u'
+
+nu = 0.0023: eta from 0.614 to 0.643 voxel, 3 realisation(s)
+   psi_d3_mf2  bound   none: exit code 0     ratio   112.0 to   116.6x  RMS error 0.895 to 0.955 %  largest error 30.05 % of u'
+   psi_d3_mf2  bound   0.05: exit code 0     ratio    82.3 to    88.4x  RMS error 0.781 to 0.830 %  largest error 4.99 % of u'
+   psi_d3_mf2  bound   0.03: exit code 1
+   psi_d2_mf2  bound   none: exit code 0     ratio   107.3 to   111.4x  RMS error 1.018 to 1.091 %  largest error 31.38 % of u'
+   psi_d3_mf1  bound   none: exit code 0     ratio    32.4 to    36.0x  RMS error 0.463 to 0.483 %  largest error 3.76 % of u'
+   psi_d3_mf1  bound   0.05: exit code 0     ratio    32.4 to    36.0x  RMS error 0.463 to 0.483 %  largest error 3.76 % of u'
+   psi_d3_mf1  bound   0.03: exit code 0     ratio    32.4 to    36.0x  RMS error 0.463 to 0.483 %  largest error 2.99 % of u'
+   sperr       bound   0.05: exit code 0     ratio    70.5 to    76.2x  RMS error 1.010 to 1.055 %  largest error 5.00 % of u'
+   sperr       bound   0.03: exit code 0     ratio    48.7 to    52.9x  RMS error 0.701 to 0.732 %  largest error 3.00 % of u'
+   sz3         bound   0.05: exit code 0     ratio    84.0 to    91.9x  RMS error 1.928 to 1.969 %  largest error 5.00 % of u'
+   sz3         bound   0.03: exit code 0     ratio    52.2 to    57.0x  RMS error 1.258 to 1.288 %  largest error 3.00 % of u'
+   sz3_4d_32   bound   0.05: exit code 0     ratio   175.6 to   197.0x  RMS error 1.835 to 1.875 %  largest error 5.00 % of u'
+   sz3_4d_32   bound   0.03: exit code 0     ratio   106.4 to   119.6x  RMS error 1.194 to 1.224 %  largest error 3.00 % of u'
+
+nu = 0.0028: eta from 0.702 to 0.795 voxel, 3 realisation(s)
+   psi_d3_mf2  bound   none: exit code 0     ratio   120.3 to   137.1x  RMS error 0.629 to 0.763 %  largest error 23.56 % of u'
+   psi_d3_mf2  bound   0.05: exit code 0     ratio   105.9 to   133.2x  RMS error 0.618 to 0.713 %  largest error 4.99 % of u'
+   psi_d3_mf2  bound   0.03: exit code 0     ratio    61.5 to   103.1x  RMS error 0.585 to 0.620 %  largest error 2.99 % of u'
+   psi_d2_mf2  bound   none: exit code 0     ratio   112.7 to   116.4x  RMS error 0.689 to 0.868 %  largest error 27.68 % of u'
+   psi_d3_mf1  bound   none: exit code 0     ratio    40.7 to    52.9x  RMS error 0.387 to 0.436 %  largest error 3.93 % of u'
+   psi_d3_mf1  bound   0.05: exit code 0     ratio    40.7 to    52.9x  RMS error 0.387 to 0.436 %  largest error 3.93 % of u'
+   psi_d3_mf1  bound   0.03: exit code 0     ratio    40.7 to    52.8x  RMS error 0.387 to 0.436 %  largest error 2.99 % of u'
+   sperr       bound   0.05: exit code 0     ratio    87.3 to   109.3x  RMS error 0.835 to 0.936 %  largest error 5.00 % of u'
+   sperr       bound   0.03: exit code 0     ratio    61.1 to    77.0x  RMS error 0.581 to 0.650 %  largest error 3.00 % of u'
+   sz3         bound   0.05: exit code 0     ratio   109.9 to   147.5x  RMS error 1.787 to 1.872 %  largest error 5.00 % of u'
+   sz3         bound   0.03: exit code 0     ratio    67.9 to    90.0x  RMS error 1.153 to 1.215 %  largest error 3.00 % of u'
+   sz3_4d_32   bound   0.05: exit code 0     ratio   244.5 to   334.0x  RMS error 1.700 to 1.728 %  largest error 5.00 % of u'
+   sz3_4d_32   bound   0.03: exit code 0     ratio   146.4 to   201.4x  RMS error 1.092 to 1.120 %  largest error 3.00 % of u'

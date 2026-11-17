@@ -1,0 +1,12 @@
+play           : build/work/seal_256/f_t256_d3_t05_unsealed.psi, 256^3, degree 3, 57 frames read out of 57, 1000000 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 4.99 %; at most 2757 bricks and 59074 nodes per frame; 6.5 MiB resident
+Certification  : bound held at encoding; largest error 0.049900 u' for a certification threshold of 0.049950 u' (tolerance 0.05000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step without support cache (blocks of 256 threads); lattice read directly
+File           : 81.615 MiB; read in steady state: 1.4015 MiB per frame, that is 137x less than a raw frame (192 MiB)
+Per frame      : disk 0.249 ms, bus 0.095 ms, decoding 0.746 ms, sort 0.000 ms, 2 RK4 steps of 0.918 ms
+Key frames     : 1 read in steady state (coded), 3.077 MiB each: disk 0.552 ms, bus 0.162 ms, decoding 1.219 ms
+Full budget    : 2.926 ms per frame, that is 341.8 frames per second (wall clock: 3.008 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 104.0 MiB allocated by the reader, of which 68.1 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions d711abacf7a2ece2

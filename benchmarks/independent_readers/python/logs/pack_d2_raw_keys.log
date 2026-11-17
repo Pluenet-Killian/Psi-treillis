@@ -1,0 +1,15 @@
+== psi_stream pack --data build/tests/turb64.seq --file build/work/independent_readers/python/reencoded/d2_raw_keys.psi --probe build/work/independent_readers/python/probes/d2_raw_keys.probe --degree 2 --start 3 --frames 36 --raw-keys: exit code 0
+pack           : build/tests/turb64.seq, 64^3, frames 3 to 38 -> build/work/independent_readers/python/reencoded/d2_raw_keys.psi
+Codec          : degree 2, 3 levels (32^3 to 8^3), potential step 3.049e-03, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+
+Predictors     : fitted on frames 4 to 7; level 0 (1.732, -0.739, 0.005) level 1 (1.974, -0.978, 0.001) level 2 (1.983, -0.984, 0.000)
+File           : 1.167 MiB for 36 frames, against 108 MiB raw: 92.6x
+Seal           : header and frame table sealed (48 bytes after the table)
+Frames         : 2 keys of 0.120 MiB, 34 innovations of 0.027 MiB on average
+Keys           : 0 coded out of 2 (3D Lorenzo residual, rANS), 25.0x less than a raw frame against 25.0x for a key written raw; encoding of a key 2.75 ms
+Encoding       : 4.13 ms per frame (projection, quantisation, entropy coder); raw disk read 0.6 ms per frame
+Fidelity       : relative field error 9.5924e-03 on average, 9.8246e-03 at worst; largest error of a component 0.1169 u'; 36 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 0 innovation escapes and 0 overflows of the fine level, that is 0.0000 MiB over the file
+Clippings      : 0 in total, on 0 frame(s)

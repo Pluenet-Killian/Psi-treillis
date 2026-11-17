@@ -1,0 +1,4 @@
+frame  0: turb256.seq f8be4ce95a5e22bd  nu00280_seed42.seq f8be4ce95a5e22bd  identical
+frame 32: turb256.seq 940098208b0d197d  nu00280_seed42.seq 940098208b0d197d  identical
+frame 47: turb256.seq c3410628e60973b1  nu00280_seed42.seq c3410628e60973b1  identical
+same simulation on these frames

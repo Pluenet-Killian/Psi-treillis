@@ -1,0 +1,13 @@
+file,n,degree,version,frames,frames_read,fingerprints_differing,escapes,overflows,probe_frame,probe_points,lattice_nodes_differing,fine_nodes_differing,cpu_probe_difference_over_u_rms,gpu_probe_difference_over_u_rms,cpu_gpu_bound_over_u_rms,gpu_frames_differing,cpu_exit_code,probe_origin
+f_t256_d3_t05.psi,256,3,3,57,57,0,2,0,72,114688,0,0,1.857e-05,0.000e+00,1.857e-05,0,0,written at encoding
+f_t256_d3_t04.psi,256,3,3,57,57,0,2,0,72,114688,0,0,1.949e-05,0.000e+00,1.949e-05,0,0,written at encoding
+f_t256_d3_t03.psi,256,3,3,57,57,0,2,0,72,114688,0,0,2.007e-05,0.000e+00,2.007e-05,0,0,written at encoding
+f_t512_d3_t05.psi,512,3,3,55,55,0,38,13,54,114688,0,0,2.769e-05,0.000e+00,2.769e-05,0,0,written at encoding
+f_t512_d3_t04.psi,512,3,3,55,55,0,38,13,54,114688,0,0,2.710e-05,0.000e+00,2.710e-05,0,0,written at encoding
+f_t512_d3_t03.psi,512,3,3,55,55,0,38,13,54,114688,0,0,2.762e-05,0.000e+00,2.762e-05,0,0,written at encoding
+f_t256_d2_t06.psi,256,2,3,33,33,0,0,0,48,114688,0,0,1.510e-05,0.000e+00,1.510e-05,0,0,written at encoding
+f_t256_d2_t05.psi,256,2,3,33,33,0,0,0,48,114688,0,0,1.510e-05,0.000e+00,1.510e-05,0,0,written at encoding
+f_t512_d2_t07.psi,512,2,3,55,55,0,7,60,54,114688,0,0,2.207e-05,0.000e+00,2.207e-05,0,0,written at encoding
+f_t512_d2_t06.psi,512,2,3,55,55,0,7,60,54,114688,0,0,2.342e-05,0.000e+00,2.342e-05,0,0,written at encoding
+z_t512_d2.psi,512,2,2,55,55,0,7,60,54,114688,0,0,2.205e-05,0.000e+00,2.205e-05,0,0,identical re-encoding (SHA-256)
+z_t512_d3.psi,512,3,2,55,55,0,38,13,54,114688,0,0,2.826e-05,0.000e+00,2.826e-05,0,0,identical re-encoding (SHA-256)

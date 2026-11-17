@@ -1,0 +1,21 @@
+# psi_stream pack --data data/sweep/nu00280_seed42.seq --file build/work/validity/nu00280_seed42_psi_d3_mf1_0.05.psi --degree 3 --mf 1 --start 8 --frames 36 --no-seal --tolerance 0.05
+pack           : data/sweep/nu00280_seed42.seq, 256^3, frames 8 to 43 -> build/work/validity/nu00280_seed42_psi_d3_mf1_0.05.psi
+Codec          : degree 3, 3 levels (256^3 to 64^3), potential step 5.643e-04, one key frame every 32 frames
+Step           : expected quantisation error 1.000 eps, that is 5.0000e-03 u' (new formula)
+Fine level     : potential of step 1 voxel in bricks of 4^3 nodes; tolerance 5.00 % of u' on the largest error of a component at voxel centres; quantisation error 0.588 % of u', step 6.843e-04
+Certification  : marking at 0.049900 u', certification at 0.049950 u' (tolerance minus an arithmetic margin of 1.0e-04 u', then minus half of it); at most 64 marking passes per frame
+
+Predictors     : fitted on frames 9 to 12; level 0 (0.493, 0.284, 0.028) level 1 (1.776, -0.781, 0.010) level 2 (1.965, -0.965, 0.004)
+File           : 134.244 MiB for 36 frames, against 6912 MiB raw: 51.5x
+Seal           : none (--no-seal): the header and the frame table are covered by no fingerprint
+Frames         : 2 keys of 7.185 MiB, 34 innovations of 3.526 MiB on average
+Keys           : 2 coded out of 2 (3D Lorenzo residual, rANS), 26.7x less than a raw frame against 3.1x for a key written raw; encoding of a key 150.95 ms
+Encoding       : 137.59 ms per frame (projection, quantisation, entropy coder); raw disk read 35.0 ms per frame
+Fidelity       : relative field error 3.8735e-03 on average, 3.8865e-03 at worst; largest error of a component 0.0369 u'; 36 frames checked, on all the voxels
+Saturations    : 0 coefficients
+Exceptions     : 3 innovation escapes and 0 overflows of the fine level, that is 0.0000 MiB over the file
+Fine level     : 0 bricks and 0 nodes per frame on average, that is 0.000 % of the nodes (at most 0 bricks and 0 nodes); 0.0017 MiB per frame, that is +0.05 % in bytes; at most 1 passes; 42.5 ms per frame
+Passes         : cap of 64 pass(es) per frame; 0 frame(s) stopped on this cap while nodes were still being added
+Floor          : 0 frame(s) where voxels remain outside the marking threshold once all their nodes are retained (at most 0 voxels in one frame)
+Bound          : largest error observed 0.0369 u' for a tolerance of 0.0500 u'; 0 frame(s) above the certification threshold (0.049950 u') out of 36 checked
+Clippings      : 0 in total, on 0 frame(s)

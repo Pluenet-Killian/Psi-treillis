@@ -1,0 +1,38 @@
+# .\tools\viewer\figures.ps1, 2026-11-17: output of psi_view for each capture of docs/figures/
+Capture        : docs/figures/particles_256.png (1600x900), view 1, sync, 2 RK4 steps per frame, 4000000 particles per side
+Left : cuZFP 2 bits + half-precision 3D texture
+  cost         : 5.023 ms per frame, that is 199.1 frames per second by its own costs; 40 frames advanced
+  divergence   : 5.990e-02 of the gradient (RMS over the slice)
+Right : Psi-treillis, degree 3
+  cost         : 12.887 ms per frame, that is 77.6 frames per second by its own costs; 40 frames advanced
+  divergence   : 7.486e-16 of the gradient (RMS over the slice)
+Capture        : docs/figures/divergence_256.png (1600x900), view 2, sync, 2 RK4 steps per frame, 4000000 particles per side
+Left : cuZFP 2 bits + half-precision 3D texture
+  cost         : 4.839 ms per frame, that is 206.6 frames per second by its own costs; 40 frames advanced
+  divergence   : 6.044e-02 of the gradient (RMS over the slice)
+Right : Psi-treillis, degree 3
+  cost         : 12.812 ms per frame, that is 78.0 frames per second by its own costs; 40 frames advanced
+  divergence   : 7.442e-16 of the gradient (RMS over the slice)
+Capture        : docs/figures/error_256.png (1600x900), view 3, sync, 2 RK4 steps per frame, 4000000 particles per side
+Left : cuZFP 2 bits + half-precision 3D texture
+  cost         : 5.059 ms per frame, that is 197.7 frames per second by its own costs; 40 frames advanced
+  divergence   : 6.133e-02 of the gradient (RMS over the slice)
+  error        : 5.9888e-03 (RMS over the slice, against the raw frame)
+Right : Psi-treillis, degree 3
+  cost         : 12.839 ms per frame, that is 77.9 frames per second by its own costs; 40 frames advanced
+  divergence   : 7.732e-16 of the gradient (RMS over the slice)
+  error        : 6.0989e-03 (RMS over the slice, against the raw frame)
+Capture        : docs/figures/particles_512.png (1600x900), view 1, sync, 2 RK4 steps per frame, 4000000 particles per side
+Left : cuZFP 2 bits + half-precision 3D texture
+  cost         : 54.877 ms per frame, that is 18.2 frames per second by its own costs; 40 frames advanced
+  divergence   : 6.575e-02 of the gradient (RMS over the slice)
+Right : Psi-treillis, degree 3
+  cost         : 19.402 ms per frame, that is 51.5 frames per second by its own costs; 40 frames advanced
+  divergence   : 9.127e-16 of the gradient (RMS over the slice)
+Capture        : docs/figures/raw_512.png (1600x900), view 1, sync, 2 RK4 steps per frame, 4000000 particles per side
+Left : Raw frames + half-precision 3D texture
+  cost         : 942.134 ms per frame, that is 1.1 frames per second by its own costs; 40 frames advanced
+  divergence   : 4.978e-02 of the gradient (RMS over the slice)
+Right : Psi-treillis, degree 3
+  cost         : 23.277 ms per frame, that is 43.0 frames per second by its own costs; 40 frames advanced
+  divergence   : 9.127e-16 of the gradient (RMS over the slice)

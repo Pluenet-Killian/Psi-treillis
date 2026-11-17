@@ -1,0 +1,349 @@
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_capacity_d2.psi --particles 4096: exit code 1
+Failure: .psi file: frame table missing (encoding interrupted?)
+  codec_stream.cuh:79
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_capacity_d3.psi --particles 4096: exit code 1
+Failure: .psi file: frame table missing (encoding interrupted?)
+  codec_stream.cuh:79
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_degree_0.psi --particles 4096: exit code 1
+Failure: .psi file: invalid degree
+  codec_stream.cuh:76
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_degree_3.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_degree_7.psi --particles 4096: exit code 1
+Failure: .psi file: invalid degree
+  codec_stream.cuh:76
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_fb7_d2.psi --particles 4096: exit code 0
+play           : build/work/independent_readers/python/cases64/guard_fb7_d2.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Warning        : the encoder clipped 1917244 coefficient(s) on 36 frame(s); this file does not reproduce the requested projection
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read by differences
+File           : 1.027 MiB; read in steady state: 0.0278 MiB per frame, that is 108x less than a raw frame (3 MiB)
+Per frame      : disk 0.008 ms, bus 0.024 ms, decoding 0.290 ms, sort 0.000 ms, 2 RK4 steps of 0.015 ms
+Key frames     : 1 read in steady state (coded), 0.054 MiB each: disk 0.008 ms, bus 0.024 ms, decoding 0.428 ms
+Full budget    : 0.353 ms per frame, that is 2836.5 frames per second (wall clock: 0.389 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 87f38cd59ff2baf2
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_frame.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_frame.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.028 ms, decoding 0.281 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.009 ms, bus 0.027 ms, decoding 0.407 ms
+Full budget    : 0.345 ms per frame, that is 2901.4 frames per second (wall clock: 0.378 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions c43477e50c1ebcac
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_block_offset0.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_block_offset_backwards.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_block_offset_end.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_block_offset_huge.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_bytes_huge.psi --particles 4096: exit code 1
+Failure: corrupt frame table: frame outside the frame area
+  codec_stream.cuh:405
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_bytes_less.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_bytes_short.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:419
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_exceptions3.psi --particles 4096: exit code 1
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_exceptions_huge.psi --particles 4096: exit code 1
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fb5.psi --particles 4096: exit code 0
+play           : build/work/independent_readers/python/cases64/guard_geo_fb5.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.048 ms, decoding 0.296 ms, sort 0.000 ms, 2 RK4 steps of 0.016 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.009 ms, bus 0.047 ms, decoding 0.405 ms
+Full budget    : 0.382 ms per frame, that is 2619.6 frames per second (wall clock: 0.418 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions af13937f2d178835
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_block_offset.psi --particles 4096: exit code 1
+Failure: corrupt section of the fine level
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_brick.psi --particles 4096: exit code 1
+Failure: header of the fine level unreadable
+  codec_stream.cuh:380
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_bricks_huge.psi --particles 4096: exit code 1
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_bricks_minus.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_geo_fine_bricks_minus.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.008 ms, bus 0.024 ms, decoding 0.398 ms, sort 0.000 ms, 2 RK4 steps of 0.074 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.010 ms, bus 0.023 ms, decoding 0.547 ms
+Full budget    : 0.579 ms per frame, that is 1727.7 frames per second (wall clock: 0.659 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 9c10c2def261a907
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_bricks_plus.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_geo_fine_bricks_plus.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.012 ms, bus 0.064 ms, decoding 0.487 ms, sort 0.000 ms, 2 RK4 steps of 0.076 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.019 ms, bus 0.544 ms, decoding 0.841 ms
+Full budget    : 0.715 ms per frame, that is 1397.9 frames per second (wall clock: 0.815 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 396006fc973d2a7f
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_levels2.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_max_bricks.psi --particles 4096: exit code 1
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_max_nodes.psi --particles 4096: exit code 1
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_n128.psi --particles 4096: exit code 1
+Failure: corrupt section of the fine level
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_nodes_plus.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_geo_fine_nodes_plus.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.009 ms, bus 0.024 ms, decoding 0.403 ms, sort 0.000 ms, 2 RK4 steps of 0.075 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.010 ms, bus 0.023 ms, decoding 0.544 ms
+Full budget    : 0.586 ms per frame, that is 1705.6 frames per second (wall clock: 0.661 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0351132e6584de68
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_nodes_zero.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_geo_fine_nodes_zero.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.010 ms, bus 0.036 ms, decoding 0.458 ms, sort 0.000 ms, 2 RK4 steps of 0.077 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.014 ms, bus 0.027 ms, decoding 0.548 ms
+Full budget    : 0.658 ms per frame, that is 1520.3 frames per second (wall clock: 0.770 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions f36775b8ac74cb91
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_section_huge.psi --particles 4096: exit code 1
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1064
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_section_odd.psi --particles 4096: exit code 1
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1064
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_fine_section_short.psi --particles 4096: exit code 1
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_frequencies.psi --particles 4096: exit code 1
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_last_block_zero.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_geo_last_block_zero.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.028 ms, decoding 0.282 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.009 ms, bus 0.026 ms, decoding 0.408 ms
+Full budget    : 0.346 ms per frame, that is 2892.9 frames per second (wall clock: 0.385 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions ed4c0976b0c39563
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_levels1.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_levels2.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_mf1.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_n128.psi --particles 4096: exit code 1
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_n32.psi --particles 4096: exit code 1
+Failure: too many levels for this resolution
+  codec_stream.cuh:140
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_offset_outside.psi --particles 4096: exit code 1
+Failure: corrupt frame table: frame outside the frame area
+  codec_stream.cuh:405
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_offset_shifted.psi --particles 4096: exit code 1
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_raw_bytes.psi --particles 4096: exit code 1
+Failure: corrupt exception list
+  codec_stream.cuh:1078
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_raw_exceptions.psi --particles 4096: exit code 1
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_raw_levels2.psi --particles 4096: exit code 1
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_type0_key.psi --particles 4096: exit code 1
+Failure: corrupt frame table: the first frame is not a key frame
+  codec_stream.cuh:407
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_type0_raw.psi --particles 4096: exit code 1
+Failure: raw key frame: size inconsistent with the geometry of the header
+  codec_stream.cuh:1073
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_type5_9.psi --particles 4096: exit code 1
+Failure: corrupt frame table: unknown frame type
+  codec_stream.cuh:404
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_type5_after.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_geo_type5_after.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.030 ms, decoding 0.284 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.009 ms, bus 0.024 ms, decoding 0.419 ms
+Full budget    : 0.349 ms per frame, that is 2863.0 frames per second (wall clock: 0.383 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions d1aa6b51347320a7
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_type5_coded.psi --particles 4096: exit code 1
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_type5_raw.psi --particles 4096: exit code 1
+Failure: raw key frame: size inconsistent with the geometry of the header
+  codec_stream.cuh:1073
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_geo_zero_state.psi --particles 4096: exit code 1
+play           : build/work/independent_readers/python/cases64/guard_geo_zero_state.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.034 ms, decoding 0.291 ms, sort 0.000 ms, 2 RK4 steps of 0.015 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.009 ms, bus 0.072 ms, decoding 0.410 ms
+Full budget    : 0.362 ms per frame, that is 2761.3 frames per second (wall clock: 0.400 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions 91ca99293bad2578
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_magic.psi --particles 4096: exit code 1
+Failure: invalid .psi file
+  codec_stream.cuh:75
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_overflow.psi --particles 4096: exit code 0
+play           : build/work/independent_readers/python/cases64/guard_overflow.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.928 MiB; read in steady state: 0.0523 MiB per frame, that is 57x less than a raw frame (3 MiB)
+Per frame      : disk 0.013 ms, bus 0.028 ms, decoding 0.314 ms, sort 0.000 ms, 2 RK4 steps of 0.015 ms
+Key frames     : 1 read in steady state (coded), 0.097 MiB each: disk 0.013 ms, bus 0.025 ms, decoding 0.484 ms
+Full budget    : 0.383 ms per frame, that is 2608.6 frames per second (wall clock: 0.425 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions c787e5f3aec5b705
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_coef_0.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_coef_2b.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_delta.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_dt_frame.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_fb.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_fine_delta.psi --particles 4096: exit code 1
+Failure: seal of the file: the header of the fine level has been altered since writing
+  codec_stream.cuh:396
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_fine_levels.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_fine_margin.psi --particles 4096: exit code 1
+Failure: seal of the file: the header of the fine level has been altered since writing
+  codec_stream.cuh:396
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_fine_mean.psi --particles 4096: exit code 1
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_fine_nodes.psi --particles 4096: exit code 1
+Failure: seal of the file: the header of the fine level has been altered since writing
+  codec_stream.cuh:396
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_fingerprint.psi --particles 4096: exit code 1
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_index_offset.psi --particles 4096: exit code 1
+Failure: corrupt frame table: unknown frame type
+  codec_stream.cuh:404
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_levels.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_mean.psi --particles 4096: exit code 1
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_mf.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_n.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_n_frames.psi --particles 4096: exit code 1
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:387
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_seal_magic.psi --particles 4096: exit code 1
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:393
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_seal_value.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_seal_zero.psi --particles 4096: exit code 1
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:393
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_type.psi --particles 4096: exit code 1
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_sealed_wrapped.psi --particles 4096: exit code 1
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_1.psi --particles 4096: exit code 1
+Failure: invalid .psi file
+  psi_stream.cu:488
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_10.psi --particles 4096: exit code 1
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_2.psi --particles 4096: exit code 1
+Failure: invalid .psi file
+  psi_stream.cu:488
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_3.psi --particles 4096: exit code 1
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_4.psi --particles 4096: exit code 1
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_5.psi --particles 4096: exit code 1
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:387
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_6.psi --particles 4096: exit code 1
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_7.psi --particles 4096: exit code 1
+Failure: header of the fine level unreadable
+  codec_stream.cuh:380
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_8.psi --particles 4096: exit code 1
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_stream play --file build/work/independent_readers/python/cases64/guard_truncated_9.psi --particles 4096: exit code 1
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:387

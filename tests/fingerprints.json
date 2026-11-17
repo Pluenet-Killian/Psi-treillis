@@ -1,0 +1,40 @@
+{
+  "_warning": [
+    "Reference fingerprints of tests/test_codec.py: SHA-256 of the sequence and of the .psi files of the cases, and fingerprints of the final positions read back by play.",
+    "They are valid only for the toolchain described in \"toolchain\" (version of CUDA and of cuFFT, host compiler, architecture of the GPU) and for the settings of the cases (\"settings\"): the sequence comes out of a chaotic simulation in floating point, whose bytes change with the FFT library, the compiler or the GPU, and every file encoded with it.",
+    "On another machine or after a change of toolchain: first check the integrity (every case of tests/test_codec.py other than \"fingerprint\" must pass: play reads each file back), then regenerate this file with python tests/test_codec.py --update.",
+    "Do not edit by hand. On the same toolchain, a fingerprint that changes is a regression of the encoder or an intended change of the format: say so in the commit that regenerates this file."
+  ],
+  "generated_on": "2026-11-15",
+  "toolchain": {
+    "cuda": "nvcc 13.2.78",
+    "cuda_architecture": "120-real",
+    "host_compiler": "MSVC 19.44.35228.0",
+    "cufft": "cuFFT 12.2.0.46 (header of the build)",
+    "cufft_library": "cufft64_12.dll 6,14,11,1220",
+    "gpu": "NVIDIA GeForce RTX 5090 Laptop GPU",
+    "driver": "621.14"
+  },
+  "settings": "dns --n 64 --nu 0.02 --spinup 12 --frames 40 --steps-per-frame 4 --seed 42 | pack --start 3 --frames 36 | tolerances: degree 2 0.05, degree 3 0.04 | exceptions: --eps 0.001 in degree 2, 0.002 in degree 3 | play --particles 1000000 --sort",
+  "fingerprints": {
+    "turb64.seq": "34ad5a3a59132efc5d4e15e0efa3cb5838cd02db9ebddd66b8791dcb245bb2b5",
+    "d2_base.psi": "5f77800e51abafa8207c7401093a621dda9aa6a666e4bfc328c85c5e0c1d8c59",
+    "d2_bound.psi": "1424fa7e4ff3546ccdc78d4a710811f7cd30ceb330e5e4d59aa370cf6076f9f5",
+    "d2_old.psi": "7504435f874c67abd8bff0e710d32af51bf8f9319e8cb3ea820535c482d1c8d4",
+    "d2_raw_keys.psi": "5bc12f665a0793d94b91c20588731e098da0e6f97718e945cfc6b3d00b2d8d4c",
+    "d2_exceptions.psi": "a1b70708e30a54920fe8de9e98cb7fb3fa015e6c1a685c45af21229ef7039425",
+    "d2_no_seal.psi": "da0ef478e3e443ac6490dcb5cf041c73d9f643a722987bb74707d395e1fdfff8",
+    "d2_bound_no_seal.psi": "d567112f8fb75b79e3d8c7869a5d8594e37286ddadd55d0bba2d2dc456633a74",
+    "d2_base.positions": "e0abe547720f435d",
+    "d2_bound.positions": "79d8643c4b5d06bf",
+    "d3_base.psi": "97ef1b494b23fccebe073b5bf3cde53d38e52d5ec365faf949d83fa0c98f5e0d",
+    "d3_bound.psi": "9d610d19a4833d6f933843e8a5c65a2d644fbfb0b685bf6787c6f351fb9952ca",
+    "d3_old.psi": "e36c41a38076627d97aa73fa89d688d490adf73187ee51ff305efa1b206caa57",
+    "d3_raw_keys.psi": "1edddf37f61b4a79e17d61b8a5ad09aa3fa243c238b62baaa040447683fcd22f",
+    "d3_exceptions.psi": "90544663171a7d26207f2790a6400bc2e5303faa43e2f6374651d591b75383de",
+    "d3_no_seal.psi": "22e44bd5df94c589f6f8846176c466764576c87ba7794b29fa27723ea0cf9c7b",
+    "d3_bound_no_seal.psi": "9de59044c68d64a8eae031f637b5b9e4d13dae8cd54c308942fc26f42fce630f",
+    "d3_base.positions": "67854114a48194c2",
+    "d3_bound.positions": "b95e64087d7fcfcc"
+  }
+}

@@ -1,0 +1,16 @@
+% Written by tools/paper_numbers.py from the logs of benchmarks/. Do not edit: run the script again.
+\begin{tabular}{lrrrr}
+\toprule
+ & Compression & RMS error & Divergence & Divergence \\
+Chain & ratio & (\%) & on the grid (\%) & as read (\%) \\
+\midrule
+original grid &  &  & $<$0.0002 & 4.1 to 4.6 \\
+zfp & 11 & 0.15 & 1.4 to 1.6 & 4.3 to 4.7 \\
+cuZFP, 2 bits & 16 & 0.46 & 5.0 to 6.1 & 5.2 to 5.9 \\
+SPERR & 110 & 0.83 & 5.8 to 6.0 & 6.0 to 6.3 \\
+SZ3 & 147 & 1.79 & 10.4 to 11.1 & 8.7 to 9.2 \\
+SZ3 in 4D & 337 & 1.79 & 10.8 to 11.1 & 8.8 to 9.2 \\
+cuSZp & 12 & 2.89 & 32.8 to 38.0 & 17.9 to 20.5 \\
+\codec, decoded grid & 134 & 0.62 & 0.2 to 0.3 & 4.2 to 4.6 \\
+\bottomrule
+\end{tabular}

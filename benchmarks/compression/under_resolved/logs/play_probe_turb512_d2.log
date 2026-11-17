@@ -1,0 +1,11 @@
+play           : build/work/under_resolved/probe_turb512_d2.psi, 512^3, degree 2, 55 frames read out of 55, 1000000 particles, 2 RK4 steps per frame
+Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 0.000e+00
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 711.350 MiB; read in steady state: 12.7566 MiB per frame, that is 120x less than a raw frame (1536 MiB)
+Per frame      : disk 2.630 ms, bus 0.642 ms, decoding 4.332 ms, sort 0.000 ms, 2 RK4 steps of 0.399 ms
+Key frames     : 1 read in steady state (coded), 22.481 MiB each: disk 4.409 ms, bus 1.015 ms, decoding 8.429 ms
+Full budget    : 8.401 ms per frame, that is 119.0 frames per second (wall clock: 8.675 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 530.0 MiB allocated by the reader, of which 490.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions de929ce511d42c8d

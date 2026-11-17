@@ -1,0 +1,11 @@
+play           : build/work/under_resolved/probe_nu0006_d2.psi, 512^3, degree 2, 55 frames read out of 55, 1000000 particles, 2 RK4 steps per frame
+Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 1.049e-05
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 830.105 MiB; read in steady state: 14.7571 MiB per frame, that is 104x less than a raw frame (1536 MiB)
+Per frame      : disk 2.707 ms, bus 0.601 ms, decoding 3.191 ms, sort 0.000 ms, 2 RK4 steps of 0.372 ms
+Key frames     : 1 read in steady state (coded), 33.208 MiB each: disk 6.044 ms, bus 1.298 ms, decoding 5.737 ms
+Full budget    : 7.244 ms per frame, that is 138.0 frames per second (wall clock: 7.439 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 540.0 MiB allocated by the reader, of which 500.7 MiB of receiver state; lattice at 000000190D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions aaee13ad922bbf33

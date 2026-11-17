@@ -1,0 +1,57 @@
+Psi-treillis: regression suite of the pack / play chain at 64^3 (2026-11-17 16:56)
+Toolchain   : nvcc 13.2.78, MSVC 19.44.35228.0, cufft64_12.dll 6,14,11,1220, NVIDIA GeForce RTX 5090 Laptop GPU (120-real), driver 621.14
+Fingerprints: recorded on this toolchain, on 2026-11-15
+
+OK       sequence.fingerprint
+OK       d2.pack_play
+OK       d2.determinism
+OK       d2.bound_held
+OK       d2.bound_missed
+OK       d2.pass_cap
+OK       d2.old_behaviour
+OK       d2.probe
+OK       d2.exceptions
+OK       d2.raw_keys
+OK       d2.seal
+OK       d2.fingerprint.base
+OK       d2.fingerprint.bound
+OK       d2.fingerprint.old
+OK       d2.fingerprint.raw_keys
+OK       d2.fingerprint.exceptions
+OK       d2.fingerprint.no_seal
+OK       d2.fingerprint.bound_no_seal
+OK       d2.fingerprint.positions
+OK       d3.pack_play
+OK       d3.determinism
+OK       d3.bound_held
+OK       d3.bound_missed
+OK       d3.pass_cap
+OK       d3.old_behaviour
+OK       d3.probe
+OK       d3.exceptions
+OK       d3.raw_keys
+OK       d3.seal
+OK       d3.fingerprint.base
+OK       d3.fingerprint.bound
+OK       d3.fingerprint.old
+OK       d3.fingerprint.raw_keys
+OK       d3.fingerprint.exceptions
+OK       d3.fingerprint.no_seal
+OK       d3.fingerprint.bound_no_seal
+OK       d3.fingerprint.positions
+OK       guard.fb7_degree3
+OK       guard.clipping_fb7_degree2
+OK       guard.fine_level_capacity
+OK       guard.truncated_file
+OK       guard.corrupt_magic
+OK       guard.invalid_degree
+OK       guard.corrupt_frame
+OK       guard.invalid_sequence
+OK       guard.swapped_degree
+OK       guard.sealed_header
+OK       guard.geometry_no_seal
+OK       guard.random_alteration: 240 altered files: 100 refused, 99 counted, 37 without effect, 4 not seen (no seal)
+KNOWN    guard.altered_overflow: play accepts a frame in which an overflow of level 0 is altered: code 0, 0 frame(s) whose state differs, whereas the probe measures a difference of 4.780e-03 between the field of the reader and that of the encoder [known defect, not corrected: the fingerprint of a frame does not cover the value of the overflows of level 0, which touch only the lattice]
+
+TOTAL: 50 cases, 49 OK, 0 FAILED, 1 known defect(s)
+Duration of the cases: 41 s (sequence apart)

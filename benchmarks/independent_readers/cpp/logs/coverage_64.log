@@ -1,0 +1,1044 @@
+== psi_ref d2_base.psi: exit code 0, read
+File        : build/tests/cases/d2_base.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 0
+Velocity    : largest difference from the field of the probe 3.273e-06 u', RMS difference 3.796e-07 u' (u' = 0.718785); scales to within 5.2e-08 and 0.0e+00
+CSV,ref,64,2,2,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,3.2726e-06,3.7965e-07,1
+== psi_stream play d2_base.psi: exit code 0, read
+play           : build/tests/cases/d2_base.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.033 ms, decoding 0.281 ms, sort 0.000 ms, 2 RK4 steps of 0.017 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.008 ms, bus 0.024 ms, decoding 0.409 ms
+Full budget    : 0.355 ms per frame, that is 2819.8 frames per second (wall clock: 0.399 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions eef125bfde6486ad
+== psi_ref d2_base_again.psi: exit code 0, read
+File        : build/tests/cases/d2_base_again.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 0
+Velocity    : largest difference from the field of the probe 3.273e-06 u', RMS difference 3.796e-07 u' (u' = 0.718785); scales to within 5.2e-08 and 0.0e+00
+CSV,ref,64,2,2,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,3.2726e-06,3.7965e-07,1
+== psi_stream play d2_base_again.psi: exit code 0, read
+play           : build/tests/cases/d2_base_again.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.034 ms, decoding 0.291 ms, sort 0.000 ms, 2 RK4 steps of 0.016 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.009 ms, bus 0.029 ms, decoding 0.406 ms
+Full budget    : 0.365 ms per frame, that is 2740.7 frames per second (wall clock: 0.409 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions eef125bfde6486ad
+== psi_ref d2_bound.psi: exit code 0, read
+File        : build/tests/cases/d2_bound.psi, PSISTRM3, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 11551 brick(s) and 218544 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 262144
+Velocity    : largest difference from the field of the probe 3.230e-06 u', RMS difference 3.801e-07 u' (u' = 0.718785); scales to within 5.2e-08 and 9.4e-09
+CSV,ref,64,2,3,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,3.2299e-06,3.8009e-07,1
+== psi_stream play d2_bound.psi: exit code 0, read
+play           : build/tests/cases/d2_bound.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 4.99 %; at most 373 bricks and 7424 nodes per frame; 0.5 MiB resident
+Certification  : bound held at encoding; largest error 0.049897 u' for a certification threshold of 0.049950 u' (tolerance 0.05000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.303 MiB; read in steady state: 0.0354 MiB per frame, that is 85x less than a raw frame (3 MiB)
+Per frame      : disk 0.011 ms, bus 0.040 ms, decoding 0.447 ms, sort 0.000 ms, 2 RK4 steps of 0.033 ms
+Key frames     : 1 read in steady state (coded), 0.063 MiB each: disk 0.010 ms, bus 0.023 ms, decoding 0.760 ms
+Full budget    : 0.564 ms per frame, that is 1773.1 frames per second (wall clock: 0.668 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.5 MiB of receiver state; lattice at 000000020D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 8168148ace1e0bf2
+== psi_ref d2_bound_again.psi: exit code 0, read
+File        : build/tests/cases/d2_bound_again.psi, PSISTRM3, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 11551 brick(s) and 218544 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 262144
+Velocity    : largest difference from the field of the probe 3.230e-06 u', RMS difference 3.801e-07 u' (u' = 0.718785); scales to within 5.2e-08 and 9.4e-09
+CSV,ref,64,2,3,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,3.2299e-06,3.8009e-07,1
+== psi_stream play d2_bound_again.psi: exit code 0, read
+play           : build/tests/cases/d2_bound_again.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 4.99 %; at most 373 bricks and 7424 nodes per frame; 0.5 MiB resident
+Certification  : bound held at encoding; largest error 0.049897 u' for a certification threshold of 0.049950 u' (tolerance 0.05000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.303 MiB; read in steady state: 0.0354 MiB per frame, that is 85x less than a raw frame (3 MiB)
+Per frame      : disk 0.009 ms, bus 0.044 ms, decoding 0.426 ms, sort 0.000 ms, 2 RK4 steps of 0.028 ms
+Key frames     : 1 read in steady state (coded), 0.063 MiB each: disk 0.009 ms, bus 0.024 ms, decoding 0.523 ms
+Full budget    : 0.535 ms per frame, that is 1869.0 frames per second (wall clock: 0.613 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.5 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 8168148ace1e0bf2
+== psi_ref d2_bound_no_seal.psi: exit code 0, read
+File        : build/tests/cases/d2_bound_no_seal.psi, PSISTRM3, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 11551 brick(s) and 218544 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,3,36,36,0,0,0,0
+== psi_stream play d2_bound_no_seal.psi: exit code 0, read
+play           : build/tests/cases/d2_bound_no_seal.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 4.99 %; at most 373 bricks and 7424 nodes per frame; 0.5 MiB resident
+Certification  : bound held at encoding; largest error 0.049897 u' for a certification threshold of 0.049950 u' (tolerance 0.05000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.303 MiB; read in steady state: 0.0354 MiB per frame, that is 85x less than a raw frame (3 MiB)
+Per frame      : disk 0.010 ms, bus 0.028 ms, decoding 0.444 ms, sort 0.000 ms, 2 RK4 steps of 0.035 ms
+Key frames     : 1 read in steady state (coded), 0.063 MiB each: disk 0.010 ms, bus 0.024 ms, decoding 0.526 ms
+Full budget    : 0.553 ms per frame, that is 1808.4 frames per second (wall clock: 0.629 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.5 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 8168148ace1e0bf2
+== psi_ref d2_cap.psi: exit code 0, read
+File        : build/tests/cases/d2_cap.psi, PSISTRM3, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 11269 brick(s) and 211827 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,3,36,36,1,0,0,0
+== psi_stream play d2_cap.psi: exit code 0, read
+play           : build/tests/cases/d2_cap.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 6.28 %; at most 361 bricks and 7291 nodes per frame; 0.5 MiB resident
+Warning        : the encoder missed the bound on 36 frame(s); largest error 0.062795 u' for a certification threshold of 0.049950 u' (tolerance 0.05000 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.296 MiB; read in steady state: 0.0352 MiB per frame, that is 85x less than a raw frame (3 MiB)
+Per frame      : disk 0.009 ms, bus 0.036 ms, decoding 0.419 ms, sort 0.000 ms, 2 RK4 steps of 0.037 ms
+Key frames     : 1 read in steady state (coded), 0.062 MiB each: disk 0.009 ms, bus 0.024 ms, decoding 0.537 ms
+Full budget    : 0.538 ms per frame, that is 1859.3 frames per second (wall clock: 0.615 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.5 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0efae38f9cbc7d4f
+== psi_ref d2_exceptions.psi: exit code 0, read
+File        : build/tests/cases/d2_exceptions.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 69 escape(s), 52805 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 0
+Velocity    : largest difference from the field of the probe 3.614e-06 u', RMS difference 3.773e-07 u' (u' = 0.718785); scales to within 2.3e-08 and 0.0e+00
+CSV,ref,64,2,2,36,36,1,0,69,52805
+CSV,probe,38,114688,0,0,3.6139e-06,3.7735e-07,1
+== psi_stream play d2_exceptions.psi: exit code 0, read
+play           : build/tests/cases/d2_exceptions.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.928 MiB; read in steady state: 0.0523 MiB per frame, that is 57x less than a raw frame (3 MiB)
+Per frame      : disk 0.011 ms, bus 0.038 ms, decoding 0.334 ms, sort 0.000 ms, 2 RK4 steps of 0.017 ms
+Key frames     : 1 read in steady state (coded), 0.097 MiB each: disk 0.012 ms, bus 0.027 ms, decoding 0.482 ms
+Full budget    : 0.417 ms per frame, that is 2399.6 frames per second (wall clock: 0.458 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 667ff28c49eb354b
+== psi_ref d2_floor.psi: exit code 0, read
+File        : build/tests/cases/d2_floor.psi, PSISTRM3, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 11861 brick(s) and 227157 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,3,36,36,1,0,0,0
+== psi_stream play d2_floor.psi: exit code 0, read
+play           : build/tests/cases/d2_floor.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 7.88 %; at most 387 bricks and 7766 nodes per frame; 0.5 MiB resident
+Warning        : the encoder missed the bound on 36 frame(s); largest error 0.078849 u' for a certification threshold of 0.049950 u' (tolerance 0.05000 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.184 MiB; read in steady state: 0.0321 MiB per frame, that is 94x less than a raw frame (3 MiB)
+Per frame      : disk 0.014 ms, bus 0.060 ms, decoding 0.462 ms, sort 0.000 ms, 2 RK4 steps of 0.034 ms
+Key frames     : 1 read in steady state (coded), 0.059 MiB each: disk 0.018 ms, bus 0.023 ms, decoding 0.820 ms
+Full budget    : 0.603 ms per frame, that is 1659.3 frames per second (wall clock: 0.728 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.5 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions f0ce3748f2a1de1e
+== psi_ref d2_no_seal.psi: exit code 0, read
+File        : build/tests/cases/d2_no_seal.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,2,36,36,0,0,0,0
+== psi_stream play d2_no_seal.psi: exit code 0, read
+play           : build/tests/cases/d2_no_seal.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.028 ms, decoding 0.291 ms, sort 0.000 ms, 2 RK4 steps of 0.015 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.008 ms, bus 0.024 ms, decoding 0.416 ms
+Full budget    : 0.356 ms per frame, that is 2812.8 frames per second (wall clock: 0.391 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000190D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions eef125bfde6486ad
+== psi_ref d2_old.psi: exit code 0, read
+File        : build/tests/cases/d2_old.psi, PSISTRM3, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 11432 brick(s) and 216280 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,3,36,36,0,0,0,0
+== psi_stream play d2_old.psi: exit code 0, read
+play           : build/tests/cases/d2_old.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 5.00 % of u', largest error observed at encoding 5.00 %; at most 373 bricks and 7372 nodes per frame; 0.5 MiB resident
+Certification  : bound held at encoding, with no arithmetic margin (file from before the evening of 15 November, or --tolerance-margin 0)
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.301 MiB; read in steady state: 0.0353 MiB per frame, that is 85x less than a raw frame (3 MiB)
+Per frame      : disk 0.012 ms, bus 0.049 ms, decoding 0.450 ms, sort 0.000 ms, 2 RK4 steps of 0.033 ms
+Key frames     : 1 read in steady state (coded), 0.063 MiB each: disk 0.014 ms, bus 0.466 ms, decoding 0.591 ms
+Full budget    : 0.577 ms per frame, that is 1731.7 frames per second (wall clock: 0.657 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.5 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0f7d426d424c0429
+== psi_ref d2_raw_keys.psi: exit code 0, read
+File        : build/tests/cases/d2_raw_keys.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 0 coded key(s), 2 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,2,36,36,1,0,0,0
+== psi_stream play d2_raw_keys.psi: exit code 0, read
+play           : build/tests/cases/d2_raw_keys.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.167 MiB; read in steady state: 0.0298 MiB per frame, that is 101x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.028 ms, decoding 0.274 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (raw), 0.120 MiB each: disk 0.015 ms, bus 0.024 ms, decoding 0.029 ms
+Full budget    : 0.337 ms per frame, that is 2970.1 frames per second (wall clock: 0.365 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions eef125bfde6486ad
+== psi_ref d3_base.psi: exit code 0, read
+File        : build/tests/cases/d3_base.psi, PSISTRM2, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 0
+Velocity    : largest difference from the field of the probe 5.944e-06 u', RMS difference 7.174e-07 u' (u' = 0.718785); scales to within 5.1e-08 and 0.0e+00
+CSV,ref,64,3,2,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,5.9439e-06,7.1744e-07,1
+== psi_stream play d3_base.psi: exit code 0, read
+play           : build/tests/cases/d3_base.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.003 MiB; read in steady state: 0.0270 MiB per frame, that is 111x less than a raw frame (3 MiB)
+Per frame      : disk 0.008 ms, bus 0.064 ms, decoding 0.317 ms, sort 0.000 ms, 2 RK4 steps of 0.030 ms
+Key frames     : 1 read in steady state (coded), 0.057 MiB each: disk 0.009 ms, bus 0.067 ms, decoding 0.457 ms
+Full budget    : 0.451 ms per frame, that is 2219.7 frames per second (wall clock: 0.491 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 36048ae07d37282d
+== psi_ref d3_base_again.psi: exit code 0, read
+File        : build/tests/cases/d3_base_again.psi, PSISTRM2, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 0
+Velocity    : largest difference from the field of the probe 5.944e-06 u', RMS difference 7.174e-07 u' (u' = 0.718785); scales to within 5.1e-08 and 0.0e+00
+CSV,ref,64,3,2,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,5.9439e-06,7.1744e-07,1
+== psi_stream play d3_base_again.psi: exit code 0, read
+play           : build/tests/cases/d3_base_again.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.003 MiB; read in steady state: 0.0270 MiB per frame, that is 111x less than a raw frame (3 MiB)
+Per frame      : disk 0.008 ms, bus 0.030 ms, decoding 0.285 ms, sort 0.000 ms, 2 RK4 steps of 0.029 ms
+Key frames     : 1 read in steady state (coded), 0.057 MiB each: disk 0.009 ms, bus 0.033 ms, decoding 0.407 ms
+Full budget    : 0.381 ms per frame, that is 2624.7 frames per second (wall clock: 0.414 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 36048ae07d37282d
+== psi_ref d3_bound.psi: exit code 0, read
+File        : build/tests/cases/d3_bound.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15247 brick(s) and 347230 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 262144
+Velocity    : largest difference from the field of the probe 5.916e-06 u', RMS difference 7.174e-07 u' (u' = 0.718785); scales to within 5.1e-08 and 2.1e-08
+CSV,ref,64,3,3,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,5.9161e-06,7.1742e-07,1
+== psi_stream play d3_bound.psi: exit code 0, read
+play           : build/tests/cases/d3_bound.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.012 ms, bus 0.023 ms, decoding 0.425 ms, sort 0.000 ms, 2 RK4 steps of 0.075 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.010 ms, bus 0.023 ms, decoding 0.543 ms
+Full budget    : 0.610 ms per frame, that is 1638.2 frames per second (wall clock: 0.699 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0351132e6584de68
+== psi_ref d3_bound_again.psi: exit code 0, read
+File        : build/tests/cases/d3_bound_again.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15247 brick(s) and 347230 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 262144
+Velocity    : largest difference from the field of the probe 5.916e-06 u', RMS difference 7.174e-07 u' (u' = 0.718785); scales to within 5.1e-08 and 2.1e-08
+CSV,ref,64,3,3,36,36,1,0,0,0
+CSV,probe,38,114688,0,0,5.9161e-06,7.1742e-07,1
+== psi_stream play d3_bound_again.psi: exit code 0, read
+play           : build/tests/cases/d3_bound_again.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.010 ms, bus 0.024 ms, decoding 0.393 ms, sort 0.000 ms, 2 RK4 steps of 0.074 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.010 ms, bus 0.023 ms, decoding 0.552 ms
+Full budget    : 0.576 ms per frame, that is 1737.0 frames per second (wall clock: 0.647 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0351132e6584de68
+== psi_ref d3_bound_no_seal.psi: exit code 0, read
+File        : build/tests/cases/d3_bound_no_seal.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15247 brick(s) and 347230 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,3,3,36,36,0,0,0,0
+== psi_stream play d3_bound_no_seal.psi: exit code 0, read
+play           : build/tests/cases/d3_bound_no_seal.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.009 ms, bus 0.024 ms, decoding 0.408 ms, sort 0.000 ms, 2 RK4 steps of 0.074 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.009 ms, bus 0.024 ms, decoding 0.532 ms
+Full budget    : 0.588 ms per frame, that is 1700.6 frames per second (wall clock: 0.658 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0351132e6584de68
+== psi_ref d3_cap.psi: exit code 0, read
+File        : build/tests/cases/d3_cap.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15156 brick(s) and 344824 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,3,3,36,36,1,0,0,0
+== psi_stream play d3_cap.psi: exit code 0, read
+play           : build/tests/cases/d3_cap.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 4.96 %; at most 541 bricks and 12465 nodes per frame; 0.7 MiB resident
+Warning        : the encoder missed the bound on 24 frame(s); largest error 0.049551 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.317 MiB; read in steady state: 0.0356 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.010 ms, bus 0.024 ms, decoding 0.403 ms, sort 0.000 ms, 2 RK4 steps of 0.077 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.009 ms, bus 0.025 ms, decoding 0.527 ms
+Full budget    : 0.591 ms per frame, that is 1690.7 frames per second (wall clock: 0.659 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0e5bbfa8d6978435
+== psi_ref d3_exceptions.psi: exit code 0, read
+File        : build/tests/cases/d3_exceptions.psi, PSISTRM2, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 176 escape(s), 219 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+Probe       : frame 38 (position 35), 114688 points; lattice read directly, 0 value(s) outside the 16-bit range
+Lattice     : 0 node(s) out of 32768 differ from those of the encoder; fine level: 0 node(s) out of 0
+Velocity    : largest difference from the field of the probe 8.023e-06 u', RMS difference 7.200e-07 u' (u' = 0.718785); scales to within 5.0e-09 and 0.0e+00
+CSV,ref,64,3,2,36,36,1,0,176,219
+CSV,probe,38,114688,0,0,8.0234e-06,7.1999e-07,1
+== psi_stream play d3_exceptions.psi: exit code 0, read
+play           : build/tests/cases/d3_exceptions.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.193 MiB; read in steady state: 0.0319 MiB per frame, that is 94x less than a raw frame (3 MiB)
+Per frame      : disk 0.008 ms, bus 0.029 ms, decoding 0.306 ms, sort 0.000 ms, 2 RK4 steps of 0.028 ms
+Key frames     : 1 read in steady state (coded), 0.074 MiB each: disk 0.010 ms, bus 0.025 ms, decoding 0.466 ms
+Full budget    : 0.399 ms per frame, that is 2507.6 frames per second (wall clock: 0.443 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions b0e63934dac8f5d7
+== psi_ref d3_floor.psi: exit code 0, read
+File        : build/tests/cases/d3_floor.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15206 brick(s) and 346909 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,3,3,36,36,1,0,0,0
+== psi_stream play d3_floor.psi: exit code 0, read
+play           : build/tests/cases/d3_floor.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 8.89 %; at most 542 bricks and 12574 nodes per frame; 0.7 MiB resident
+Warning        : the encoder missed the bound on 36 frame(s); largest error 0.088946 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.127 MiB; read in steady state: 0.0304 MiB per frame, that is 99x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.064 ms, decoding 0.418 ms, sort 0.000 ms, 2 RK4 steps of 0.077 ms
+Key frames     : 1 read in steady state (coded), 0.061 MiB each: disk 0.010 ms, bus 0.024 ms, decoding 0.516 ms
+Full budget    : 0.644 ms per frame, that is 1552.5 frames per second (wall clock: 0.718 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 685e2f2297e0d0f3
+== psi_ref d3_no_seal.psi: exit code 0, read
+File        : build/tests/cases/d3_no_seal.psi, PSISTRM2, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,3,2,36,36,0,0,0,0
+== psi_stream play d3_no_seal.psi: exit code 0, read
+play           : build/tests/cases/d3_no_seal.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.003 MiB; read in steady state: 0.0270 MiB per frame, that is 111x less than a raw frame (3 MiB)
+Per frame      : disk 0.006 ms, bus 0.027 ms, decoding 0.279 ms, sort 0.000 ms, 2 RK4 steps of 0.027 ms
+Key frames     : 1 read in steady state (coded), 0.057 MiB each: disk 0.009 ms, bus 0.024 ms, decoding 0.409 ms
+Full budget    : 0.366 ms per frame, that is 2730.4 frames per second (wall clock: 0.395 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 36048ae07d37282d
+== psi_ref d3_old.psi: exit code 0, read
+File        : build/tests/cases/d3_old.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15112 brick(s) and 343424 node(s) over the frames read
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,3,3,36,36,0,0,0,0
+== psi_stream play d3_old.psi: exit code 0, read
+play           : build/tests/cases/d3_old.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 4.00 %; at most 548 bricks and 12679 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding, with no arithmetic margin (file from before the evening of 15 November, or --tolerance-margin 0)
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.316 MiB; read in steady state: 0.0356 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.009 ms, bus 0.024 ms, decoding 0.404 ms, sort 0.000 ms, 2 RK4 steps of 0.077 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.011 ms, bus 0.022 ms, decoding 0.534 ms
+Full budget    : 0.590 ms per frame, that is 1694.7 frames per second (wall clock: 0.661 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 26a484bf9adbfed5
+== psi_ref d3_raw_keys.psi: exit code 0, read
+File        : build/tests/cases/d3_raw_keys.psi, PSISTRM2, 64^3, degree 3, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 0 coded key(s), 2 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,3,2,36,36,1,0,0,0
+== psi_stream play d3_raw_keys.psi: exit code 0, read
+play           : build/tests/cases/d3_raw_keys.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.129 MiB; read in steady state: 0.0288 MiB per frame, that is 104x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.028 ms, decoding 0.274 ms, sort 0.000 ms, 2 RK4 steps of 0.029 ms
+Key frames     : 1 read in steady state (raw), 0.120 MiB each: disk 0.018 ms, bus 0.024 ms, decoding 0.030 ms
+Full budget    : 0.368 ms per frame, that is 2717.9 frames per second (wall clock: 0.393 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 36048ae07d37282d
+== psi_ref guard_capacity_d2.psi: exit code 1, refused
+Failure: index_offset = 0: table missing (interrupted encoding?) or placed inside the headers
+== psi_stream play guard_capacity_d2.psi: exit code 1, refused
+Failure: .psi file: frame table missing (encoding interrupted?)
+  codec_stream.cuh:79
+== psi_ref guard_capacity_d3.psi: exit code 1, refused
+Failure: index_offset = 0: table missing (interrupted encoding?) or placed inside the headers
+== psi_stream play guard_capacity_d3.psi: exit code 1, refused
+Failure: .psi file: frame table missing (encoding interrupted?)
+  codec_stream.cuh:79
+== psi_ref guard_degree_0.psi: exit code 1, refused
+Failure: degree 0: only 2 and 3 exist
+== psi_stream play guard_degree_0.psi: exit code 1, refused
+Failure: .psi file: invalid degree
+  codec_stream.cuh:76
+== psi_ref guard_degree_3.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_degree_3.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_degree_7.psi: exit code 1, refused
+Failure: degree 7: only 2 and 3 exist
+== psi_stream play guard_degree_7.psi: exit code 1, refused
+Failure: .psi file: invalid degree
+  codec_stream.cuh:76
+== psi_ref guard_fb7_d2.psi: exit code 0, read
+File        : build/tests/cases/guard_fb7_d2.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,2,36,36,1,0,0,0
+== psi_stream play guard_fb7_d2.psi: exit code 0, read
+play           : build/tests/cases/guard_fb7_d2.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Warning        : the encoder clipped 1917244 coefficient(s) on 36 frame(s); this file does not reproduce the requested projection
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read by differences
+File           : 1.027 MiB; read in steady state: 0.0278 MiB per frame, that is 108x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.027 ms, decoding 0.282 ms, sort 0.000 ms, 2 RK4 steps of 0.015 ms
+Key frames     : 1 read in steady state (coded), 0.054 MiB each: disk 0.008 ms, bus 0.025 ms, decoding 0.404 ms
+Full budget    : 0.345 ms per frame, that is 2897.9 frames per second (wall clock: 0.376 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 87f38cd59ff2baf2
+== psi_ref guard_frame.psi: exit code 1, counted
+File        : build/tests/cases/guard_frame.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 27 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,2,2,36,36,1,27,0,0
+== psi_stream play guard_frame.psi: exit code 1, counted
+play           : build/tests/cases/guard_frame.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.028 ms, decoding 0.286 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.008 ms, bus 0.024 ms, decoding 0.417 ms
+Full budget    : 0.350 ms per frame, that is 2859.2 frames per second (wall clock: 0.378 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions c43477e50c1ebcac
+== psi_ref guard_geo_block_offset0.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_block_offset0.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: offset of block 0 (innovations) inconsistent
+== psi_stream play guard_geo_block_offset0.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_block_offset_backwards.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_block_offset_backwards.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: offset of block 50 (innovations) inconsistent
+== psi_stream play guard_geo_block_offset_backwards.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_block_offset_end.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_block_offset_end.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: the last block (innovations) starts outside the stream area
+== psi_stream play guard_geo_block_offset_end.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_block_offset_huge.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_block_offset_huge.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: offset of block 8 (innovations) inconsistent
+== psi_stream play guard_geo_block_offset_huge.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_bytes_huge.psi: exit code 1, refused
+Failure: frame 5: offset 178927 and size 140737488355327 outside the frame area
+== psi_stream play guard_geo_bytes_huge.psi: exit code 1, refused
+Failure: corrupt frame table: frame outside the frame area
+  codec_stream.cuh:405
+== psi_ref guard_geo_bytes_less.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_bytes_less.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: the last block (innovations) starts outside the stream area
+== psi_stream play guard_geo_bytes_less.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_bytes_short.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_bytes_short.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: the tables and the offsets (innovations) leave the frame
+== psi_stream play guard_geo_bytes_short.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:419
+== psi_ref guard_geo_exceptions3.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_exceptions3.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: frequency table 0 (innovations) of sum 4183 instead of 4096
+== psi_stream play guard_geo_exceptions3.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_ref guard_geo_exceptions_huge.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_exceptions_huge.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: 2147483647 exceptions, 65536 at most
+== psi_stream play guard_geo_exceptions_huge.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== psi_ref guard_geo_fb5.psi: exit code 0, read
+File        : build/tests/cases/guard_geo_fb5.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,2,36,36,0,0,0,0
+== psi_stream play guard_geo_fb5.psi: exit code 0, read
+play           : build/tests/cases/guard_geo_fb5.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.008 ms, bus 0.030 ms, decoding 0.296 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.008 ms, bus 0.047 ms, decoding 0.406 ms
+Full budget    : 0.364 ms per frame, that is 2747.1 frames per second (wall clock: 0.399 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000020D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions af13937f2d178835
+== psi_ref guard_geo_fine_block_offset.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_block_offset.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: offset of block 1 (fine level) inconsistent
+== psi_stream play guard_geo_fine_block_offset.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:434
+== psi_ref guard_geo_fine_brick.psi: exit code 1, refused
+Failure: fine level: bricks of side 8, only 4 exists
+== psi_stream play guard_geo_fine_brick.psi: exit code 1, refused
+Failure: header of the fine level unreadable
+  codec_stream.cuh:380
+== psi_ref guard_geo_fine_bricks_huge.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_bricks_huge.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: 16777215 bricks and 11302 nodes, beyond the maxima of the header (550 and 12724)
+== psi_stream play guard_geo_fine_bricks_huge.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== psi_ref guard_geo_fine_bricks_minus.psi: exit code 1, counted
+File        : build/tests/cases/guard_geo_fine_bricks_minus.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15246 brick(s) and 347230 node(s) over the frames read
+Fingerprints: 1 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,3,3,36,36,0,1,0,0
+== psi_stream play guard_geo_fine_bricks_minus.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_bricks_minus.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.015 ms, bus 0.030 ms, decoding 0.426 ms, sort 0.000 ms, 2 RK4 steps of 0.076 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.025 ms, bus 0.039 ms, decoding 0.623 ms
+Full budget    : 0.623 ms per frame, that is 1605.5 frames per second (wall clock: 0.712 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 9c10c2def261a907
+== psi_ref guard_geo_fine_bricks_plus.psi: exit code 1, counted
+File        : build/tests/cases/guard_geo_fine_bricks_plus.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15248 brick(s) and 347230 node(s) over the frames read
+Fingerprints: 1 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,3,3,36,36,0,1,0,0
+== psi_stream play guard_geo_fine_bricks_plus.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_bricks_plus.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.019 ms, bus 0.050 ms, decoding 0.483 ms, sort 0.000 ms, 2 RK4 steps of 0.086 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.010 ms, bus 0.022 ms, decoding 0.576 ms
+Full budget    : 0.724 ms per frame, that is 1381.1 frames per second (wall clock: 0.838 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 396006fc973d2a7f
+== psi_ref guard_geo_fine_levels2.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_levels2.psi, PSISTRM3, 64^3, degree 3, 2 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: offset of block 0 (coded key) inconsistent
+== psi_stream play guard_geo_fine_levels2.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_fine_max_bricks.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_max_bricks.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: 550 bricks and 12724 nodes, beyond the maxima of the header (1 and 12724)
+== psi_stream play guard_geo_fine_max_bricks.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== psi_ref guard_geo_fine_max_nodes.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_max_nodes.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: 550 bricks and 12724 nodes, beyond the maxima of the header (550 and 1)
+== psi_stream play guard_geo_fine_max_nodes.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1067
+== psi_ref guard_geo_fine_n128.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_n128.psi, PSISTRM3, 128^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: the last block (fine level) starts outside the stream area
+== psi_stream play guard_geo_fine_n128.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:434
+== psi_ref guard_geo_fine_nodes_plus.psi: exit code 1, counted
+File        : build/tests/cases/guard_geo_fine_nodes_plus.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15247 brick(s) and 347235 node(s) over the frames read
+Fingerprints: 1 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,3,3,36,36,0,1,0,0
+== psi_stream play guard_geo_fine_nodes_plus.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_nodes_plus.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.010 ms, bus 0.024 ms, decoding 0.398 ms, sort 0.000 ms, 2 RK4 steps of 0.074 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.009 ms, bus 0.024 ms, decoding 0.536 ms
+Full budget    : 0.581 ms per frame, that is 1721.1 frames per second (wall clock: 0.655 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0351132e6584de68
+== psi_ref guard_geo_fine_nodes_zero.psi: exit code 1, counted
+File        : build/tests/cases/guard_geo_fine_nodes_zero.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fine level  : 15247 brick(s) and 335928 node(s) over the frames read
+Fingerprints: 1 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,3,3,36,36,0,1,0,0
+== psi_stream play guard_geo_fine_nodes_zero.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_fine_nodes_zero.psi, 64^3, degree 3, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 4.00 % of u', largest error observed at encoding 3.99 %; at most 550 bricks and 12724 nodes per frame; 0.7 MiB resident
+Certification  : bound held at encoding; largest error 0.039881 u' for a certification threshold of 0.039950 u' (tolerance 0.04000 u', arithmetic margin 1.0e-04 u')
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.319 MiB; read in steady state: 0.0357 MiB per frame, that is 84x less than a raw frame (3 MiB)
+Per frame      : disk 0.011 ms, bus 0.024 ms, decoding 0.420 ms, sort 0.000 ms, 2 RK4 steps of 0.077 ms
+Key frames     : 1 read in steady state (coded), 0.066 MiB each: disk 0.009 ms, bus 0.023 ms, decoding 0.565 ms
+Full budget    : 0.609 ms per frame, that is 1643.0 frames per second (wall clock: 0.688 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 1 frame(s) whose state differs from that of the sender; fingerprint of the final positions f36775b8ac74cb91
+== psi_ref guard_geo_fine_section_huge.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_section_huge.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: section of the fine level of 2147483640 bytes, outside the frame
+== psi_stream play guard_geo_fine_section_huge.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1064
+== psi_ref guard_geo_fine_section_odd.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_section_odd.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: section of the fine level of 10700 bytes, outside the frame
+== psi_stream play guard_geo_fine_section_odd.psi: exit code 1, refused
+Failure: corrupt section of the fine level
+  codec_stream.cuh:1064
+== psi_ref guard_geo_fine_section_short.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_fine_section_short.psi, PSISTRM3, 64^3, degree 3, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: frequency table 0 (fine level) of sum 2992 instead of 4096
+== psi_stream play guard_geo_fine_section_short.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_ref guard_geo_frequencies.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_frequencies.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: frequency table 1 (innovations) of sum 4097 instead of 4096
+== psi_stream play guard_geo_frequencies.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_ref guard_geo_last_block_zero.psi: exit code 1, counted
+File        : build/tests/cases/guard_geo_last_block_zero.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 27 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,2,2,36,36,0,27,0,0
+== psi_stream play guard_geo_last_block_zero.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_last_block_zero.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.032 ms, decoding 0.289 ms, sort 0.000 ms, 2 RK4 steps of 0.015 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.008 ms, bus 0.030 ms, decoding 0.405 ms
+Full budget    : 0.358 ms per frame, that is 2791.6 frames per second (wall clock: 0.403 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000150D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions ed4c0976b0c39563
+== psi_ref guard_geo_levels1.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_levels1.psi, PSISTRM2, 64^3, degree 2, 1 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: offset of block 0 (coded key) inconsistent
+== psi_stream play guard_geo_levels1.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_levels2.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_levels2.psi, PSISTRM2, 64^3, degree 2, 2 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: offset of block 0 (coded key) inconsistent
+== psi_stream play guard_geo_levels2.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_mf1.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_mf1.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: offset of block 127 (coded key) inconsistent
+== psi_stream play guard_geo_mf1.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_n128.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_n128.psi, PSISTRM2, 128^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: offset of block 127 (coded key) inconsistent
+== psi_stream play guard_geo_n128.psi: exit code 1, refused
+Failure: corrupt frame: frequency tables or block offsets inconsistent with the geometry of the header
+  codec_stream.cuh:434
+== psi_ref guard_geo_n32.psi: exit code 1, refused
+Failure: level 2: 4 nodes per axis, at least 8 expected
+== psi_stream play guard_geo_n32.psi: exit code 1, refused
+Failure: too many levels for this resolution
+  codec_stream.cuh:140
+== psi_ref guard_geo_offset_outside.psi: exit code 1, refused
+Failure: frame 5: offset 1085977 and size 27864 outside the frame area
+== psi_stream play guard_geo_offset_outside.psi: exit code 1, refused
+Failure: corrupt frame table: frame outside the frame area
+  codec_stream.cuh:405
+== psi_ref guard_geo_offset_shifted.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_offset_shifted.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: frequency table 0 (innovations) of sum 4445 instead of 4096
+== psi_stream play guard_geo_offset_shifted.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_ref guard_geo_raw_bytes.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_raw_bytes.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: the exception list leaves the frame
+== psi_stream play guard_geo_raw_bytes.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1078
+== psi_ref guard_geo_raw_exceptions.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_raw_exceptions.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: the exception list leaves the frame
+== psi_stream play guard_geo_raw_exceptions.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== psi_ref guard_geo_raw_levels2.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_raw_levels2.psi, PSISTRM2, 64^3, degree 2, 2 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: 23003341 exceptions, 65536 at most
+== psi_stream play guard_geo_raw_levels2.psi: exit code 1, refused
+Failure: corrupt exception list
+  codec_stream.cuh:1080
+== psi_ref guard_geo_type0_key.psi: exit code 1, refused
+Failure: frame 0 is not a key frame
+== psi_stream play guard_geo_type0_key.psi: exit code 1, refused
+Failure: corrupt frame table: the first frame is not a key frame
+  codec_stream.cuh:407
+== psi_ref guard_geo_type0_raw.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_type0_raw.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 0: raw key of 57259 bytes, at least 125952 expected
+== psi_stream play guard_geo_type0_raw.psi: exit code 1, refused
+Failure: raw key frame: size inconsistent with the geometry of the header
+  codec_stream.cuh:1073
+== psi_ref guard_geo_type5_9.psi: exit code 1, refused
+Failure: frame 5: unknown type 9
+== psi_stream play guard_geo_type5_9.psi: exit code 1, refused
+Failure: corrupt frame table: unknown frame type
+  codec_stream.cuh:404
+== psi_ref guard_geo_type5_after.psi: exit code 1, counted
+File        : build/tests/cases/guard_geo_type5_after.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 3 innovation(s) after a key, 31 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 27 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,2,2,36,36,0,27,0,0
+== psi_stream play guard_geo_type5_after.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_type5_after.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.007 ms, bus 0.027 ms, decoding 0.286 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.008 ms, bus 0.025 ms, decoding 0.408 ms
+Full budget    : 0.349 ms per frame, that is 2868.8 frames per second (wall clock: 0.380 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions d1aa6b51347320a7
+== psi_ref guard_geo_type5_coded.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_type5_coded.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: frequency table 3 (coded key) of sum 2767811 instead of 4096
+== psi_stream play guard_geo_type5_coded.psi: exit code 1, refused
+Failure: corrupt frequency table
+  codec_stream.cuh:424
+== psi_ref guard_geo_type5_raw.psi: exit code 1, refused
+File        : build/tests/cases/guard_geo_type5_raw.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Failure: frame 5: raw key of 27864 bytes, at least 125952 expected
+== psi_stream play guard_geo_type5_raw.psi: exit code 1, refused
+Failure: raw key frame: size inconsistent with the geometry of the header
+  codec_stream.cuh:1073
+== psi_ref guard_geo_zero_state.psi: exit code 1, counted
+File        : build/tests/cases/guard_geo_zero_state.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), no seal
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 0 escape(s), 0 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 27 frame(s) whose fingerprint differs from that of the table, the first at position 5
+CSV,ref,64,2,2,36,36,0,27,0,0
+== psi_stream play guard_geo_zero_state.psi: exit code 1, counted
+play           : build/tests/cases/guard_geo_zero_state.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.036 MiB; read in steady state: 0.0280 MiB per frame, that is 107x less than a raw frame (3 MiB)
+Per frame      : disk 0.008 ms, bus 0.039 ms, decoding 0.311 ms, sort 0.000 ms, 2 RK4 steps of 0.016 ms
+Key frames     : 1 read in steady state (coded), 0.055 MiB each: disk 0.009 ms, bus 0.023 ms, decoding 0.418 ms
+Full budget    : 0.390 ms per frame, that is 2565.2 frames per second (wall clock: 0.428 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : absent (file from before the seal, or pack --no-seal): the header and the frame table are covered by no fingerprint
+Integrity      : 27 frame(s) whose state differs from that of the sender; fingerprint of the final positions 91ca99293bad2578
+== psi_ref guard_magic.psi: exit code 1, refused
+Failure: unknown signature: this is not a .psi file
+== psi_stream play guard_magic.psi: exit code 1, refused
+Failure: invalid .psi file
+  codec_stream.cuh:75
+== psi_ref guard_overflow.psi: exit code 0, read
+File        : build/tests/cases/guard_overflow.psi, PSISTRM2, 64^3, degree 2, 3 levels, 36 frames (3 to 38), seal verified
+Frames      : 36 read out of 36; 2 coded key(s), 0 raw key(s), 2 innovation(s) after a key, 32 innovation(s)
+Exceptions  : 69 escape(s), 52805 overflow(s) of level 0, 0 overflow(s) ignored
+Fingerprints: 0 frame(s) whose fingerprint differs from that of the table
+CSV,ref,64,2,2,36,36,1,0,69,52805
+== psi_stream play guard_overflow.psi: exit code 0, read
+play           : build/tests/cases/guard_overflow.psi, 64^3, degree 2, 36 frames read out of 36, 4096 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1.928 MiB; read in steady state: 0.0523 MiB per frame, that is 57x less than a raw frame (3 MiB)
+Per frame      : disk 0.011 ms, bus 0.027 ms, decoding 0.322 ms, sort 0.000 ms, 2 RK4 steps of 0.014 ms
+Key frames     : 1 read in steady state (coded), 0.097 MiB each: disk 0.013 ms, bus 0.023 ms, decoding 0.483 ms
+Full budget    : 0.388 ms per frame, that is 2578.5 frames per second (wall clock: 0.423 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 2.0 MiB allocated by the reader, of which 1.0 MiB of receiver state; lattice at 000000160D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions c787e5f3aec5b705
+== psi_ref guard_sealed_coef_0.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_coef_0.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_coef_2b.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_coef_2b.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_delta.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_delta.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_dt_frame.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_dt_frame.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_fb.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_fb.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_fine_delta.psi: exit code 1, refused
+Failure: seal: the header of the fine level has changed since the encoding
+== psi_stream play guard_sealed_fine_delta.psi: exit code 1, refused
+Failure: seal of the file: the header of the fine level has been altered since writing
+  codec_stream.cuh:396
+== psi_ref guard_sealed_fine_levels.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_fine_levels.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_fine_margin.psi: exit code 1, refused
+Failure: seal: the header of the fine level has changed since the encoding
+== psi_stream play guard_sealed_fine_margin.psi: exit code 1, refused
+Failure: seal of the file: the header of the fine level has been altered since writing
+  codec_stream.cuh:396
+== psi_ref guard_sealed_fine_mean.psi: exit code 1, refused
+Failure: seal: the frame table has changed since the encoding
+== psi_stream play guard_sealed_fine_mean.psi: exit code 1, refused
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_ref guard_sealed_fine_nodes.psi: exit code 1, refused
+Failure: seal: the header of the fine level has changed since the encoding
+== psi_stream play guard_sealed_fine_nodes.psi: exit code 1, refused
+Failure: seal of the file: the header of the fine level has been altered since writing
+  codec_stream.cuh:396
+== psi_ref guard_sealed_fingerprint.psi: exit code 1, refused
+Failure: seal: the frame table has changed since the encoding
+== psi_stream play guard_sealed_fingerprint.psi: exit code 1, refused
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_ref guard_sealed_index_offset.psi: exit code 1, refused
+Failure: frame 35: unknown type 1857681089
+== psi_stream play guard_sealed_index_offset.psi: exit code 1, refused
+Failure: corrupt frame table: unknown frame type
+  codec_stream.cuh:404
+== psi_ref guard_sealed_levels.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_levels.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_mean.psi: exit code 1, refused
+Failure: seal: the frame table has changed since the encoding
+== psi_stream play guard_sealed_mean.psi: exit code 1, refused
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_ref guard_sealed_mf.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_mf.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_n.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_n.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_n_frames.psi: exit code 1, refused
+Failure: file size 1086017: 1085921 (without a seal) or 1085969 (with the seal) expected
+== psi_stream play guard_sealed_n_frames.psi: exit code 1, refused
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:387
+== psi_ref guard_sealed_seal_magic.psi: exit code 1, refused
+Failure: the 48 bytes that follow the table are not a seal
+== psi_stream play guard_sealed_seal_magic.psi: exit code 1, refused
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:393
+== psi_ref guard_sealed_seal_value.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_seal_value.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_sealed_seal_zero.psi: exit code 1, refused
+Failure: seal: reserved words not zero
+== psi_stream play guard_sealed_seal_zero.psi: exit code 1, refused
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:393
+== psi_ref guard_sealed_type.psi: exit code 1, refused
+Failure: seal: the frame table has changed since the encoding
+== psi_stream play guard_sealed_type.psi: exit code 1, refused
+Failure: seal of the file: the frame table has been altered since writing
+  codec_stream.cuh:398
+== psi_ref guard_sealed_wrapped.psi: exit code 1, refused
+Failure: seal: the header has changed since the encoding
+== psi_stream play guard_sealed_wrapped.psi: exit code 1, refused
+Failure: seal of the file: the header has been altered since writing
+  codec_stream.cuh:394
+== psi_ref guard_truncated_1.psi: exit code 1, refused
+Failure: file too short for a header (0 bytes)
+== psi_stream play guard_truncated_1.psi: exit code 1, refused
+Failure: invalid .psi file
+  psi_stream.cu:488
+== psi_ref guard_truncated_10.psi: exit code 1, refused
+Failure: file size 1382728: 1382776 (without a seal) or 1382824 (with the seal) expected
+== psi_stream play guard_truncated_10.psi: exit code 1, refused
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_ref guard_truncated_2.psi: exit code 1, refused
+Failure: file too short for a header (100 bytes)
+== psi_stream play guard_truncated_2.psi: exit code 1, refused
+Failure: invalid .psi file
+  psi_stream.cu:488
+== psi_ref guard_truncated_3.psi: exit code 1, refused
+Failure: file size 208: 1085969 (without a seal) or 1086017 (with the seal) expected
+== psi_stream play guard_truncated_3.psi: exit code 1, refused
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_ref guard_truncated_4.psi: exit code 1, refused
+Failure: file size 272: 1085969 (without a seal) or 1086017 (with the seal) expected
+== psi_stream play guard_truncated_4.psi: exit code 1, refused
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_ref guard_truncated_5.psi: exit code 1, refused
+Failure: file size 1086016: 1085969 (without a seal) or 1086017 (with the seal) expected
+== psi_stream play guard_truncated_5.psi: exit code 1, refused
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:387
+== psi_ref guard_truncated_6.psi: exit code 1, refused
+Failure: file size 1085968: 1085969 (without a seal) or 1086017 (with the seal) expected
+== psi_stream play guard_truncated_6.psi: exit code 1, refused
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_ref guard_truncated_7.psi: exit code 1, refused
+Failure: file size 208: 1382776 (without a seal) or 1382824 (with the seal) expected
+== psi_stream play guard_truncated_7.psi: exit code 1, refused
+Failure: header of the fine level unreadable
+  codec_stream.cuh:380
+== psi_ref guard_truncated_8.psi: exit code 1, refused
+Failure: file size 272: 1382776 (without a seal) or 1382824 (with the seal) expected
+== psi_stream play guard_truncated_8.psi: exit code 1, refused
+Failure: frame table unreadable
+  codec_stream.cuh:384
+== psi_ref guard_truncated_9.psi: exit code 1, refused
+Failure: file size 1382804: 1382776 (without a seal) or 1382824 (with the seal) expected
+== psi_stream play guard_truncated_9.psi: exit code 1, refused
+Failure: .psi file: unexpected bytes after the frame table (neither end of file, nor seal)
+  codec_stream.cuh:387

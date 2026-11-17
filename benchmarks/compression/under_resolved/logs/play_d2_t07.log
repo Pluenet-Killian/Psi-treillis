@@ -1,0 +1,14 @@
+play           : build/work/under_resolved/d2_t07.psi, 512^3, degree 2, 55 frames read out of 55, 4000000 particles, 2 RK4 steps per frame
+Fine level     : read; tolerance 7.00 % of u', largest error observed at encoding 12.54 %; at most 392473 bricks and 10445238 nodes per frame; 511.9 MiB resident
+Warning        : the encoder missed the bound on 55 frame(s); largest error 0.125406 u' for a certification threshold of 0.069950 u' (tolerance 0.07000 u')
+Probe          : frame 54, 114688 points; largest difference between the field of the reader and that of the encoder: 1.049e-05
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 1366.800 MiB; read in steady state: 24.5142 MiB per frame, that is 63x less than a raw frame (1536 MiB)
+Per frame      : disk 4.464 ms, bus 1.096 ms, decoding 5.782 ms, sort 0.000 ms, 2 RK4 steps of 4.036 ms
+Key frames     : 1 read in steady state (coded), 42.968 MiB each: disk 8.395 ms, bus 1.702 ms, decoding 7.998 ms
+Full budget    : 19.413 ms per frame, that is 51.5 frames per second (wall clock: 19.768 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 1162.0 MiB allocated by the reader, of which 1022.4 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header, header of the fine level and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions b5c41be558ce5528
+CSV,play,512,2,4000000,2,1,0,24.5142,4.4636,1.0959,5.7825,0.0000,4.0356,0.0000,19.4131,19.7680,1162.0,1022.4,0,b5c41be558ce5528,1,42.9683,8.3950,1.7015,7.9978

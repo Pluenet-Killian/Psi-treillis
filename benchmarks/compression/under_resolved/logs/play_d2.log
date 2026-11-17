@@ -1,0 +1,11 @@
+play           : build/work/under_resolved/d2.psi, 512^3, degree 2, 55 frames read out of 55, 4000000 particles, 2 RK4 steps per frame
+Kernels        : RK4 step with support cache (blocks of 128 threads); lattice read directly
+File           : 830.105 MiB; read in steady state: 14.7571 MiB per frame, that is 104x less than a raw frame (1536 MiB)
+Per frame      : disk 2.645 ms, bus 0.642 ms, decoding 4.277 ms, sort 0.000 ms, 2 RK4 steps of 1.193 ms
+Key frames     : 1 read in steady state (coded), 33.208 MiB each: disk 6.272 ms, bus 1.320 ms, decoding 8.723 ms
+Full budget    : 9.949 ms per frame, that is 100.5 frames per second (wall clock: 10.189 ms per frame)
+Sort           : 0 sorts during the reading, 0.000 ms each
+GPU memory     : 632.0 MiB allocated by the reader, of which 500.7 MiB of receiver state; lattice at 000000130D600000 (remainder modulo 2 MiB: 0 KiB)
+Seal           : present and verified at opening: header and frame table unchanged since writing
+Integrity      : 0 frame(s) whose state differs from that of the sender; fingerprint of the final positions 0169251f6a9e3dae
+CSV,play,512,2,4000000,2,1,0,14.7571,2.6449,0.6419,4.2771,0.0000,1.1926,0.0000,9.9490,10.1890,632.0,500.7,0,0169251f6a9e3dae,1,33.2079,6.2718,1.3196,8.7225
